@@ -1,3 +1,9 @@
+---
+layout: default
+title: Eun Soo's Machine Learning Guide
+description: Data Structure and Algorithm
+---
+
 [<- PREV](../README.md)
 
 # What kind of data structure and algorithm are you going to use?
