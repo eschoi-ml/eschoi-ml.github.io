@@ -1,4 +1,4 @@
-[<-PREV ](../chestxray/README.md)[ NEXT->](results.md)
+[<-PREV ](chestxray.md)[ NEXT->](results.md)
 
 # Walk Through Part 3. Prediction and Evaluation
 
@@ -378,4 +378,4 @@ testset_visualize(testloader, y_pred, labeled=True, normalized=True)
     
 ![png](output_16_0.png)
     
-[<-PREV ](../chestxray/README.md)[ NEXT->](results.md)
+[<-PREV ](chestxray.md)[ NEXT->](results.md)
