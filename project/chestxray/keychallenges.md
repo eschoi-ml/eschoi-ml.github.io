@@ -1,4 +1,4 @@
-[<- PREV](README.md) [ NEXT ->](chestxray-part2.md)
+[<- PREV](chestxray.md) [ NEXT ->](chestxray-part2.md)
 
 # 4 key challenges
 1. Multi-label classification
@@ -67,4 +67,4 @@
   :-----: | :-----:
   90 minutes | 90 seconds
 
-[<- PREV](README.md) [ NEXT ->](chestxray-part2.md)
+[<- PREV](chestxray.md) [ NEXT ->](chestxray-part2.md)
