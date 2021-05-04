@@ -8,5 +8,5 @@ This Gibhub page is to share Machine Learning related knowledge and projects tha
 ## [Data Structure & Algorithm](dsa/README.md)
 
 ### Contact info
-- eschoi.stanford@gmail.com
+- eschoi.stanford(at)gmail(dot)com
 - [RESUME]()
