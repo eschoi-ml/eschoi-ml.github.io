@@ -1,4 +1,4 @@
-[<-PREV ](../chestxray/README.md)[ NEXT->](chestxray-part3.md)
+[<-PREV ](chestxray.md)[ NEXT->](chestxray-part3.md)
 
 # Walk Through Part 2.
 1. Set up
@@ -1078,4 +1078,4 @@ for i, met in enumerate(['loss', 'roc', 'accuracy', 'precision', 'recall', 'pr']
     
 ![png](images/small_result_50_.png)
     
-[<-PREV ](../chestxray/README.md)[ NEXT->](chestxray-part3.md)
+[<-PREV ](chestxray.md)[ NEXT->](chestxray-part3.md)
