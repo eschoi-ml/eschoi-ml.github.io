@@ -1,8 +1,6 @@
 [<- PREV](chestxray.md) [ NEXT->](chestxray-part1.md)
 
-# Introduction: NIH Chest X-ray Dataset of 14 Common Thorax Disease Categories
-
-
+# Introduction: NIH Chest X-ray14 Dataset
 
 You may directly download from the NIH website or use the Kaggle website.
 - [Direct download NIH Chest X-ray Dataset](https://nihcc.app.box.com/v/ChestXray-NIHCC)
