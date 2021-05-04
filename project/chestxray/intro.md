@@ -1,4 +1,4 @@
-[<- PREV](README.md) [ NEXT->](chestxray-part1.md)
+[<- PREV](chestxray.md) [ NEXT->](chestxray-part1.md)
 
 # Introduction: NIH Chest X-ray Dataset of 14 Common Thorax Disease Categories
 
@@ -42,4 +42,4 @@ Additionally, I removed some of the images that were inverted, rotated or not-fr
 ## Chest X-ray14 sample images
 ![xraysample](images/xraysample.png)
 
-[<- PREV](README.md) [ NEXT->](chestxray-part1.md)
+[<- PREV](chestxray.md) [ NEXT->](chestxray-part1.md)
