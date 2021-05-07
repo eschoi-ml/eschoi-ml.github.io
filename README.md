@@ -5,7 +5,7 @@ This Gibhub page is to share Machine Learning related knowledge and projects tha
 
 ## [ML Lecture Note](lecture_note/README.md)
 
-## [Data Structure & Algorithm](dsa/README.md)
+## [Data Structure & Algorithm](dsa/dsa.md)
 
 ### Contact info
 - eschoi.stanford (at) gmail (dot) com
