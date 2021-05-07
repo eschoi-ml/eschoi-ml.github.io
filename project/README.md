@@ -2,6 +2,6 @@
 
 ## Machine Learning Project
 - [Multi-Label Disease Classification on Chest X-ray with Deep Learning](chestxray/chestxray.md)
-- [Spam Email Classification on Enron Emails using NLP](enronemail/enronemail.md)
+- [Email Classification on Enron Emails using NLP](enronemail/enronemail.md)
 
 
