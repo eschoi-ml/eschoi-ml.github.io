@@ -1,6 +1,6 @@
 [<- PREV](../README.md)
 
-# Spam Email Classification on Enron Emails using NLP
+# Email Classification on Enron Emails using NLP
 
 # Outline
 - Introduction
