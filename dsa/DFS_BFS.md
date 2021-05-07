@@ -1,4 +1,4 @@
-[<- PREV](README.md)
+[<- PREV](dsa.md)
 
 # DFS & BFS
 
@@ -313,4 +313,4 @@ bfs_path(graph, 'A', 'F')
     bfs_path_iterative1:  A->C->F
     bfs_path_iterative2:  A->C->F
 
-[<- PREV](README.md)
+[<- PREV](dsa.md)
