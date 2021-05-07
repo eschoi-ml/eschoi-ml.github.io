@@ -1,3 +1,5 @@
+[<-PREV](dsa.md)
+
 # Ultimate Binary Search Template
 This is an ultimate binary search template inspired by and improved from [this.](https://towardsdatascience.com/powerful-ultimate-binary-search-template-and-many-leetcode-problems-1f850ef95651)
 
@@ -470,3 +472,4 @@ class RLEIterator:
                 l = mid + 1
         return self.nums[l]
 ```
+[<-PREV](dsa.md)
