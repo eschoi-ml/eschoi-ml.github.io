@@ -50,7 +50,7 @@ Basic categories of algorithms: Insert, Update, Delete, Sort, and Search
 
 ### Search
 
-> **Code along Lecture Note: [Ultimate Binary Search Template](binary_search.md)
+> **Code along Lecture Note: [Ultimate Binary Search Template](binary_search.md)**
 
 - Linear search
 - Binary search
