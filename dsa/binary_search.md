@@ -344,24 +344,6 @@ def kthSmallest(self, matrix: List[List[int]], k: int) -> int:
     
 
     """
-    def count(mid):
-        
-        cnt = 0
-        
-        row, col = n - 1, 0
-        smaller, larger = matrix[0][0], matrix[n-1][n-1]
-        
-        while row >= 0 and col < n:
-            if matrix[row][col] > mid:
-                larger = min(matrix[row][col], larger)
-                row -= 1
-            else:
-                smaller = max(matrix[row][col], smaller)
-                cnt += row + 1
-                col += 1
-                
-        return cnt, smaller, larger
-    
     def enough(m):
         
         cnt = 0
