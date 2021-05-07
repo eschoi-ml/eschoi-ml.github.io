@@ -61,7 +61,7 @@ Basic categories of algorithms: Insert, Update, Delete, Sort, and Search
 - Breath first search
 - Bidirectional search (if undirected)
 
-> **Code along Lecture Note: [Shortest Path]()**
+> **Code along Lecture Note: Shortest Path**
 
 - Bellman Ford's algorithm (if negative weighted) 
 - Dijkstra's algorithm (if positive weighted) 
