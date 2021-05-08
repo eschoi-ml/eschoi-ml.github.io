@@ -29,6 +29,8 @@ description: Data Structure and Algorithm
   - Decision Tree
   - B, B+, Red-Black Tree
 
+> **Code along Lecture Note: [Tree Recursion Top-Down & Bottom-Up](tree_recursion.md)**
+
 ## Algorithm
 Basic categories of algorithms: Insert, Update, Delete, Sort, and Search
 
