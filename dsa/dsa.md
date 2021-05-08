@@ -6,7 +6,7 @@ description: Data Structure and Algorithm
 
 [<- PREV](../README.md)
 
-# What kind of data structure and algorithm are you going to use?
+# Data Structure and Algorithm
 ## Data Structure
 ### Basic data structure
 - Array (list)
