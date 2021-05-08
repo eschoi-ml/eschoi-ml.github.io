@@ -14,7 +14,7 @@
 4. DNA
   - DNA sequence analysis
 
-## RNN types
+## RNN types by the number of inputs and outputs
 1. One to one
 3. One to many
 4. Many to one
@@ -22,5 +22,8 @@
 6. Many to many with time delay
 
 
-
+## RNN type by Unit type
+Simple RNN
+GRU (Gated Recurrent Unit)
+LSTM (Long Short Term Memory)
 
