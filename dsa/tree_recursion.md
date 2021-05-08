@@ -314,7 +314,6 @@ def findFrequentTreeSum(self, root: TreeNode) -> List[int]:
     res = collections.Counter()
     helper(root)
     
-    res = collections.Counter(res)
     max_val = max(res.values())
     max_res = []
     for key, val in res.items():
