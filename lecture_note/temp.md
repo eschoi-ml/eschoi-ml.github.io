@@ -5,6 +5,7 @@
   - Sentiment classification (Many-to-one)
   - Machine translation (Many-to-many with time delay)
   - Name entity recognition (Many-to-many)
+  - Language model and text sequence generation (One-to-many)
 2. Sound
   - Speech recognition (Many-to-one)
   - Music generation (One-to-many)
