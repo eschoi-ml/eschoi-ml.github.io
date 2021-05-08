@@ -1,6 +1,6 @@
 [<- PREV](../README.md)
 
-# Email Classification on Enron Emails using NLP
+# Sentiment Classification on Enron Emails using NLP
 
 # Outline
 - Introduction
