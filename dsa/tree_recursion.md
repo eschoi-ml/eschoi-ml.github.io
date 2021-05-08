@@ -1,3 +1,5 @@
+[<-PREV](dsa.md)
+
 # Tree Recursion Top-down or Bottom-up
 
 ## Basic application
@@ -373,3 +375,4 @@ def pathSum(self, root: TreeNode, targetSum: int) -> int:
     helper(root, 0)
     return self.cnt
 ```
+[<-PREV](dsa.md)
