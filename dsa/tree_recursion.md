@@ -1,8 +1,7 @@
-[<-PREV](dsa.md)
+# Tree Recursion Top-down & Bottom-up
 
-# Tree Recursion Top-down and Bottom-up
 
-```pypthon
+```python
 def TopDown(node, params):
 
     if not node:
@@ -15,7 +14,9 @@ def TopDown(node, params):
 
     return answer if needed
 ```
-```pypthon
+
+
+```python
 def BottomUp(node):
 
     if not node:
@@ -35,7 +36,7 @@ def BottomUp(node):
 ```python
 def maxDepth(self, root: TreeNode) -> int:
     
-    # Top-down
+    # Top down
     def helper(node, depth):
         
         if not node:
@@ -399,4 +400,3 @@ def pathSum(self, root: TreeNode, targetSum: int) -> int:
     helper(root, 0)
     return self.cnt
 ```
-[<-PREV](dsa.md)
