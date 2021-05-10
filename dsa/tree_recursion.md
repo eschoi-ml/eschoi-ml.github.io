@@ -1,5 +1,3 @@
-[<-PREV](dsa.md)
-
 # Tree Recursion Top-down & Bottom-up
 
 
@@ -28,6 +26,25 @@ def BottomUp(node):
     right = BottomUp(node.right)
 
     return answer
+```
+
+
+```python
+def Advanced_BottomUp(node):
+
+    if not node:
+        return specific value
+
+    left = Advanced_BottomUp(node.left)
+    right = Advanced_BottomUp(node.right)
+
+    update_left, update_right = 0, 0
+    update_left = if needed
+    update_right = if needed
+
+    self.global_variable = update_function(self.global_variable, update_left + update_right(+ node.val))
+
+    return return_one_subtree_function(update_left, update_right)(+ node.val)
 ```
 
 ## Basic application
@@ -320,6 +337,8 @@ def findFrequentTreeSum(self, root: TreeNode) -> List[int]:
 ### [572. Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)
 
 
+
+
 ```python
 def isSubtree(self, root: TreeNode, subRoot: TreeNode) -> bool:
     
@@ -400,5 +419,3 @@ def pathSum(self, root: TreeNode, targetSum: int) -> int:
     helper(root, 0)
     return self.cnt
 ```
-
-[<-PREV](dsa.md)
