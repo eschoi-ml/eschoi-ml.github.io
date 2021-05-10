@@ -287,39 +287,6 @@ def countUnivalSubtrees(self, root: TreeNode) -> int:
     return self.cnt
 ```
 
-### [572. Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)
-
-
-
-
-```python
-def isSubtree(self, root: TreeNode, subRoot: TreeNode) -> bool:
-    
-    def helper(p, q):
-        
-        if not p and not q:
-            return True
-        
-        if not p or not q:
-            return False
-        
-        if p.val != q.val:
-            return False
-        
-        return helper(p.left, q.left) and helper(p.right, q.right)
-        
-    if helper(root, subRoot):
-        return True
-    
-    if not root:
-        return False
-    
-    left = self.isSubtree(root.left, subRoot)
-    right = self.isSubtree(root.right, subRoot)
-    
-    return left or right
-```
-
 ### [508. Most Frequent Subtree Sum](https://leetcode.com/problems/most-frequent-subtree-sum/)
 
 
@@ -348,6 +315,37 @@ def findFrequentTreeSum(self, root: TreeNode) -> List[int]:
         if val == max_val:
             max_res.append(key)
     return max_res
+```
+
+### [572. Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)
+
+
+```python
+def isSubtree(self, root: TreeNode, subRoot: TreeNode) -> bool:
+    
+    def helper(p, q):
+        
+        if not p and not q:
+            return True
+        
+        if not p or not q:
+            return False
+        
+        if p.val != q.val:
+            return False
+        
+        return helper(p.left, q.left) and helper(p.right, q.right)
+        
+    if helper(root, subRoot):
+        return True
+    
+    if not root:
+        return False
+    
+    left = self.isSubtree(root.left, subRoot)
+    right = self.isSubtree(root.right, subRoot)
+    
+    return left or right
 ```
 
 ### [560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)
