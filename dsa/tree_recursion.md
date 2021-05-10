@@ -1,6 +1,31 @@
 [<-PREV](dsa.md)
 
-# Tree Recursion Top-down or Bottom-up
+# Tree Recursion Top-down and Bottom-up
+
+```pypthon
+def TopDown(node, params):
+
+    if not node:
+        return specific value if needed
+    
+    update the answer if needed
+
+    left = TopDown(node.left, left_params)
+    right = TopDown(node.right, right_params)
+
+    return answer if needed
+```
+```pypthon
+def BottomUp(node):
+
+    if not node:
+        return specific value
+
+    left = BottomUp(node.left)
+    right = BottomUp(node.right)
+
+    return answer
+```
 
 ## Basic application
 
