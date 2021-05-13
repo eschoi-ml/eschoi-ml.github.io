@@ -1,3 +1,5 @@
+[<-PREV](enronemail.md)
+
 # The Enron Email Part 1. 
 1. Import libraries, set up directories, and read data
 2. Quick data check
@@ -667,7 +669,7 @@ plt.xlabel('Count');
 
 
     
-![png](output_29_0.png)
+![png](images/output_29_0.png)
     
 
 
@@ -682,7 +684,7 @@ ax.imshow(wc);
 
 
     
-![png](output_30_0.png)
+![png](images/output_30_0.png)
     
 
 
@@ -783,3 +785,4 @@ df.head()
 ```python
 df.to_csv(output_dir + 'preprocessed.csv', index=False)
 ```
+[<-PREV](enronemail.md)
