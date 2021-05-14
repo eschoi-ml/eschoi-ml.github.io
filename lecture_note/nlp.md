@@ -1,6 +1,6 @@
 [<-PREV](README.md)
 
-# Natural Language Processing
+# Natural Language Process
 
 ## 1. Pretrained Word Embedding
 - Static Word Embedding: word2vec, GloVe, Tast Text and others
