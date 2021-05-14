@@ -1,3 +1,5 @@
+[<-PREV](enronemail.md)
+
 # The Enron Email 
 # Part 2. NLP - Deep Learning
 
@@ -417,7 +419,7 @@ plot_results(history)
 
 
     
-![png](output_31_0.png)
+![png](images/output_31_0.png)
     
 
 
@@ -569,7 +571,7 @@ test_acc2 = model2.evaluate(X_test_padded, y_test)
 
 
     
-![png](output_37_1.png)
+![png](images/output_37_1.png)
     
 
 
@@ -690,7 +692,7 @@ test_acc3 = model3.evaluate(X_test_padded, y_test)
 
 
     
-![png](output_39_1.png)
+![png](images/output_39_1.png)
     
 
 
@@ -795,11 +797,7 @@ test_acc4 = model4.evaluate(X_test_padded, y_test)
 
 
     
-![png](output_41_1.png)
+![png](images/output_41_1.png)
     
 
-
-
-```python
-
-```
+[<-PREV](enronemail.md)
