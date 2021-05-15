@@ -7,6 +7,6 @@ This Gibhub page is to share Machine Learning related knowledge and projects tha
 
 ## **-** [Data Structure & Algorithm](dsa/dsa.md)
 
-## **-** Contact info
+### Contact info
 - Feel free to contact me if you have any question or want to leave comments. 
 - eschoi.stanford (at) gmail (dot) com
