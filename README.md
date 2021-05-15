@@ -9,5 +9,4 @@ This Gibhub page is to share Machine Learning related knowledge and projects tha
 
 ### Contact info
 Contact me if you have any question or want to leave any comment. 
-- eschoi.stanford (at) gmail (dot) com
-- [RESUME]()
+eschoi.stanford (at) gmail (dot) com
