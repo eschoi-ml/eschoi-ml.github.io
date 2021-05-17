@@ -213,6 +213,30 @@ def pathSum(self, root: TreeNode, targetSum: int) -> List[List[int]]:
     return res
 ```
 
+### [543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)
+
+
+```python
+def diameterOfBinaryTree(self, root: TreeNode) -> int:
+    
+    def helper(node):
+        
+        if not node:
+            return 0
+        
+        left = helper(node.left)
+        right = helper(node.right)
+        
+        self.max_diameter = max(self.max_diameter, left + right)
+        
+        return max(left, right) + 1
+    
+    self.max_diameter = 0
+    helper(root)
+    return self.max_diameter
+```
+
+
 ## Advanced application
 
 ### [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
