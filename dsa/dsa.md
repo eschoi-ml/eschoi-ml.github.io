@@ -52,26 +52,24 @@ Basic categories of algorithms: Insert, Update, Delete, Sort, and Search
 
 ### Search
 
-> **Code along Lecture Note: [Ultimate Binary Search Template](binary_search.md)**
-
-- Linear search
+-  Linear search
 - Binary search
 
-> **Code along Lecture Note: [DFS & BFS](DFS_BFS.md)**
+> **Code along Lecture Note: [Ultimate Binary Search Template](binary_search.md)**
 
 - Depth first search/ Backtracking
 - Breath first search
+
+> **Code along Lecture Note: [DFS & BFS](DFS_BFS.md)**
+
 - Bidirectional search (if undirected)
-
-> **Code along Lecture Note: Shortest Path**
-
 - Bellman Ford's algorithm (if negative weighted) 
 - Dijkstra's algorithm (if positive weighted) 
 - A*(A star) search (Best First Search)
 
-### Greedy algorithm
+> **Code along Lecture Note: Shortest Path**
 
-> **Code along Lecture Note: [Top 8 Greedy Algorithm](greedy.md) **
+### Greedy algorithm
 
 Looks for locally optimum solutions in the hopes of finding a global optimum
 - Activity selelction 
@@ -82,6 +80,8 @@ Looks for locally optimum solutions in the hopes of finding a global optimum
 - Huffman Coding
 - Dijkstra's algorithm for shortest paths from a single source 
 - Kruska's and Prim's minimum spanning tree
+
+> **Code along Lecture Note: [Top 8 Greedy Algorithm](greedy.md) **
 
 ### Dynamic programming
 Problems that have overlapping subproblems AND optimal substructure property (If not, use a recursive algorithm using a divide and conquer approach)
