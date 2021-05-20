@@ -70,11 +70,18 @@ Basic categories of algorithms: Insert, Update, Delete, Sort, and Search
 - A*(A star) search (Best First Search)
 
 ### Greedy algorithm
+
+> **Code along Lecture Note: [Top 8 Greedy Algorithm](greedy.md) **
+
 Looks for locally optimum solutions in the hopes of finding a global optimum
-- Ford-Fulkerson algorithm
-- Kruskal's minimum spanning tree algorithm
-- Prim's minimum spanning tree algorithm
-- Huffman coding
+- Activity selelction 
+- Fractional Knapsack
+- Graph coloring
+- Job sequencing with deadlines
+- Minimum number of platforms/ meeting rooms
+- Huffman Coding
+- Dijkstra's algorithm for shortest paths from a single source 
+- Kruska's and Prim's minimum spanning tree
 
 ### Dynamic programming
 Problems that have overlapping subproblems AND optimal substructure property (If not, use a recursive algorithm using a divide and conquer approach)
