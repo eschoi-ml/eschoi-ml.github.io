@@ -108,6 +108,7 @@ fractiona_knapsack(value, weight, capacity)
 Graph coloring (also called vertex coloring) is a way of coloring a graph's vertices such that no two adjacent vertices share the same color. 
 1. K-colorable graph: Given K colors, find a way of coloring the vertices. 
 2. K-chromatic graph: Find the minimum number K of colors used. 
+
 ---
 1. Color first vertex with first color. 
 2. Do the following for remaining V-1 vertices
