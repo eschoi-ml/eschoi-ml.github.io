@@ -81,7 +81,7 @@ Looks for locally optimum solutions in the hopes of finding a global optimum
 - Dijkstra's algorithm for shortest paths from a single source 
 - Kruska's and Prim's minimum spanning tree
 
-> **Code along Lecture Note: [Top 8 Greedy Algorithm](greedy.md) **
+> **Code along Lecture Note: [Top 8 Greedy Algorithm](greedy.md)**
 
 ### Dynamic programming
 Problems that have overlapping subproblems AND optimal substructure property (If not, use a recursive algorithm using a divide and conquer approach)
