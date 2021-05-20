@@ -1,3 +1,5 @@
+[<-PREV](dsa.md)
+
 # Greedy Algorithm
 Let's try solving Top 8 Greedy algorithm questions!
 
@@ -461,3 +463,4 @@ Dijkstra(0, graph)
 #### Prim's MST
 
 
+[<-PREV](dsa.md)
