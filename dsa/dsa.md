@@ -31,6 +31,8 @@ description: Data Structure and Algorithm
 
 > **Code along Lecture Note: [Tree Recursion Top-Down & Bottom-Up](tree_recursion.md)**
 
+> **Code along Lecture Note: [Binary Search Tree](bst.md)**
+
 ## Algorithm
 Basic categories of algorithms: Insert, Update, Delete, Sort, and Search
 
