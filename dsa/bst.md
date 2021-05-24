@@ -1,3 +1,5 @@
+[<-PREV](dsa.md)
+
 # Binary Search Tree
 
 - Inorder traversal of BST is an array sorted in the ascending order.
@@ -109,3 +111,5 @@ def splitBST(self, root: TreeNode, target: int) -> List[TreeNode]:
         root.left = sub[1]
         return sub[0], root
 ```
+
+[<-PREV](dsa.md)
