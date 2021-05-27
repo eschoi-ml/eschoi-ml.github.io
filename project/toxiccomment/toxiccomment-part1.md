@@ -275,7 +275,7 @@ plt.title('Correlation among Toxic comments');
 
 
     
-![png](output_16_0.png)
+![png](images/output_16_0.png)
     
 
 
