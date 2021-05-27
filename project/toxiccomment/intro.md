@@ -1,4 +1,4 @@
-[<-PREV](toxiccomment.md)[NEXT->](toxiccomment-part1.md)
+[<-PREV](toxiccomment.md) [NEXT->](toxiccomment-part1.md)
 
 # Introduction
 
