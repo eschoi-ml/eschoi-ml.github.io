@@ -1,5 +1,7 @@
 [<-PREV](toxiccomment.md)
 
+
+
 # Toxic Comment Classification Part 1
 1. Set up
 1. Quick data check
@@ -474,5 +476,7 @@ df.head()
 ```python
 df.to_csv(output_dir + 'preprocessed.csv', index=False)
 ```
+
+
 
 [<-PREV](toxiccomment.md)
