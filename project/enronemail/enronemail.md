@@ -1,4 +1,4 @@
-[<- PREV](../README.md)
+[<-PREV ](../project.md)
 
 # Sentiment Classification on Enron Emails using NLP Deep Learning
 
