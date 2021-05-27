@@ -1,3 +1,5 @@
+[<-PREV](toxiccomment.md)
+
 # Toxic Comment Classification Part 1
 1. Set up
 1. Quick data check
@@ -231,7 +233,7 @@ plt.ylabel('Count');
 
 
     
-![png](output_14_0.png)
+![png](images/output_14_0.png)
     
 
 
@@ -259,7 +261,7 @@ plt.title('Count from Single vs. Multiple labels');
 
 
     
-![png](output_15_0.png)
+![png](images/output_15_0.png)
     
 
 
@@ -301,7 +303,7 @@ plt.tight_layout()
 
 
     
-![png](output_19_0.png)
+![png](images/output_19_0.png)
     
 
 
@@ -325,7 +327,7 @@ plt.tight_layout();
 
 
     
-![png](output_20_0.png)
+![png](images/output_20_0.png)
     
 
 
@@ -342,7 +344,7 @@ plt.tight_layout();
 
 
     
-![png](output_21_0.png)
+![png](images/output_21_0.png)
     
 
 
@@ -387,7 +389,7 @@ plt.ylabel('Count');
 
 
     
-![png](output_25_1.png)
+![png](images/output_25_1.png)
     
 
 
@@ -397,3 +399,5 @@ plt.ylabel('Count');
 ```python
 df.to_csv(output_dir + 'preprocessed.csv', index=False)
 ```
+
+[<-PREV](toxiccomment.md)
