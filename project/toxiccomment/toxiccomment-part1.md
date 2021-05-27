@@ -397,6 +397,81 @@ plt.ylabel('Count');
 
 
 ```python
+print(df.info())
+df.head()
+```
+
+    <class 'pandas.core.frame.DataFrame'>
+    Int64Index: 32450 entries, 6 to 111060
+    Data columns (total 2 columns):
+     #   Column        Non-Null Count  Dtype 
+    ---  ------        --------------  ----- 
+     0   comment_text  32450 non-null  object
+     1   Toxic         32450 non-null  int64 
+    dtypes: int64(1), object(1)
+    memory usage: 1.8+ MB
+    None
+
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>comment_text</th>
+      <th>Toxic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>6</th>
+      <td>COCKSUCKER BEFORE YOU PISS AROUND ON MY WORK</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Hey... what is it..\n@ | talk .\nWhat is it......</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Bye! \n\nDon't look, come or think of comming ...</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>You are gay or antisemmitian? \n\nArchangel WH...</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>FUCK YOUR FILTHY MOTHER IN THE ASS, DRY!</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
 df.to_csv(output_dir + 'preprocessed.csv', index=False)
 ```
 
