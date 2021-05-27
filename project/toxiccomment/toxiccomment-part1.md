@@ -216,7 +216,7 @@ plt.ylabel('Count');
 
 
     
-![png](output_13_0.png)
+![png](images/output_13_0.png)
     
 
 
