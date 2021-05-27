@@ -1,4 +1,4 @@
-[<-PREV ](../README.md)
+[<-PREV ](../project.md)
 
 # Multi-Label Disease Classification on Chest X-ray with Deep Learning
 
