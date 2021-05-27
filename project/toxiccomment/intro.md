@@ -19,3 +19,6 @@ The tagging was done via crowdsourcing which means that the dataset was rated by
 ## 2. Create new data by reorganizing
 In this project, I reorganized the dataset as binary classes with clean vs. Toxic comments by combining the six categories.
 Because the original data was tagged subjectively by multiple people and the majority toxic comments were multi-tagged, the dataset resulted in high imbalance between clean and Toxic comments or among Toxic comments. Thus, instead of following the Kaggle challenge, I thought it was more reasonable to reorganize the data as a binary classification problem. Note that the clean data was also sampled so that the size of clean and toxic data was matched. 
+
+
+[<-PREV](toxiccomment.md) [NEXT->](toxiccomment-part1.md)
