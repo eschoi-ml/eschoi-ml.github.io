@@ -3,7 +3,7 @@
 # Machine Learning Topics
 
 1. Computer Vision
-2. [Sequence Model](sequence.md)
+2. [Sequence Model](sequence/sequence.md)
 
 
 [<- PREV](../README.md)
