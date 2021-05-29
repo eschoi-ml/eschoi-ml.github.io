@@ -20,6 +20,6 @@
   - **Machine translation**
   - Speech recognition
 
-
+**Bold** in Natural Language Process (NLP)
 
 [<-PREV](../lecturenote.md)
