@@ -2,6 +2,8 @@
 
 # Sequence Models
 
+## Sequence problems
+
 1. Sequence classification (many-to-one, many-to-many)
   - DNA sequence analysis
   - **Sentiment analysis**
@@ -20,6 +22,9 @@
   - **Machine translation**
   - Speech recognition
 
-**Bold** in Natural Language Process (NLP)
+## Sequence Topics
+
+1. **[Natural Language Process (NLP)](nlp.md)**
+
 
 [<-PREV](../lecturenote.md)
