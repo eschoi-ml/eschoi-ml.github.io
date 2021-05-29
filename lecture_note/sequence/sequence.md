@@ -2,7 +2,7 @@
 
 # Sequence Models
 
-## Sequence problems
+## Sequence Problems
 
 1. Sequence classification (many-to-one, many-to-many)
   - DNA sequence analysis
