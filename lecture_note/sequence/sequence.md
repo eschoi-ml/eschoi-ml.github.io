@@ -24,7 +24,7 @@
 
 ## Sequence Topics
 
-1. **[Natural Language Process (NLP)](nlp.md)**
+1. **[Natural Language Process (NLP)](nlp/nlp.md)**
 
 
 
