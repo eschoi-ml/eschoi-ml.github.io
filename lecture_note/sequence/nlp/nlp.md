@@ -1,4 +1,4 @@
-[<-PREV](README.md)
+[<-PREV](../sequence.md)
 
 # Natural Language Process
 
@@ -16,4 +16,6 @@
   - bidirectional LSTM 
 - Attention
 
-[<-PREV](README.md)
+
+
+[<-PREV](../sequence.md)
