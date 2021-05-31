@@ -22,9 +22,6 @@
   - **Machine translation**
   - Speech recognition
 
-## Sequence Topics
-
-1. **[Natural Language Process (NLP)](nlp/nlp.md)**
 
 ## Sequence Model Architectures
 - Recurrent Neural Network(RNN)
@@ -33,6 +30,13 @@
   - Long Short Term Memory(LSTM)
   - bidirectional LSTM 
 - Transformer
+
+
+## Sequence Topics
+
+1. **[Natural Language Process (NLP)](nlp/nlp.md)**
+
+
 
 
 [<-PREV](../lecturenote.md)
