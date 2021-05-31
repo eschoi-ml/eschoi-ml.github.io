@@ -21,6 +21,8 @@
   - **Text summarization**
   - **Machine translation**
   - Speech recognition
+  - Question answering
+  - Language inference
 
 
 ## Sequence Model Architectures
