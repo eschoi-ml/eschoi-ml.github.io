@@ -26,7 +26,13 @@
 
 1. **[Natural Language Process (NLP)](nlp/nlp.md)**
 
-
+## Sequence Model Architectures
+- Recurrent Neural Network(RNN)
+  - Simple RNN
+  - Gated Recurrent Unit(GRU)
+  - Long Short Term Memory(LSTM)
+  - bidirectional LSTM 
+  - Transformer
 
 
 [<-PREV](../lecturenote.md)
