@@ -3,8 +3,8 @@
 # Machine Learning 
 
 ## Topics
-1. Computer Vision
-2. [Sequence Model](sequence/sequence.md)
+- Computer Vision
+- [Sequence Model](sequence/sequence.md)
 
 ## Deep Learning Model Architectures
 - Multi-Layer Perceptron (MLP)
