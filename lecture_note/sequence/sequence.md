@@ -32,7 +32,7 @@
   - Gated Recurrent Unit(GRU)
   - Long Short Term Memory(LSTM)
   - bidirectional LSTM 
-  - Transformer
+- Transformer
 
 
 [<-PREV](../lecturenote.md)
