@@ -5,8 +5,8 @@
 ## Outline
 - [Introduction: Wikipedia comments for toxic behavior dataset](intro.md)
 - [**Code along Part1** Exploratory Data Analysis](toxiccomment-part1.md) 
-- **Code along Part2** Deep Learning NLP
-- **Code along Part3** Prediction and Evaluation
+- [**Code along Part2** Deep Learning NLP with RNN](toxiccomment-part2.md)
+- **Code along Part3** Deep Learning NLP with Transformer
 - Results
 - Conclusion
 - [References](references.md)
