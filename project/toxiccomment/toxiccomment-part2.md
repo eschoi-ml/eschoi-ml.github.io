@@ -1,3 +1,5 @@
+[<-PREV](toxiccomment.md)
+
 # Toxic Comment Classification Part 2
 1. Set up
 2. Text preprocessing
@@ -483,7 +485,7 @@ print(f"Test result: {test_result}")
 
 
     
-![png](output_35_1.png)
+![png](images/output_35_1.png)
     
 
 
@@ -595,7 +597,7 @@ print(f"Test result: {test_result}")
 
 
     
-![png](output_37_1.png)
+![png](images/output_37_1.png)
     
 
 
@@ -709,7 +711,7 @@ print(f"Test result: {test_result}")
 
 
     
-![png](output_39_1.png)
+![png](images/output_39_1.png)
     
 
 
@@ -772,3 +774,5 @@ results
 </div>
 
 
+
+[<-PREV](toxiccomment.md)
