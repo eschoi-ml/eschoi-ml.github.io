@@ -1,6 +1,7 @@
 [<-PREV](toxiccomment.md)
 
-# Toxic Comment Classification Part 2 - Deep Learning NLP with RNN
+# Toxic Comment Classification Part 2 
+# Deep Learning NLP with RNN
 1. Set up
 2. Text preprocessing
     - Clean the text
