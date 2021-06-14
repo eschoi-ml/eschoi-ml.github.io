@@ -261,7 +261,7 @@ plt.xlabel('The length of X');
 
 
     
-![png](output_23_0.png)
+![png](images/output_23_0.png)
     
 
 
