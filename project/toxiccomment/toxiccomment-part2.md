@@ -1,4 +1,8 @@
-# Toxic Comment Classification Part 2
+[<-PREV](toxiccomment.md)
+
+# Toxic Comment Classification Part 2:
+# Deep Learning NLP with RNN
+
 1. Set up
 2. Text preprocessing
     - Clean the text
@@ -513,7 +517,7 @@ print(f"Test result: {test_result}")
 
 
     
-![png](output_35_1.png)
+![png](images/output_35_1.png)
     
 
 
@@ -624,7 +628,7 @@ print(f"Test result: {test_result}")
 
 
     
-![png](output_37_1.png)
+![png](images/output_37_1.png)
     
 
 
@@ -727,7 +731,7 @@ print(f"Test result: {test_result}")
 
 
     
-![png](output_39_1.png)
+![png](images/output_39_1.png)
     
 
 
@@ -841,7 +845,7 @@ print(f"Test result: {test_result}")
 
 
     
-![png](output_41_1.png)
+![png](images/output_41_1.png)
     
 
 
@@ -941,7 +945,7 @@ print(f"Test result: {test_result}")
 
 
     
-![png](output_43_1.png)
+![png](images/output_43_1.png)
     
 
 
@@ -1059,7 +1063,7 @@ print(f"Test result: {test_result}")
 
 
     
-![png](output_45_1.png)
+![png](images/output_45_1.png)
     
 
 
@@ -1201,7 +1205,7 @@ print(f"Test result: {test_result}")
 
 
     
-![png](output_47_1.png)
+![png](images/output_47_1.png)
     
 
 
@@ -1309,7 +1313,7 @@ print(f"Test result: {test_result}")
 
 
     
-![png](output_49_1.png)
+![png](images/output_49_1.png)
     
 
 
@@ -1409,6 +1413,7 @@ ax[1].set_xlim(0.90, 0.922);
 
 
     
-![png](output_53_0.png)
+![png](images/output_53_0.png)
     
 
+[<-PREV](toxiccomment.md)
