@@ -88,7 +88,7 @@ Looks for locally optimum solutions in the hopes of finding a global optimum
 ### Dynamic programming
 Problems that have overlapping subproblems AND optimal substructure property (If not, use a recursive algorithm using a divide and conquer approach)
 - Floyd-Warshall algorithm
-- [Pattern 1. Min/Max value to reach a target](dp-pattern1.md)
+- **[Pattern 1. Min/Max value to reach a target](dp-pattern1.md)**
 - Longest Common Sequence
 
 [<- PREV](../README.md)
