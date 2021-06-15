@@ -1,3 +1,5 @@
+[<-PREV](dsa.md)
+
 # Dynamic Programming Pattern 1. Min/Max value to reach a target
 
 Given a target, find the minimum/maximum cost/path/sum to reach the target.
@@ -282,3 +284,5 @@ def numSquares(self, n: int) -> int:
     
     return dp[-1]
 ```
+
+[<-PREV](dsa.md)
