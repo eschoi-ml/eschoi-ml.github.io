@@ -1,7 +1,5 @@
-[<-PREV](dsa.md)
-
-# Dynamic Programming  
-# Pattern1. Min/Max value to reach a target
+# Dynamic Programming 
+# Pattern 1. Min/Max value to reach a target
 
 Given a target, find the minimum/maximum cost/path/sum to reach the target.
 - 0/1 Knapsack
@@ -120,7 +118,7 @@ unbounded_knapsack(value, weight, W)
 ```python
 def coinChange(self, coins: List[int], amount: int) -> int:
     """
-    dp[i]: the min number of coins to make amount j using all coins 
+    dp[i]: the min number of coins to make amount i using all coins 
     dp[i] = min(dp[i], 1 + dp[i-coins[j]]) if coins[j] <= i
     amount 0 1 2 3 4 5 6 7 8 9 10 11
            0 
@@ -164,6 +162,7 @@ def minCostClimbingStairs(self, cost: List[int]) -> int:
 ```python
 def minPathSum(self, grid: List[List[int]]) -> int:
     """
+    grid[i][j]: the minimum sum upto the path (i, j)
         1 3 1
         1
         4
@@ -192,6 +191,10 @@ def minPathSum(self, grid: List[List[int]]) -> int:
 
 ```python
 def minFallingPathSum(self, A: List[List[int]]) -> int:
+    """
+    A[i][j]: the minimum path sum upto (i, j)
+    
+    """
     
     n = len(A)
     
@@ -210,6 +213,8 @@ def minFallingPathSum(self, A: List[List[int]]) -> int:
 ```python
 def mincostTickets(self, days: List[int], costs: List[int]) -> int:
     """
+
+    dp[i]: the minimum cost to travel until day i
     
     dp[i] = min(dp[i-1] + costs[0], dp[max(0, i-7)] + costs[1], dp[max(0, i-30)] + costs[2])
     dp[i] = dp[i-1]
@@ -240,7 +245,10 @@ def mincostTickets(self, days: List[int], costs: List[int]) -> int:
 
 ```python
 def minSteps(self, n: int) -> int:
-    
+    """
+    dp[i]: the minimum number of operations to get 'A' i times
+
+    """
     # Solution 1
     dp = [ i for i in range(n+1)]
     dp[0] = dp[1] = 0
@@ -272,7 +280,10 @@ def minSteps(self, n: int) -> int:
 
 ```python
 def numSquares(self, n: int) -> int:
-    
+    """
+    dp[i]: the minimum number of perfect square numbers that sum to i
+
+    """
     squares = [ i*i for i in range(1, int(sqrt(n)) + 1)]
     
     dp = [float('inf')] * (n + 1)
@@ -286,4 +297,155 @@ def numSquares(self, n: int) -> int:
     return dp[-1]
 ```
 
-[<-PREV](dsa.md)
+## [Last Stone Weight II](https://leetcode.com/problems/last-stone-weight-ii/)
+*Return the smallest possible weight of the left stone.(The minimum difference between the sum of two groups.)*
+
+
+```python
+def lastStoneWeightII(self, stones: List[int]) -> int:
+    """
+    dp = {0}
+    stones = 2, 7, 4, 1, 8, 1
+                +  +  +  +  +  +
+                -  -  -  -  -  -
+    """
+    
+    dp = {0}
+    for stone in stones:
+        temp_dp = set()
+        for i in dp:
+            temp_dp.add(stone + i)
+            temp_dp.add(abs(stone - i))
+        dp = temp_dp
+    return min(dp)
+```
+
+## [Triangle](https://leetcode.com/problems/triangle/)
+*Return the minimum path sum from top to bottom.*
+
+
+```python
+def minimumTotal(self, triangle: List[List[int]]) -> int:
+    """
+    triangle[i][j]: the minimum path sum to (i, j)
+
+    """
+    n = len(triangle)
+    
+    for i in range(1, n):
+        triangle[i][0] += triangle[i-1][0]
+        triangle[i][i] += triangle[i-1][i-1] 
+        for j in range(1, i):
+            triangle[i][j] += min(triangle[i-1][j-1], triangle[i-1][j])
+    
+    return min(triangle[-1])
+```
+
+## [Ones and Zeros](https://leetcode.com/problems/ones-and-zeroes/)
+*Return the size of the largest subset*
+
+
+```python
+def findMaxForm(self, strs: List[str], m: int, n: int) -> int:
+    """
+    dp[k][i][j]: the maximum number of strings that can be included in the subset 
+                    given only i 0's and j 1's using 0 to k-1 items in strs
+    
+    """
+    # Basic Solution: O(k * m * n) & O(k * m * n)
+    len_strs = len(strs)
+    for i in range(len_strs):
+        strs[i] = collections.Counter(strs[i])
+    
+    dp = [[[0] * (n + 1) for _ in range(m + 1)] for _ in range(len_strs + 1)]
+            
+    for k in range(1, len_strs + 1):
+        zeros = strs[k-1]['0']
+        ones = strs[k-1]['1']
+        for i in range(m + 1):
+            for j in range(n + 1):
+                if i >= zeros and j >= ones:
+                    dp[k][i][j] = max(dp[k-1][i][j], dp[k-1][i - zeros][j - ones] + 1)
+                else:
+                    dp[k][i][j] = dp[k-1][i][j]
+
+    return dp[-1][-1][-1]
+
+
+    """
+    dp[i][j]: the maximum number of strings that can be included in the subset 
+                given only i 0's and j 1's
+    """
+    # Optimized Solution: O(k * m * n) & O(m * n)
+
+    len_strs = len(strs)
+    for i in range(len_strs):
+        strs[i] = collections.Counter(strs[i])
+    
+    dp = [[0] * (n + 1) for _ in range(m + 1)]
+            
+    for k in range(len_strs):
+        zeros = strs[k]['0']
+        ones = strs[k]['1']
+
+        for i in range(m, -1, -1):
+            for j in range(n, -1, -1):
+                if i >= zeros and j >= ones:
+                    dp[i][j] = max(dp[i][j], dp[i - zeros][j - ones] + 1)
+
+    return dp[-1][-1]
+```
+
+## [Maximal Square](https://leetcode.com/problems/maximal-square/)
+*Find the largest square containing only 1's*
+
+
+```python
+def maximalSquare(self, matrix: List[List[str]]) -> int:
+    """
+    dp[i][j]: the longest length of square at (i+1, j+1)
+    
+    """
+    # Basic Solution: O(m * n) & O(m * n)
+    m, n = len(matrix), len(matrix[0])
+    dp = [[0] * (n + 1) for _ in range(m + 1)]
+    maxlen = 0
+    for i in range(1, m + 1):
+        for j in range(1, n + 1):
+            if matrix[i-1][j-1] == '1':
+                dp[i][j] = min(dp[i-1][j-1], dp[i][j-1], dp[i-1][j]) + 1
+                maxlen = max(maxlen, dp[i][j])
+    
+    return maxlen ** 2
+    
+    """
+    dp[i]: the longest length of square at column i 
+    """
+    # Optimized Solution 1. O(m * n) & O(m + n)
+    m, n = len(matrix), len(matrix[0])
+    dp = [0] * (n + 1)
+    maxlen = 0
+    for i in range(1, m + 1):
+        temp_dp = [0] * (n + 1)
+        for j in range(1, n + 1):
+            if matrix[i-1][j-1] == '1':
+                temp_dp[j] = min(dp[j-1], dp[j], temp_dp[j-1]) + 1
+                maxlen = max(maxlen, temp_dp[j])
+        dp = temp_dp
+    return maxlen ** 2
+            
+    # Optimized Solution 2. O(m * n) & O(n)
+    m, n = len(matrix), len(matrix[0])
+    dp = [0] * (n + 1)
+    maxlen = 0
+    for i in range(1, m + 1):
+        prev = 0
+        for j in range(1, n + 1):
+            if matrix[i-1][j-1] == '1':
+                dp[j] = min(dp[j-1], dp[j], prev) + 1
+                maxlen = max(maxlen, dp[j])
+                prev = dp[j]
+            else:
+                prev = 0
+    return maxlen ** 2
+```
