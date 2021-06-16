@@ -10,6 +10,10 @@ Given a target, find the minimum/maximum cost/path/sum to reach the target.
 - Minimum Cost For Tickets
 - 2 Keys Keyboard
 - Perfect Squares
+- Last Stone Weight II
+- Triangle
+- Ones and Zeros
+- Maximal Square
 
 ## 0/1 Knapsack 
 Given weights and values of n items, put these items in a knapsack of capacity W to get the maximum total value in the knapsack. Find the maximum value subset of value such that sum of the weights of this subset is smaller than or equal to W. You cannot break an item, either pick the complete item or don’t pick it (0-1 property).
