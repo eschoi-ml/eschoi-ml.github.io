@@ -1,3 +1,5 @@
+[<-PREV](dsa.md)
+
 # Dynamic Programming 
 # Pattern 1. Min/Max value to reach a target
 
@@ -453,3 +455,5 @@ def maximalSquare(self, matrix: List[List[str]]) -> int:
                 prev = 0
     return maxlen ** 2
 ```
+
+[<-PREV](dsa.md)
