@@ -2,8 +2,8 @@
 
 
 
-# Toxic Comment Classification 
-# Part 1. Explolatory Data Analysis
+# Toxic Comment Classification Part 1.
+
 1. Set up
 1. Quick data check
 1. Exploratory data analysis
