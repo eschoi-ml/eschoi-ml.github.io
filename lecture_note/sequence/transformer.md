@@ -5,18 +5,11 @@
 ## 1. Intuition
 ![image](images/image1.png)
 
-## 2. Attention mechanism
+## 2. Attention mechanism and model architecture
 
 ![image](images/equation1.png)
 
-
 ![image](images/image2.png)
-![image](images/image3.png)
-
-
-## 3. Transformer architecture
-
-![image](images/image4.png)
 
 
 
