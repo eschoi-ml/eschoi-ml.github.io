@@ -32,7 +32,7 @@
   - Bidirectional GRU
   - Long Short Term Memory(LSTM)
   - Bidirectional LSTM 
-- [Transformer](transformer.md)
+- **[Transformer](transformer.md)**
 
 
 ## Sequence Topics
