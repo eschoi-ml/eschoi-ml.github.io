@@ -1,6 +1,6 @@
 [<-PREV ](../project.md)
 
-# Toxic Comment Classification using Transformers in NLP
+# Toxic Comment Classification using RNNs and Transformers for NLP
 
 ## Outline
 - [Introduction: Wikipedia comments for toxic behavior dataset](intro.md)
