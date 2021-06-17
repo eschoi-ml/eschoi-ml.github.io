@@ -34,12 +34,4 @@
   - Bidirectional LSTM 
 - **[Transformer](transformer.md)**
 
-
-## Sequence Topics
-
-1. **[Natural Language Process (NLP)](nlp/nlp.md)**
-
-
-
-
 [<-PREV](../lecturenote.md)
