@@ -1,14 +1,14 @@
 [<-PREV ](../project.md)
 
-# Toxic Comment Classification using Deep Learning NLP
+# Toxic Comment Classification using Transformers in NLP
 
 ## Outline
 - [Introduction: Wikipedia comments for toxic behavior dataset](intro.md)
 - [**Code along Part1** Exploratory Data Analysis](toxiccomment-part1.md) 
-- [**Code along Part2** Deep Learning NLP with RNN](toxiccomment-part2.md)
-- **Code along Part3** Deep Learning NLP with Transformer
+- [**Code along Part2** RNNs for NLP](toxiccomment-part2.md)
+- [**Code along Part3** Transformers for NLP](toxiccomment-part3.md)
 - Results
 - Conclusion
-- [References](references.md)
+- [Resources & References](references.md)
 
 [<-PREV ](../project.md)
