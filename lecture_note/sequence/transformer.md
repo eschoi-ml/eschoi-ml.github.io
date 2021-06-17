@@ -35,4 +35,9 @@
 3. Use last_hidden_states as input for RNN model
 
 
+## Reference
+[1][Attention Is All You Need](https://arxiv.org/pdf/1706.03762.pdf)
+[2][BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/pdf/1810.04805.pdf)
+[3] [Jay Alammar's GitHub Page](http://jalammar.github.io/a-visual-guide-to-using-bert-for-the-first-time/)
+
 [<-PREV](sequence.md)
