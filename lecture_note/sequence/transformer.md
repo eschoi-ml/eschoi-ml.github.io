@@ -7,7 +7,8 @@
 
 ## 2. Attention mechanism
 
-                              ![image](images/equation1.png#center)
+<img style="float: right;" src="images/equation1.png">
+![image](images/equation1.png#center)
 
 
 ![image](images/image2.png)
