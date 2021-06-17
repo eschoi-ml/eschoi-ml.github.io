@@ -21,13 +21,18 @@
 
 ![image](images/image5.png)
 
-### 4.2 Pretraining
+### 4.2 Pretraining BERT
 ![image](images/image6.png)
 1. Pre-training: Semi-supervised training on larget amounts of text
-  - Masked Language Model (MLM)
-  - Next Sentence Prediction (NSP) 
+    - Masked Language Model (MLM)
+    - Next Sentence Prediction (NSP) 
 2. Fine-tuning: Supervised training on a specific task with a labeled dataset 
 
-### 4.3 Fine-tuning BERT
+### 4.3 How to use BERT for classification
+![image](images/image7.png)
+1. Use a [CLS] token (Context vector) only
+2. Use last_hidden_states and Pooling
+3. Use last_hidden_states as input for RNN model
+
 
 [<-PREV](sequence.md)
