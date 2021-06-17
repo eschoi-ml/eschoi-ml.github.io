@@ -7,10 +7,11 @@
 
 ## 2. Attention mechanism
 
-[image](images/equation1.png#center)
+![image](images/equation1.png#center)
 
 
-![image](images/image2.png), ![image](images/image3.png)
+![image](images/image2.png)
+![image](images/image3.png)
 
 
 ## 3. Transformer architecture
