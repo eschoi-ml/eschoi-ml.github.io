@@ -30,7 +30,7 @@
 
 ### 4.3 Transfer learning from BERT for classification
 ![image](images/image9.png)
-1. Use a [CLS] token (Context vector) only
+1. Use a [CLS] token output(Context vector) only
 2. Use last_hidden_states and Pooling
 3. Use last_hidden_states as input for RNN model
 
