@@ -1,7 +1,7 @@
 [<-PREV](enronemail.md)
 
 # The Enron Email 
-# Part 2. NLP - Deep Learning
+# Part 2. Deep Learning with RNNs for NLP
 
 1. Set up
 2. Train Test split
