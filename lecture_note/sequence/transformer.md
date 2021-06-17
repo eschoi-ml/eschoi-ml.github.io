@@ -8,6 +8,7 @@
 ## 2. Attention mechanism
 
 $\alpha^ {<t, t^{'}>} =  \frac{exp(e^{<t, t^{'}>})}{\sum{exp(e^{<t, t^{'}>})}}$
+
 ![image](images/image2.png)
 
 
