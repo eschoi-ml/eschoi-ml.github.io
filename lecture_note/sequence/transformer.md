@@ -16,15 +16,18 @@
 
 
 ## 4. BERT (Bidirectional Encoder Representations from Transformers)
-### 4.1 Text preprocessing
+### 4.1 Text preprocessing - Tokenization
 ![image](images/image4.png)
+
 ![image](images/image5.png)
+
 ### 4.2 Pretraining
-1. Semi-supervised training on larget amounts of text
+![image](images/image6.png)
+1. Pre-training: Semi-supervised training on larget amounts of text
   - Masked Language Model (MLM)
   - Next Sentence Prediction (NSP) 
+2. Fine-tuning: Supervised training on a specific task with a labeled dataset 
 
-2. Supervised training on a specific task with a labeled dataset 
-
+### 4.3 Fine-tuning BERT
 
 [<-PREV](sequence.md)
