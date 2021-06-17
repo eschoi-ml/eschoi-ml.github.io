@@ -9,7 +9,7 @@
 
 ![image](images/equation1.png)
 
-![image](images/image2.png)
+![image](images/image2_2.png)
 
 
 
