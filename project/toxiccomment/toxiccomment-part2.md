@@ -1,4 +1,4 @@
-[<-PREV](toxiccomment.md) [->NEXT](toxiccomment-part3.md)
+[<-PREV](toxiccomment.md) [NEXT->](toxiccomment-part3.md)
 
 # Toxic Comment Classification 
 # Part 2. Deep Learning with RNNs for NLP 
@@ -1416,4 +1416,4 @@ ax[1].set_xlim(0.90, 0.922);
 ![png](images/output_53_0.png)
     
 
-[<-PREV](toxiccomment.md) [->NEXT](toxiccomment-part3.md)
+[<-PREV](toxiccomment.md) [NEXT->](toxiccomment-part3.md)
