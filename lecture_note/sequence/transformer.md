@@ -1,4 +1,4 @@
-[<-PREV](lecturenote.md)
+[<-PREV](sequence.md)
 
 # Transformer 
 
@@ -20,4 +20,4 @@
 
 
 
-[<-PREV](lecturenote.md)
+[<-PREV](sequence.md)
