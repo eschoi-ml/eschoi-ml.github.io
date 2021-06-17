@@ -17,7 +17,8 @@
 
 ## 4. BERT (Bidirectional Encoder Representations from Transformers)
 ### 4.1 Text preprocessing
-
+![image](images/image4.png)
+![image](images/image5.png)
 ### 4.2 Pretraining
 1. Semi-supervised training on larget amounts of text
   - Masked Language Model (MLM)
