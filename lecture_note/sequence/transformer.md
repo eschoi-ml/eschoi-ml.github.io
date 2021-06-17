@@ -10,7 +10,7 @@
 ![image](images/equation1.png)
 ![image](images/image2_2.png)
 
-### 3. Pre-training Transformer models
+## 3. Pre-training Transformer models
 ![image](images/image3.png)
 - Many more options at [https://huggingface.co/transformers/pretrained_models.html](https://huggingface.co/transformers/pretrained_models.html)
 
