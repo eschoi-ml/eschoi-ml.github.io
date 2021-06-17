@@ -22,6 +22,7 @@
 1. Semi-supervised training on larget amounts of text
   - Masked Language Model (MLM)
   - Next Sentence Prediction (NSP) 
+
 2. Supervised training on a specific task with a labeled dataset 
 
 
