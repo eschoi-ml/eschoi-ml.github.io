@@ -7,7 +7,7 @@
 
 ## 2. Attention mechanism
 
-![image](images/equation1.png#center)
+                              ![image](images/equation1.png#center)
 
 
 ![image](images/image2.png)
