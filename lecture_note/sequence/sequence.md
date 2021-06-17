@@ -29,8 +29,9 @@
 - Recurrent Neural Network(RNN)
   - Simple RNN
   - Gated Recurrent Unit(GRU)
+  - Bidirectional GRU
   - Long Short Term Memory(LSTM)
-  - bidirectional LSTM 
+  - Bidirectional LSTM 
 - [Transformer](transformer.md)
 
 
