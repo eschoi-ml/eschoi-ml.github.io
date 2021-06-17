@@ -7,16 +7,16 @@
 
 ## 2. Attention mechanism
 
-\begin{equation}
-    \alpha^ {<t, t^{'}>} =  \frac{exp(e^{<t, t^{'}>})}{\sum{exp(e^{<t, t^{'}>})}}
-\end{equation}
+[image](images/equation1.png#center)
 
 
-![image](images/image2.png)
+![image](images/image2.png), ![image](images/image3.png)
+
 
 ## 3. Transformer architecture
 
-![image](images/image3.png)
+![image](images/image4.png)
+
 
 
 
