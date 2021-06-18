@@ -8,7 +8,7 @@
 3. Train Test split
 4. Text preprocessing - Tokenize text
 5. Build, Fit/Train, Predict, and Evaluate models
-    - [CLS] token only
+    - [CLS] token output only
     - GlobalMaxPooling Last Hidden States
     - GlobalAveragePooling Last Hidden States
     - GlobalMaxAveragePooling Last Hidden States
@@ -336,7 +336,7 @@ from keras.callbacks import ModelCheckpoint, ReduceLROnPlateau, EarlyStopping
 from keras.optimizers import Adam
 ```
 
-## 5.1 [CLS] token only 
+## 5.1 [CLS] token output only 
 
 
 ```python
@@ -380,7 +380,7 @@ history = model.fit(X_train,
 plot_train_history(history)
 test_result = model.evaluate(X_test, y_test, batch_size=strategy.num_replicas_in_sync)
 print(f"Test result: {test_result}")
-results['[CLS] token only'] = test_result
+results['[CLS] token output only'] = test_result
 ```
 
 
@@ -1934,7 +1934,7 @@ results
   </thead>
   <tbody>
     <tr>
-      <th>[CLS] token only</th>
+      <th>[CLS] token output only</th>
       <td>0.260186</td>
       <td>0.891217</td>
     </tr>
