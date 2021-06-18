@@ -1,3 +1,5 @@
+[<-PREV](toxiccomment.md)
+
 # Toxic Comment Classification
 # Part 3. Deep Learning with Transformers for NLP
 
@@ -381,11 +383,6 @@ print(f"Test result: {test_result}")
 results['[CLS] token only'] = test_result
 ```
 
-    Some layers from the model checkpoint at distilbert-base-uncased were not used when initializing TFDistilBertModel: ['activation_13', 'vocab_layer_norm', 'vocab_transform', 'vocab_projector']
-    - This IS expected if you are initializing TFDistilBertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
-    - This IS NOT expected if you are initializing TFDistilBertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
-    All the layers of TFDistilBertModel were initialized from the model checkpoint at distilbert-base-uncased.
-    If your task is similar to the task the model of the checkpoint was trained on, you can already use TFDistilBertModel for predictions without further training.
 
 
     Model: "model"
@@ -515,7 +512,7 @@ results['[CLS] token only'] = test_result
 
 
     
-![png](output_30_2.png)
+![png](images/output_30_2.png)
     
 
 
@@ -584,11 +581,6 @@ print(f"Test result: {test_result}")
 results['GlobalMaxPooling Last Hidden States'] = test_result
 ```
 
-    Some layers from the model checkpoint at distilbert-base-uncased were not used when initializing TFDistilBertModel: ['activation_13', 'vocab_layer_norm', 'vocab_transform', 'vocab_projector']
-    - This IS expected if you are initializing TFDistilBertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
-    - This IS NOT expected if you are initializing TFDistilBertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
-    All the layers of TFDistilBertModel were initialized from the model checkpoint at distilbert-base-uncased.
-    If your task is similar to the task the model of the checkpoint was trained on, you can already use TFDistilBertModel for predictions without further training.
 
 
     Model: "model"
@@ -730,7 +722,7 @@ results['GlobalMaxPooling Last Hidden States'] = test_result
 
 
     
-![png](output_33_2.png)
+![png](images/output_33_2.png)
     
 
 
@@ -781,13 +773,8 @@ print(f"Test result: {test_result}")
 results['GlobalAveragePooling Last Hidden States'] = test_result
 ```
 
-    Some layers from the model checkpoint at distilbert-base-uncased were not used when initializing TFDistilBertModel: ['activation_13', 'vocab_layer_norm', 'vocab_transform', 'vocab_projector']
-    - This IS expected if you are initializing TFDistilBertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
-    - This IS NOT expected if you are initializing TFDistilBertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
-    All the layers of TFDistilBertModel were initialized from the model checkpoint at distilbert-base-uncased.
-    If your task is similar to the task the model of the checkpoint was trained on, you can already use TFDistilBertModel for predictions without further training.
-
-
+    
+    
     Model: "model"
     __________________________________________________________________________________________________
     Layer (type)                    Output Shape         Param #     Connected to                     
@@ -899,7 +886,7 @@ results['GlobalAveragePooling Last Hidden States'] = test_result
 
 
     
-![png](output_35_2.png)
+![png](images/output_35_2.png)
     
 
 
@@ -952,12 +939,7 @@ print(f"Test result: {test_result}")
 results['GlobalMaxAveragePooling Last Hidden States'] = test_result
 ```
 
-    Some layers from the model checkpoint at distilbert-base-uncased were not used when initializing TFDistilBertModel: ['activation_13', 'vocab_layer_norm', 'vocab_transform', 'vocab_projector']
-    - This IS expected if you are initializing TFDistilBertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
-    - This IS NOT expected if you are initializing TFDistilBertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
-    All the layers of TFDistilBertModel were initialized from the model checkpoint at distilbert-base-uncased.
-    If your task is similar to the task the model of the checkpoint was trained on, you can already use TFDistilBertModel for predictions without further training.
-
+    
 
     Model: "model"
     __________________________________________________________________________________________________
@@ -1091,7 +1073,7 @@ results['GlobalMaxAveragePooling Last Hidden States'] = test_result
 
 
     
-![png](output_37_2.png)
+![png](images/output_37_2.png)
     
 
 
@@ -1142,11 +1124,6 @@ print(f"Test result: {test_result}")
 results['Finetuned Last Hidden States with simple GRU'] = test_result
 ```
 
-    Some layers from the model checkpoint at distilbert-base-uncased were not used when initializing TFDistilBertModel: ['activation_13', 'vocab_layer_norm', 'vocab_transform', 'vocab_projector']
-    - This IS expected if you are initializing TFDistilBertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
-    - This IS NOT expected if you are initializing TFDistilBertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
-    All the layers of TFDistilBertModel were initialized from the model checkpoint at distilbert-base-uncased.
-    If your task is similar to the task the model of the checkpoint was trained on, you can already use TFDistilBertModel for predictions without further training.
 
 
     Model: "model"
@@ -1218,7 +1195,7 @@ results['Finetuned Last Hidden States with simple GRU'] = test_result
 
 
     
-![png](output_39_2.png)
+![png](images/output_39_2.png)
     
 
 
@@ -1272,11 +1249,6 @@ print(f"Test result: {test_result}")
 results['Finetuned Last Hidden States with GlobalMaxAveragePooled GRU'] = test_result
 ```
 
-    Some layers from the model checkpoint at distilbert-base-uncased were not used when initializing TFDistilBertModel: ['activation_13', 'vocab_layer_norm', 'vocab_transform', 'vocab_projector']
-    - This IS expected if you are initializing TFDistilBertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
-    - This IS NOT expected if you are initializing TFDistilBertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
-    All the layers of TFDistilBertModel were initialized from the model checkpoint at distilbert-base-uncased.
-    If your task is similar to the task the model of the checkpoint was trained on, you can already use TFDistilBertModel for predictions without further training.
 
 
     Model: "model"
@@ -1363,7 +1335,7 @@ results['Finetuned Last Hidden States with GlobalMaxAveragePooled GRU'] = test_r
 
 
     
-![png](output_41_2.png)
+![png](images/output_41_2.png)
     
 
 
@@ -1417,11 +1389,6 @@ print(f"Test result: {test_result}")
 results['Finetuned Last Hidden States with GlobalMaxAveragePooled BiGRU'] = test_result
 ```
 
-    Some layers from the model checkpoint at distilbert-base-uncased were not used when initializing TFDistilBertModel: ['activation_13', 'vocab_layer_norm', 'vocab_transform', 'vocab_projector']
-    - This IS expected if you are initializing TFDistilBertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
-    - This IS NOT expected if you are initializing TFDistilBertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
-    All the layers of TFDistilBertModel were initialized from the model checkpoint at distilbert-base-uncased.
-    If your task is similar to the task the model of the checkpoint was trained on, you can already use TFDistilBertModel for predictions without further training.
 
 
     Model: "model"
@@ -1512,7 +1479,7 @@ results['Finetuned Last Hidden States with GlobalMaxAveragePooled BiGRU'] = test
 
 
     
-![png](output_43_2.png)
+![png](images/output_43_2.png)
     
 
 
@@ -1563,11 +1530,6 @@ print(f"Test result: {test_result}")
 results['Finetuned Last Hidden States with simple LSTM'] = test_result
 ```
 
-    Some layers from the model checkpoint at distilbert-base-uncased were not used when initializing TFDistilBertModel: ['activation_13', 'vocab_layer_norm', 'vocab_transform', 'vocab_projector']
-    - This IS expected if you are initializing TFDistilBertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
-    - This IS NOT expected if you are initializing TFDistilBertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
-    All the layers of TFDistilBertModel were initialized from the model checkpoint at distilbert-base-uncased.
-    If your task is similar to the task the model of the checkpoint was trained on, you can already use TFDistilBertModel for predictions without further training.
 
 
     Model: "model"
@@ -1655,7 +1617,7 @@ results['Finetuned Last Hidden States with simple LSTM'] = test_result
 
 
     
-![png](output_45_2.png)
+![png](images/output_45_2.png)
     
 
 
@@ -1709,12 +1671,7 @@ print(f"Test result: {test_result}")
 results['Finetuned Last Hidden States with GlobalMaxAveragePooled LSTM'] = test_result
 ```
 
-    Some layers from the model checkpoint at distilbert-base-uncased were not used when initializing TFDistilBertModel: ['activation_13', 'vocab_layer_norm', 'vocab_transform', 'vocab_projector']
-    - This IS expected if you are initializing TFDistilBertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
-    - This IS NOT expected if you are initializing TFDistilBertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
-    All the layers of TFDistilBertModel were initialized from the model checkpoint at distilbert-base-uncased.
-    If your task is similar to the task the model of the checkpoint was trained on, you can already use TFDistilBertModel for predictions without further training.
-
+  
 
     Model: "model"
     __________________________________________________________________________________________________
@@ -1846,11 +1803,6 @@ print(f"Test result: {test_result}")
 results['Finetuned Last Hidden States with GlobalMaxAveragePooled BiLSTM'] = test_result
 ```
 
-    Some layers from the model checkpoint at distilbert-base-uncased were not used when initializing TFDistilBertModel: ['activation_13', 'vocab_layer_norm', 'vocab_transform', 'vocab_projector']
-    - This IS expected if you are initializing TFDistilBertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
-    - This IS NOT expected if you are initializing TFDistilBertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
-    All the layers of TFDistilBertModel were initialized from the model checkpoint at distilbert-base-uncased.
-    If your task is similar to the task the model of the checkpoint was trained on, you can already use TFDistilBertModel for predictions without further training.
 
 
     Model: "model"
@@ -1937,7 +1889,7 @@ results['Finetuned Last Hidden States with GlobalMaxAveragePooled BiLSTM'] = tes
 
 
     
-![png](output_49_2.png)
+![png](images/output_49_2.png)
     
 
 
@@ -2048,6 +2000,7 @@ ax[1].set_xlim(0.85, 0.95);
 
 
     
-![png](output_53_0.png)
+![png](images/output_53_2.png)
     
-
+    
+[<-PREV](toxiccomment.md)
