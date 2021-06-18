@@ -1749,7 +1749,7 @@ results['Finetuned Last Hidden States with GlobalMaxAveragePooled LSTM'] = test_
 
 
     
-![png](output_47_2.png)
+![png](images/output_47_2.png)
     
 
 
