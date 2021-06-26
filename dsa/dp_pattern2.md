@@ -348,7 +348,7 @@ def findNumberOfLIS(self, nums: List[int]) -> int:
     n = len(nums)
     dp, cnt_dp = [1] * n, [1] * n
     
-    maxlen = 1        
+    maxlen, maxcnt = 1, 0        
     for i in range(1, n):
         for j in range(i):
             if nums[j] < nums[i]:
@@ -358,12 +358,11 @@ def findNumberOfLIS(self, nums: List[int]) -> int:
                 elif dp[i] == dp[j] + 1:
                     cnt_dp[i] += cnt_dp[j]
                     
-        maxlen = max(maxlen, dp[i])
-    
-    maxcnt = 0
-    for i in range(n):
         if dp[i] == maxlen:
             maxcnt += cnt_dp[i]
+        elif dp[i] > maxlen:
+            maxlen = dp[i]
+            maxcnt = cnt_dp[i]
 
     return maxcnt
 ```
