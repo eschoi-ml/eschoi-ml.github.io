@@ -7,13 +7,13 @@ description: Data Structure and Algorithm
 [<- PREV](../README.md)
 
 # Data Structure and Algorithm
-## Data Structure
-### Basic data structure
+# Data Structure
+## Basic data structure
 - Array (list)
 - Hash Map (dict)
 - Hash Set (set)
 
-### Abstract data structure
+## Abstract data structure
 - Stack (list)
 - Simple/ Circular/ Priority/ Double-Ended Queue (deque, heap)
 - Singly/ Doubly/ Circular Linked List (list)
@@ -33,10 +33,10 @@ description: Data Structure and Algorithm
 
 > **Code along Lecture Note: [Binary Search Tree](bst.md)**
 
-## Algorithm
+# Algorithm
 Basic categories of algorithms: Insert, Update, Delete, Sort, and Search
 
-### Sort
+## Sort
 - bogo sort
 - bubble sort
 - insertion sort
@@ -52,7 +52,7 @@ Basic categories of algorithms: Insert, Update, Delete, Sort, and Search
 - kahn's topological sort
 
 
-### Search
+## Search
 
 -  Linear search
 - Binary search
@@ -71,7 +71,7 @@ Basic categories of algorithms: Insert, Update, Delete, Sort, and Search
 
 > **Code along Lecture Note: Shortest Path**
 
-### Greedy algorithm
+## Greedy algorithm
 
 Looks for locally optimum solutions in the hopes of finding a global optimum
 - Activity selelction 
@@ -85,7 +85,7 @@ Looks for locally optimum solutions in the hopes of finding a global optimum
 
 > **Code along Lecture Note: [Top 8 Greedy Algorithm](greedy.md)**
 
-### Dynamic programming
+## Dynamic programming
 Problems that have overlapping subproblems AND optimal substructure property (If not, use a recursive algorithm using a divide and conquer approach)
 - Floyd-Warshall algorithm
 
