@@ -1,7 +1,7 @@
 [<-PREV](dsa.md)
 
 # Dynamic Programming 
-# Pattern 1. Min/Max value to reach a target
+# Pattern 1. Min/Max value
 
 Given a target, find the minimum/maximum cost/path/sum to reach the target.
 - 0/1 Knapsack
