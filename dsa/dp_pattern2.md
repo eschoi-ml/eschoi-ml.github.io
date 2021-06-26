@@ -553,7 +553,7 @@ def numWays(self, steps: int, arrLen: int) -> int:
 
 # Pattern 2.3 dp = [1, 1, ..., 1], curr_dp = [0, 0, ..., 0 ]
 
-##[Knight Dialer](https://leetcode.com/problems/knight-dialer/)
+## [Knight Dialer](https://leetcode.com/problems/knight-dialer/)
 *Return how many distinct phone numbers of length n we can dial.*
 
 
