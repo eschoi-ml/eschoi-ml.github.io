@@ -91,5 +91,6 @@ Problems that have overlapping subproblems AND optimal substructure property (If
 
 5 DP patterns by [Atalyk Akash](https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns)
 - **[Pattern 1. Min/Max value to reach a target](dp_pattern1.md)**
+- **[Pattern 2. Dintinct ways to reach a target](dp_pattern2.md)**
 
 [<- PREV](../README.md)
