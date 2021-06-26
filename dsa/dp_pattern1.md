@@ -12,10 +12,11 @@ Given a target, find the minimum/maximum cost/path/sum to reach the target.
 - Minimum Cost For Tickets
 - 2 Keys Keyboard
 - Perfect Squares
-- Last Stone Weight II
 - Triangle
 - Ones and Zeros
 - Maximal Square
+- Last Stone Weight II
+- Partition Equal Subset Sum
 
 ## 0/1 Knapsack 
 Given weights and values of n items, put these items in a knapsack of capacity W to get the maximum total value in the knapsack. Find the maximum value subset of value such that sum of the weights of this subset is smaller than or equal to W. You cannot break an item, either pick the complete item or don’t pick it (0-1 property).
@@ -303,29 +304,6 @@ def numSquares(self, n: int) -> int:
     return dp[-1]
 ```
 
-## [Last Stone Weight II](https://leetcode.com/problems/last-stone-weight-ii/)
-*Return the smallest possible weight of the left stone.(The minimum difference between the sum of two groups.)*
-
-
-```python
-def lastStoneWeightII(self, stones: List[int]) -> int:
-    """
-    dp = {0}
-    stones = 2, 7, 4, 1, 8, 1
-                +  +  +  +  +  +
-                -  -  -  -  -  -
-    """
-    
-    dp = {0}
-    for stone in stones:
-        temp_dp = set()
-        for i in dp:
-            temp_dp.add(stone + i)
-            temp_dp.add(abs(stone - i))
-        dp = temp_dp
-    return min(dp)
-```
-
 ## [Triangle](https://leetcode.com/problems/triangle/)
 *Return the minimum path sum from top to bottom.*
 
@@ -455,5 +433,59 @@ def maximalSquare(self, matrix: List[List[str]]) -> int:
                 prev = 0
     return maxlen ** 2
 ```
+
+## [Last Stone Weight II](https://leetcode.com/problems/last-stone-weight-ii/)
+*Return the smallest possible weight of the left stone.(The minimum difference between the sum of two groups.)*
+
+
+```python
+def lastStoneWeightII(self, stones: List[int]) -> int:
+    """
+    dp = {0}
+    stones = 2, 7, 4, 1, 8, 1
+                +  +  +  +  +  +
+                -  -  -  -  -  -
+    """
+    
+    dp = {0}
+    for stone in stones:
+        temp_dp = set()
+        for i in dp:
+            temp_dp.add(stone + i)
+            temp_dp.add(abs(stone - i))
+        dp = temp_dp
+    return min(dp)
+```
+
+## [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)
+*Find if the array can be partitioned into two subsets such that the sum of elements in both subsets is equal.*
+
+```python
+def canPartition(self, nums: List[int]) -> bool:
+    """
+    h = {0}
+    nums = [1,  5,  11,  5]
+            +/0 +/0 +/0 +/0
+    """
+    
+    target = sum(nums)
+    if target % 2 == 1:
+        return False
+    target //= 2
+    
+    h = {0}
+    for num in nums:
+        curr_h = set()
+        for i in h:
+            curr_sum = num + i
+            if curr_sum == target:
+                return True
+            if curr_sum < target:
+                curr_h.add(curr_sum)
+        h = h | curr_h
+
+    return False
+```
+
 
 [<-PREV](dsa.md)
