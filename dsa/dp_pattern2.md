@@ -251,7 +251,7 @@ def soupServings(self, n: int) -> float:
 1. Longest Increasing Subsequence
 1. Number of Longest Increasing Subsequence
 
-### 1. [Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/)
+### [1. Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/)
 *Return the length of the longest continuous increasing subsequence*
 
 
@@ -271,7 +271,7 @@ def findLengthOfLCIS(self, nums: List[int]) -> int:
     return maxlen
 ```
 
-### 2. [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
+### [2. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
 *Return the length of the longest strictly increasing subsequence.*
 
 
@@ -334,7 +334,7 @@ def lengthOfLIS(self, nums: List[int]) -> int:
     return len(stack)
 ```
 
-### 3. [Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/)
+### [3. Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/)
 *Return the number of longest increasing subsequences.*
 
 
