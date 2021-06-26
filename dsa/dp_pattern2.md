@@ -1,3 +1,5 @@
+[<-PREV](dsa.md)
+
 # Dynamic Programming
 # Pattern 2. Distinct ways
 
@@ -650,3 +652,5 @@ curr_state  next_state
         dp = curr_dp
     return dp[0]
 ```
+
+[<-PREV](dsa.md)
