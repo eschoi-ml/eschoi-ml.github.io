@@ -1,3 +1,5 @@
+[<-PREV](dsa.md)
+
 # Dynamic Programming
 # Pattern 3. Merging intervals
 Given a set of numbers find an optimal solution for a problem considering the current number and the best you can get from the left and right sides.
@@ -318,3 +320,5 @@ def mergeStones(self, stones: List[int], K: int) -> int:
 
     return dp[0][-1]
 ```
+
+[<-PREV](dsa.md)
