@@ -7,7 +7,7 @@
 - Subsequence: a sequence that can be derived from another sequence by deleting some or no elements without changing the order of the remaining elements.
 - Supersequence: the shortest string that has both str1 and str2 as subsequences.  
 
-One string: Palindromic Substring and Subsequence
+**One string: Palindromic Substring and Subsequence**
 ```python
 for l in range(1, n):
     for i in range(n-l):
@@ -22,7 +22,7 @@ for l in range(1, n):
 - Longest Palindromic Subsequence
 
 
-Two strings: Subsequence or Supersequence
+**Two strings: Subsequence or Supersequence**
 ```python
 for i in range(1, m + 1):
     for j in range(1, n + 1):
