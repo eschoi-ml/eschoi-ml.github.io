@@ -93,5 +93,6 @@ Problems that have overlapping subproblems AND optimal substructure property (If
 - **[Pattern 1. Min/Max value](dp_pattern1.md)**
 - **[Pattern 2. Dintinct ways](dp_pattern2.md)**
 - **[Pattern 3. Merge intervals](dp_pattern3.md)**
+- **[Pattern 4. DP in Strings](dp_pattern4.md)**
 
 [<- PREV](../README.md)
