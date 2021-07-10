@@ -89,7 +89,7 @@ Looks for locally optimum solutions in the hopes of finding a global optimum
 Problems that have overlapping subproblems AND optimal substructure property (If not, use a recursive algorithm using a divide and conquer approach)
 - Floyd-Warshall algorithm
 
-5 DP patterns by [Atalyk Akash](https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns)
+> 5 DP patterns by [Atalyk Akash](https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns)
 - **[Pattern 1. Min/Max value](dp_pattern1.md)**
 - **[Pattern 2. Dintinct ways](dp_pattern2.md)**
 - **[Pattern 3. Merge intervals](dp_pattern3.md)**
