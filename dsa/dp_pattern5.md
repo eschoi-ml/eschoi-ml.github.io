@@ -1,3 +1,5 @@
+[<-PREV](dsa.md)
+
 # Dynamic Programming
 # Pattern 5. State machine 
 
@@ -615,3 +617,5 @@ def maxProfit(self, prices: List[int]) -> int:
             
     return sell[-1]
 ```
+
+[<-PREV](dsa.md)
