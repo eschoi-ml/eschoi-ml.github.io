@@ -13,7 +13,7 @@
 - Longest Turbulent Subarray
 
 **House Robber**
-> dp[i]: dp[i][j]: the maximum amount of money you can rob on ith day when j = 0 no rob or j = 1 rob
+> dp[i][j]: the maximum amount of money you can rob on ith day when j = 0 no rob or j = 1 rob
 
 - House Robber
 - House Robber II
