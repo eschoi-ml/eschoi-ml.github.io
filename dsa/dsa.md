@@ -13,6 +13,7 @@ description: Data Structure and Algorithm
 - Boolean (bool)
 - Numbers: integer(int), float(float), complex number(complex)
 - String (str)
+
 > **Code along Problem Set: [String](string.md)**
 
 ## Basic data structure
