@@ -1,10 +1,12 @@
-# Binary Tree Traversal
-- dfs: Use a stack
-    - pre-order: root - left - right
-    - in-order: left - root - right
-    - post-order: left - right - root
-- bfs: Use a queue(deque)
-    - level-order
+[<-PREV](dsa.md)
+
+# Tree Traversal
+- **dfs**: Use a stack
+    - **pre-order**: root - left - right
+    - **in-order**: left - root - right
+    - **post-order**: left - right - root
+- **bfs**: Use a queue(deque)
+    - **level-order**
 
 ## Pre-order tree traversal
 
@@ -162,3 +164,4 @@ def levelorder_iterative2(root):
         res.append(temp_res)
     return res
 ```
+[<-PREV](dsa.md)
