@@ -1,11 +1,11 @@
 [<-PREV](dsa.md)
 
 # Tree Traversal
-- **dfs**: Use a stack
+- **dfs**: recursive and iterative using a stack
     - **pre-order**: root - left - right
     - **in-order**: left - root - right
     - **post-order**: left - right - root
-- **bfs**: Use a queue(deque)
+- **bfs**: iterative using a queue(deque)
     - **level-order**
 
 ## Pre-order tree traversal
