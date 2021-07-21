@@ -2,9 +2,9 @@
 
 # Tree Traversal
 - **dfs**: recursive and iterative using a stack
-    - **pre-order**: root - left - right
-    - **in-order**: left - root - right
-    - **post-order**: left - right - root
+    - **pre-order**: **root** - left - right
+    - **in-order**: left - **root** - right
+    - **post-order**: left - right - **root**
 - **bfs**: iterative using a queue(deque)
     - **level-order**
 
