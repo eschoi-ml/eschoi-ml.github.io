@@ -36,6 +36,8 @@ description: Data Structure and Algorithm
   - Trie
   - Decision Tree
   - B, B+, Red-Black Tree
+  
+> **Code along Lecture Note: [Tree Traversal](tree_traversal.md)**
 
 > **Code along Lecture Note: [Tree Recursion Top-Down & Bottom-Up](tree_recursion.md)**
 
