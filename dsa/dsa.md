@@ -37,11 +37,10 @@ description: Data Structure and Algorithm
   - Decision Tree
   - B, B+, Red-Black Tree
   
-> **Code along Lecture Note: [Tree Traversal](tree_traversal.md)**
-
-> **Code along Lecture Note: [Tree Recursion Top-Down & Bottom-Up](tree_recursion.md)**
-
-> **Code along Lecture Note: [Binary Search Tree](bst.md)**
+> **Code along Lecture Note**
+> - **[Tree Traversal](tree_traversal.md)**
+> - **[Tree Recursion Top-Down & Bottom-Up](tree_recursion.md)**
+> - **[Binary Search Tree](bst.md)**
 
 # Algorithm
 Basic categories of algorithms: Insert, Update, Delete, Sort, and Search
