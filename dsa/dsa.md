@@ -25,6 +25,9 @@ description: Data Structure and Algorithm
 - Stack (list)
 - Simple/ Circular/ Priority/ Double-Ended Queue (deque, heap)
 - Singly/ Doubly/ Circular Linked List (list)
+
+> **Code along Problem Set: [Monotonic Stack](monotonic_stack.md)**
+
 - Graph: Directed/Undirected, Connected/ Disconnected, Cyclic/ Acyclic, Weighted/Unweighted
   - (Minimum) Spanning Tree: (Minimum sum of the weight of the edges) Undirected, Connected
 - Tree
