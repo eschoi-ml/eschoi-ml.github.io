@@ -1,3 +1,5 @@
+[<-PREV](dsa.md)
+
 # Monotonic Stack
 - Monotonic **increasing** vs. **decreasing** stack
 - Save **value** vs. **index** in the stack
@@ -198,3 +200,5 @@ def nextGreaterElements(self, nums: List[int]) -> List[int]:
 
     return res   
 ```
+
+[<-PREV](dsa.md)
