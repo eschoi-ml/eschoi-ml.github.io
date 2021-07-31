@@ -6,14 +6,14 @@ description: Data Structure and Algorithm
 
 [<- PREV](../README.md)
 
-# Data Structure
-## Data type
+# Data Type
 - Boolean (bool)
 - Numbers: integer(int), float(float), complex number(complex)
 - String (str)
 
 > **Code along Problem Set: [String](string.md)**
 
+# Data Structure
 ## Basic data structure
 - Array (list, tuple)
 - Hash Map (dict)
