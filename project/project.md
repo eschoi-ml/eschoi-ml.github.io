@@ -1,3 +1,8 @@
+---
+layout: default
+title: Eun Soo's Machine Learning Guide
+description: Machine Learning Project
+---
 [<-PREV ](../README.md)
 
 ## Machine Learning Project
