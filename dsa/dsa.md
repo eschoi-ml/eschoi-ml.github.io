@@ -6,8 +6,6 @@ description: Data Structure and Algorithm
 
 [<- PREV](../README.md)
 
-# Data Structure and Algorithm
-
 # Data Structure
 ## Data type
 - Boolean (bool)
