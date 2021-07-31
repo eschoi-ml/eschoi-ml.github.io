@@ -7,12 +7,11 @@ description: Lecture Note
 
 # Lecture Note
 
-## Topics
-### Machine Learning
+## Machine Learning
 - Computer Vision
 - [Sequence Model](sequence/sequence.md)
 
-### Presentation
+## Presentation
 - []()
 
 [<- PREV](../README.md)
