@@ -1,9 +1,9 @@
-[<- PREV](../README.md)
 ---
 layout: default
 title: Eun Soo's Machine Learning Guide
 description: Lecture Note
 ---
+[<- PREV](../README.md)
 
 # Lecture Note
 
