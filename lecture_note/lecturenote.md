@@ -12,6 +12,6 @@ description: Lecture Note
 - [Sequence Model](sequence/sequence.md)
 
 ## Others
-- [How to effectively structure presentations with engineers’ mindset](presentation.pdf)
+- [How to effectively structure presentations with engineers’ mindset](presentations.pdf)
 
 [<- PREV](../README.md)
