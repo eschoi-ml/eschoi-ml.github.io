@@ -11,7 +11,7 @@ description: Lecture Note
 - Computer Vision
 - [Sequence Model](sequence/sequence.md)
 
-## Presentation
-- []()
+## Others
+- [How to effectively structure presentations with engineers’ mindset](presentation.md)
 
 [<- PREV](../README.md)
