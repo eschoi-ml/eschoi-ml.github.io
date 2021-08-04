@@ -1,3 +1,5 @@
+[<-PREV](dsa.md)
+
 # Design
 - [System](#system)
 - [Cache](#cache)
@@ -352,3 +354,5 @@ class Solution:
             return True
         return False
 ```
+
+[<-PREV](dsa.md)
