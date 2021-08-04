@@ -19,7 +19,7 @@ description: Data Structure and Algorithm
 - Hash Map (dict)
 - Hash Set (set)
 
-> **Code along Problem Set: [Design]()**
+> **Code along Problem Set: [Design](design.md)**
 
 ## Abstract data structure
 - Stack (list)
