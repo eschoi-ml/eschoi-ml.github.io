@@ -1,9 +1,11 @@
 [<-PREV](dsa.md)
 
-# [Design]()
-- System
+# Design
+- [System](#system)
 - Cache
 - Tic Tac Toe
+
+## System
 
 
 
