@@ -8,7 +8,7 @@ description: Lecture Note
 # Lecture Note
 
 ## Machine Learning
-- [Generative Learning Algorithm: Naive Bayes](NaiveBayes.pdf)
+- [Generative Learning Algorithm: Naive Bayes](NaiveBayes_.pdf)
 - [Tree based methods and Imbalanced classification](ImbalancedClassification.pdf)
 
 ## Deep Learning
