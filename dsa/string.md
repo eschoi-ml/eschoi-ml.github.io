@@ -5,6 +5,7 @@
 - [Parentheses](#parentheses)
 - [Justification](#justification)
 - [Integer conversion](#integer-conversion)
+- [Palindrome](#palindrome)
     
     
 
@@ -928,6 +929,352 @@ class Solution:
                     res += dic[5*div] + dic[div]*(q-5)
             i -= 1
         return res
+```
+
+# Palindrom
+- [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
+-[Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/)
+-[Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/)
+-[Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
+-[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
+-[Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/)
+-[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)
+-[Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/)
+-[Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/)
+
+
+## Valid Palindrome
+*Given a string s, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.*
+
+
+```python
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        
+        l, r = 0, len(s)-1
+        while l < r:
+            while l < r and not s[l].isalnum():
+                l += 1
+            while l < r and not s[r].isalnum():
+                r -= 1
+            
+            if s[l].lower() != s[r].lower():
+                return False
+            l += 1
+            r -= 1
+            
+        return True
+```
+
+## Valid Palindrome II
+*Given a string s, return true if the s can be palindrome after deleting at most one character from it.*
+
+
+```python
+class Solution:
+    def validPalindrome(self, s: str) -> bool:
+
+        l, r = 0, len(s)-1
+        while l < r:
+            if s[l] == s[r]:
+                l += 1
+                r -= 1
+            else:
+                return self._validPalindrome(s, l+1, r) or self._validPalindrome(s, l, r-1)
+        
+        return True
+    
+    def _validPalindrome(self, s, l, r):
+
+        while l < r:
+            if s[l] != s[r]:
+                return False
+            l += 1
+            r -= 1
+        return True
+```
+
+## Palindrome Permutation
+*Given a string s, return true if a permutation of the string could form a palindrome.*
+
+
+```python
+class Solution:
+    def canPermutePalindrome(self, s: str) -> bool:
+        
+        # Solution1. double pass with dic
+        dic = collections.defaultdict(int)
+        
+        for ch in s:
+            dic[ch] += 1
+        
+        oddcnt = 0
+        for cnt in dic.values():
+            if cnt % 2 == 1:
+                oddcnt += 1
+                if oddcnt > 1:
+                    return False
+        return True
+    
+    
+        # Solution2. single pass with dic
+        dic = collections.defaultdict(int)
+        oddcnt = 0
+        for ch in s:
+            dic[ch] += 1
+            if dic[ch] % 2 == 0:
+                oddcnt -= 1
+            else:
+                oddcnt += 1
+        return oddcnt <= 1
+    
+        
+        # Solution3. single pass with set
+        h = set()
+        for ch in s:
+            if ch in h:
+                h.remove(ch)
+            else:
+                h.add(ch)
+        return len(h) <= 1
+```
+
+## Palindromic Substrings
+*Given a string s, return the number of palindromic substrings in it.*
+
+
+```python
+class Solution:
+    def countSubstrings(self, s: str) -> int:
+        """
+        dp[i][j]: # of palidromic substrings in s[i:j+1]
+        l = 1, ... n-1
+        i = 0, ..., n-l-1
+        j = i + l
+        
+        """
+        n = len(s)
+        dp = [[False] * n for _ in range(n)]
+        for i in range(n):
+            dp[i][i] = True
+        
+        cnt = n
+        for l in range(1, n):
+            for i in range(n - l):
+                j = i + l
+                if s[i] == s[j] and (j - i + 1 <= 3 or dp[i+1][j-1] == True):
+                    dp[i][j] = True
+                    cnt += 1
+        return cnt
+```
+
+## Longest Palindromic Substring
+*Given a string s, return the longest palindromic substring in s.*
+
+
+```python
+class Solution:
+    def longestPalindrome(self, s: str) -> str:
+        """
+        dp[i][j]: whether s[i:j+1] is palindromic or not
+        
+        l = 1, ..., n-1
+        i = 0, ..., n-1-l
+        j = i + l
+        """
+        n = len(s)
+        if n == 1:
+            return s
+        
+        dp = [[False] * n for _ in range(n)]
+        for i in range(n):
+            dp[i][i] = True
+            
+        maxstr = s[0]
+        for l in range(1, n):
+            for i in range(n - l):
+                j = i + l
+                if s[i] == s[j] and (j - i + 1 <= 3 or dp[i+1][j-1] == True):
+                    dp[i][j] = True
+                    maxstr = s[i:j+1]
+                else:
+                    dp[i][j] = False
+        return maxstr
+```
+
+## Longest Palindromic Subsequence
+*Given a string s, find the longest palindromic subsequence's length in s.*
+
+
+```python
+class Solution:
+    def longestPalindromeSubseq(self, s: str) -> int:
+        """
+        dp[i][j]: the longest palindromic subsequence's length in s[i:j+1]
+        
+        l = 1, ..., n-1
+        i = 0, ..., n-l-1
+        j = i + l
+        
+        """
+        n = len(s)
+        dp = [[0] * n for _ in range(n)]
+        for i in range(n):
+            dp[i][i] = 1
+        
+        for l in range(1, n):
+            for i in range(n - l):
+                j = i + l
+                if s[i] == s[j]:
+                    dp[i][j] = dp[i+1][j-1] + 2
+                else:
+                    dp[i][j] = max(dp[i+1][j], dp[i][j-1])
+                    
+        return dp[0][-1]
+```
+
+## Palindrome Partitioning
+*Given a string s, partition s such that every substring of the partition is a palindrome. Return all possible palindrome partitioning of s.*
+
+
+```python
+class Solution:
+    
+    def validPalindrome(self, st):
+        
+        l, r = 0, len(st) - 1
+        while l < r:
+            if st[l] == st[r]:
+                l += 1
+                r -= 1
+            else:
+                return False
+        return True
+            
+        
+    def partition(self, s: str) -> List[List[str]]:
+        
+        def helper(i=0, curr=[]):
+            
+            if i == n:
+                res.append(curr)
+                return 
+            
+            for j in range(i, n):
+                if self.validPalindrome(s[i:j+1]):
+                    helper(j+1, curr + [s[i:j+1]])
+            
+        n = len(s)
+        res = []
+        helper()
+        return res
+```
+
+## Palindrome Pairs
+*Given a list of unique words, return all the pairs of the distinct indices (i, j) in the given list, so that the concatenation of the two words words[i] + words[j] is a palindrome.*
+
+
+```python
+class Solution:
+    def palindromePairs(self, words: List[str]) -> List[List[int]]:
+        """
+        (i, j), (j, i) 
+        """
+        # Solution1 Brute Force. TLE
+        # O(n^2 * k), O(n)
+        n = len(words)
+        res = []
+        for i in range(n-1):
+            for j in range(i+1, n):
+                if self.validPalindrome(words[i] + words[j]):
+                    res.append([i, j])
+                if self.validPalindrome(words[j] + words[i]):
+                    res.append([j, i])
+        return res
+        
+        
+        """
+        i = 0, ..., n
+        rev_suff pref        suff
+                 word[:i]    word[i:]
+        dcba     i=0 ""      abcd           
+        dcb      i=1 a       bcd    
+                 i=2 ab      
+                 i=3 abc
+                 i=4 abcd
+        
+        pref     suff        rev_pref
+        word[:i] word[i:]
+                 i=0 abcd
+                 i=1 bcd
+                 i=2 cd
+        abc      i=3 d       cba
+   
+        """
+        # Solution2 dict
+        n = len(words)
+        wordsdic = {word:i for i, word in enumerate(words)}
+        res = []
+        for idx, word in enumerate(words):
+            
+            reword = word[::-1]
+            if reword in wordsdic and wordsdic[reword]!= idx:
+                res.append([idx, wordsdic[reword]])
+            if word == reword and word !="" and "" in wordsdic:
+                res.extend([[idx, wordsdic[""]],[wordsdic[""], idx]])
+            
+            for i in range(1, len(word)):
+                pref = word[:i]
+                suff = word[i:]
+                rev_pref = pref[::-1]
+                rev_suff = suff[::-1]
+                
+                if self.validPalindrome(pref) and rev_suff in wordsdic:
+                    res.append([wordsdic[rev_suff], idx])
+                if self.validPalindrome(suff) and rev_pref in wordsdic:
+                    res.append([idx, wordsdic[rev_pref]])
+
+        return res
+
+    def validPalindrome(self, st):
+        
+        l, r = 0, len(st) - 1
+        while l < r:
+            if st[l] == st[r]:
+                l += 1
+                r -= 1
+            else:
+                return False
+        return True
+```
+
+## Shortest Palindrome
+*You are given a string s. You can convert s to a palindrome by adding characters in front of it. Return the shortest palindrome you can find by performing this transformation.*
+
+
+```python
+class Solution:
+    def shortestPalindrome(self, s: str) -> str:
+        
+        # Solution1 TLE
+        for i in range(len(s) + 1, 0, -1):
+            pref = s[:i]
+            suff = s[i:]
+            rev_suff = suff[::-1]
+            if self.validPalindrome(pref):
+                return rev_suff + s
+        return ""
+
+    def validPalindrome(self, st):
+        
+        l, r = 0, len(st)-1
+        while l < r:
+            if st[l] == st[r]:
+                l += 1
+                r -= 1
+            else:
+                return False
+        return True
 ```
 
 [<-PREV](dsa.md)
