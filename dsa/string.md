@@ -932,15 +932,15 @@ class Solution:
 ```
 
 # Palindrome
--[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
--[Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/)
--[Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/)
--[Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
--[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
--[Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/)
--[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)
--[Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/)
--[Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/)
+- [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
+- [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/)
+- [Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/)
+- [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
+- [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
+- [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/)
+- [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)
+- [Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/)
+- [Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/)
 
 
 ## Valid Palindrome
