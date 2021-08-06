@@ -931,8 +931,8 @@ class Solution:
         return res
 ```
 
-# Palindrom
-- [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
+# Palindrome
+-[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
 -[Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/)
 -[Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/)
 -[Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
