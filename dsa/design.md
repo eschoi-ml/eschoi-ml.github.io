@@ -4,6 +4,7 @@
 - [System](#system)
 - [Cache](#cache)
 - [Tic Tac Toe](#tic-tac-toe)
+- [Iterator](#iterator)
 
 # System
 - [Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system/): Trie
@@ -354,5 +355,93 @@ class Solution:
             return True
         return False
 ```
+# Iterator
+- [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)
 
+## Flatten Nested List Iterator
+
+
+```python
+# N: the total number of integers within the nested list
+# L: the total number of lists within the nested list
+# D: the maximum nesting depth
+# Solution1
+class NestedIterator:
+    def __init__(self, nestedList: [NestedInteger]):
+        # O(N + L), O(N + D)
+        def flatten(nestedlist):
+            
+            for nl in nestedList:
+                if nl.isInteger():
+                    self.dic.append(nl.getInteger())
+                else:
+                    flatten(nl.getList())
+                    
+        self.dic = []
+        self.pos = -1
+        flatten(nestedList)       
+    
+    def next(self) -> int:
+        # O(1)
+        self.pos += 1
+        return self.dic[self.pos]
+    
+    def hasNext(self) -> bool:
+        # O(1)
+        return self.dic
+
+# Solution 2
+class NestedIterator:
+    def __init__(self, nestedList: [NestedInteger]):
+        # O(1), O(N)
+        self.q = collections.deque(nestedList)
+
+    def next(self) -> int: 
+        # O(1)
+        return self.q.popleft().getInteger()
+    
+    def hasNext(self) -> bool:
+        # O(N + L) in total
+        while self.q and not self.q[0].isInteger():
+            self.q.extendleft(reversed(self.q.popleft().getList()))        
+        return self.q
+"""
+[6, 7] 1 ##
+[5, [6,7]] 1 ##
+[3,4,[5,[6,7]]] 3 ##
+[[1, 2, [3,4,[5,[6,7]]], 8]] 4 ##
+"""
+# Solution 3
+class NestedIterator:
+    def __init__(self, nestedList: [NestedInteger]):
+        # O(1), O(D)
+        self.stack = [[nestedList, 0]]
+    
+    def next(self) -> int: 
+        
+        self.hasNext()
+        
+        nestedList, i = self.stack[-1]
+        self.stack[-1][1] = i + 1
+        return nestedList[i].getInteger()
+        
+    
+    def hasNext(self) -> bool:   
+        # O(D), O(D)
+        while self.stack:
+    
+            nestedList, i = self.stack[-1]
+        
+            if i == len(nestedList):
+                self.stack.pop()
+            else:
+                x = nestedList[i]
+                if x.isInteger():
+                    return True
+                else:
+                    self.stack[-1][1] += 1
+                    self.stack.append([x.getList(), 0])
+        
+        return False
+```
 [<-PREV](dsa.md)
