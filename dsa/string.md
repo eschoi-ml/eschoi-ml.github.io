@@ -19,7 +19,7 @@
 - [Expression Add Operators](https://leetcode.com/problems/expression-add-operators/)
 - [Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/)
 
-## [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)
+## Basic Calculator II
 
 
 ```python
@@ -84,7 +84,7 @@ def calculate(self, s: str) -> int:
     return res + stack
 ```
 
-## [Basic Calculator III](https://leetcode.com/problems/basic-calculator-iii/)
+## Basic Calculator III
 
 
 ```python
@@ -210,7 +210,7 @@ def calculate(self, s: str) -> int:
     return helper(s + '+', 0)[0]
 ```
 
-## [Basic Calculator](https://leetcode.com/problems/basic-calculator/)
+## Basic Calculator
 
 
 ```python
@@ -291,7 +291,7 @@ def calculate(self, s: str) -> int:
     return helper(s + '+', 0)[0]
 ```
 
-## [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
+## Evaluate Reverse Polish Notation
 
 
 
@@ -318,7 +318,7 @@ def evalRPN(self, tokens: List[str]) -> int:
     return stack.pop()
 ```
 
-## [Expression Add Operators](https://leetcode.com/problems/expression-add-operators/)
+## Expression Add Operators
 
 
 ```python
@@ -406,7 +406,7 @@ def addOperators(self, num: str, target: int) -> List[str]:
     return ans
 ```
 
-## [Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/)
+## Different Ways to Add Parentheses
 
 
 ```python
@@ -475,7 +475,7 @@ def diffWaysToCompute(self, expression: str) -> List[int]:
 - [Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)
 - [Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/)
 
-## [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+## Valid Parentheses
 *Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.*
 
 
@@ -510,7 +510,7 @@ class Solution:
         return not stack
 ```
 
-## [Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/)
+## Minimum Remove to Make Valid Parentheses
 *Given a string s of '(' , ')' and lowercase English characters. Your task is to remove the minimum number of parentheses ( '(' or ')', in any positions ) so that the resulting parentheses string is valid and return any valid string.*
 
 
@@ -538,7 +538,7 @@ class Solution:
         return "".join(s)
 ```
 
-## [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)
+## Longest Valid Parentheses
 *Given a string containing just the characters '(' and ')', find the length of the longest valid (well-formed) parentheses substring.*
 
 
@@ -590,7 +590,7 @@ class Solution:
         return maxlen
 ```
 
-## [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)
+## Generate Parentheses
 *Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.*
 
 
@@ -623,7 +623,7 @@ class Solution:
         return res
 ```
 
-## [Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/)
+## Different Ways to Add Parentheses
 *Given a string expression of numbers and operators, return all possible results from computing all the different possible ways to group numbers and operators. You may return the answer in any order.*
 
 
@@ -682,7 +682,7 @@ class Solution:
 
 ```
 
-## [Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)
+## Remove Invalid Parentheses
 *Given a string s that contains parentheses and letters, remove the minimum number of invalid parentheses to make the input string valid. Return all the possible results.*
 
 
@@ -723,7 +723,7 @@ class Solution:
         return res
 ```
 
-## [Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/)
+## Valid Parenthesis String
 *Given a string s containing only three types of characters: '(', ')' and '*', return true if s is valid.*
 
 
@@ -757,7 +757,7 @@ class Solution:
 - [Text Justification](https://leetcode.com/problems/text-justification/)
 - [Rearrange Spaces Between Words](https://leetcode.com/problems/rearrange-spaces-between-words/)
 
-## [Text Justification](https://leetcode.com/problems/text-justification/)
+## Text Justification
 *Given an array of strings words and a width maxWidth, format the text such that each line has exactly maxWidth characters and is fully (left and right) justified.*
 
 
@@ -812,7 +812,7 @@ class Solution:
         return res
 ```
 
-## [Rearrange Spaces Between Words](https://leetcode.com/problems/rearrange-spaces-between-words/)
+## Rearrange Spaces Between Words
 *Return the string after rearranging the spaces.*
 
 
@@ -834,7 +834,7 @@ class Solution:
 - [Integer to English Words](https://leetcode.com/problems/integer-to-english-words/)
 - [Integer to Roman](https://leetcode.com/problems/integer-to-roman/)
 
-## [Integer to English Words](https://leetcode.com/problems/integer-to-english-words/)
+## Integer to English Words
 *Convert a non-negative integer num to its English words representation.*
 
 
@@ -891,7 +891,7 @@ class Solution:
         return " ".join(res)
 ```
 
-## [Integer to Roman](https://leetcode.com/problems/integer-to-roman/)
+## Integer to Roman
 *Given an integer, convert it to a roman numeral.*
 
 
