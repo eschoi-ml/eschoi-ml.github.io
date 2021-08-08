@@ -10,7 +10,7 @@
 - [Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system/): Trie
 - [Design Log Storage System](https://leetcode.com/problems/design-log-storage-system/): dict & binary search
 
-## [Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system/)
+## Design In-Memory File System
 
 
 ```python
@@ -62,7 +62,7 @@ class FileSystem:
 
 ```
 
-## [Design Log Storage System](https://leetcode.com/problems/design-log-storage-system/)
+## Design Log Storage System
 
 
 ```python
@@ -108,7 +108,7 @@ class LogSystem:
 - [LRU Cache](https://leetcode.com/problems/lru-cache/): OrderedDict
 - [LFU Cache](https://leetcode.com/problems/lfu-cache/): dict, defaultdict(deque) 
 
-## [LRU Cache](https://leetcode.com/problems/lru-cache/)
+## LRU Cache
 
 
 ```python
@@ -137,7 +137,7 @@ class LRUCache:
             self.dic.popitem(last=False)
 ```
 
-## [LFU Cache](https://leetcode.com/problems/lfu-cache/)
+## LFU Cache
 
 
 ```python
@@ -202,7 +202,7 @@ class LFUCache:
 - [Valid Tic-Tac-Toe State](https://leetcode.com/problems/valid-tic-tac-toe-state/)
 
 
-## [Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/)
+## Design Tic-Tac-Toe
 
 
 ```python
@@ -252,7 +252,7 @@ class TicTacToe:
         return 0
 ```
 
-## [Find Winner on a Tic Tac Toe Game](https://leetcode.com/problems/find-winner-on-a-tic-tac-toe-game/)
+## Find Winner on a Tic Tac Toe Game
 
 
 ```python
@@ -294,7 +294,7 @@ class Solution:
         
 ```
 
-## [Valid Tic-Tac-Toe State](https://leetcode.com/problems/valid-tic-tac-toe-state/)
+## Valid Tic-Tac-Toe State
 
 
 ```python
