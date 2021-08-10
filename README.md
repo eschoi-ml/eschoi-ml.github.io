@@ -1,5 +1,5 @@
 Hi, I'm a Machine Learning scientist based in Silicon Valley, California. 
-This Gibhub page is to share Machine Learning related knowledge and projects that I have worked on.
+This Github page is to share Machine Learning related knowledge and projects that I have worked on.
 
 ## [**-** Machine Learning Project](project/project.md)
 
