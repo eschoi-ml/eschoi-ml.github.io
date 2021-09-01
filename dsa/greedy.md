@@ -460,7 +460,7 @@ Dijkstra(0, graph)
 
 ### Minimum Spanning Tree (MST)
 
-#### Kruska's MST
+#### Kruskal's MST
 #### Prim's MST
 
 
