@@ -61,12 +61,10 @@ Basic categories of algorithms: Insert, Update, Delete, Sort, and Search
 - radix sort
 - bucket sort
 - topological sort
-- kahn's topological sort
-
 
 ## Search
 
--  Linear search
+- Linear search
 - Binary search
 
 > **Code along Lecture Note: [Ultimate Binary Search Template](binary_search.md)**
@@ -76,12 +74,14 @@ Basic categories of algorithms: Insert, Update, Delete, Sort, and Search
 
 > **Code along Lecture Note: [DFS & BFS](DFS_BFS.md)**
 
-- Bidirectional search (if undirected)
-- Bellman Ford's algorithm (if negative weighted) 
-- Dijkstra's algorithm (if positive weighted) 
-- A*(A star) search (Best First Search)
+- DFS (traverse all nodes or traverse all paths between two nodes when equally or unweighted)
+- *BFS* (traverse all nodes or shortest path between two nodes when equally or unweighted)
+- *Dijkstra's algorithm* (shortest path from a single source when eaqually or positively weighted) 
+- *Bellman-Ford's algorithm* (shortest path from a single source when negatively weighted) 
+- Kruskal's minimum spanning tree (UnionFind, DisjointSet) and Prim's minimum spanning tree 
+- Kahn's topological sort
 
-> **Code along Lecture Note: Shortest Path**
+> **Code along Lecture Note: DFS, BFS, Dijkstra, Bellman-Ford, UnionFind, Topological sort**
 
 ## Greedy algorithm
 
@@ -93,7 +93,7 @@ Looks for locally optimum solutions in the hopes of finding a global optimum
 - Minimum number of platforms/ meeting rooms
 - Huffman Coding
 - Dijkstra's algorithm for shortest paths from a single source 
-- Kruska's and Prim's minimum spanning tree
+- Kruskal's and Prim's minimum spanning tree
 
 > **Code along Lecture Note: [Top 8 Greedy Algorithm](greedy.md)**
 
