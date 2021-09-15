@@ -74,12 +74,12 @@ Basic categories of algorithms: Insert, Update, Delete, Sort, and Search
 
 > **Code along Lecture Note: [DFS & BFS](DFS_BFS.md)**
 
-- DFS (traverse all nodes or traverse all paths between two nodes when equally or unweighted)
-- *BFS* (traverse all nodes or shortest path between two nodes when equally or unweighted)
-- *Dijkstra's algorithm* (shortest path from a single source when eaqually or positively weighted) 
-- *Bellman-Ford's algorithm* (shortest path from a single source when negatively weighted) 
-- Kruskal's minimum spanning tree (UnionFind, DisjointSet) and Prim's minimum spanning tree 
-- Kahn's topological sort
+- **DFS** (traverse all nodes or traverse all paths between two nodes when equally or unweighted)
+- ***BFS*** (traverse all nodes or shortest path between two nodes when equally or unweighted)
+- ***Dijkstra***'s algorithm (shortest path from a single source when eaqually or positively weighted) 
+- ***Bellman-Ford***'s algorithm (shortest path from a single source when negatively weighted) 
+- Kruskal's minimum spanning tree (**UnionFind**, DisjointSet) and Prim's minimum spanning tree 
+- **Kahn**'s topological sort
 
 > **Code along Lecture Note: DFS, BFS, Dijkstra, Bellman-Ford, UnionFind, Topological sort**
 
