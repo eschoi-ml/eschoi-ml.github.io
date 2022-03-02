@@ -60,7 +60,8 @@ Basic categories of algorithms: Insert, Update, Delete, Sort, and Search
 - counting sort
 - radix sort
 - bucket sort
-- topological sort
+
+> **Code along Lecture Note: [Sort](sort.md)**
 
 ## Search
 
