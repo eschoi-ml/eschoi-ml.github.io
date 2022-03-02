@@ -1,3 +1,5 @@
+[<-PREV](dsa.md)
+
 # Sort
 1. Bogo Sort: best O(n), avg O(n*n!) worst O(inf) & O(1), randomly shuffle
 1. Bubble Sort: best, avg, worst O(n^2) & O(1), compare arr[j] vs. arr[j+1] with j = 0 to n - 1 - i when 0 <= i <= n-1 
@@ -441,3 +443,4 @@ bucket_sort(arr3)
 
     Bucket Sort:  [0.1234, 0.3434, 0.565, 0.656, 0.665, 0.666, 0.897, 0.899]
 
+[<-PREV](dsa.md)
