@@ -1127,7 +1127,7 @@ plot_tree(model);
 
 
     
-![png](output_51_0.png)
+![png](images/output_51_0.png)
     
 
 
