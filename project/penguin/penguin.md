@@ -1650,7 +1650,7 @@ dump(final_model, mypath + 'penguin_gradientboosting.joblib')
 
 
 
-    ['/content/drive/MyDrive/Udemy/2022_PythonForMLDSMasterClass/project/penguin_gradientboosting.joblib']
+    ['/project/penguin_gradientboosting.joblib']
 
 
 
