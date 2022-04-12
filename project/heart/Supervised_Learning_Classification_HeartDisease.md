@@ -1,3 +1,5 @@
+[<-PREV](../project.md)
+
 # Supervised Learning - Classification of Heart Disease
 1. Import libraries, set up directory, and read data
 2. Quick data check 
@@ -25,7 +27,7 @@ import seaborn as sns
 
 
 ```python
-mypath = '/content/drive/MyDrive/Udemy/2022_PythonForMLDSMasterClass/project/'
+mypath = '/project/'
 ```
 
 
@@ -617,7 +619,7 @@ plt.xticks(rotation=90);
 
 
     
-![png](output_20_0.png)
+![png](images/output_20_0.png)
     
 
 
@@ -641,7 +643,7 @@ save_results('Logistic Regression', y_test, y_pred)
 
 
     
-![png](output_21_1.png)
+![png](images/output_21_1.png)
     
 
 
@@ -751,7 +753,7 @@ plt.title('Using Grid Search');
 
 
     
-![png](output_29_0.png)
+![png](images/output_29_0.png)
     
 
 
@@ -774,7 +776,7 @@ display_evaluation(y_test, y_pred)
 
 
     
-![png](output_30_1.png)
+![png](images/output_30_1.png)
     
 
 
@@ -807,7 +809,7 @@ plt.title('Using Manual Elbow Method');
 
 
     
-![png](output_32_0.png)
+![png](images/output_32_0.png)
     
 
 
@@ -844,7 +846,7 @@ save_results('KNN', y_test, y_pred)
 
 
     
-![png](output_34_1.png)
+![png](images/output_34_1.png)
     
 
 
@@ -938,7 +940,7 @@ plt.ylabel('Mean Test Score');
 
 
     
-![png](output_41_0.png)
+![png](images/output_41_0.png)
     
 
 
@@ -1030,7 +1032,7 @@ save_results('SVM', y_test, y_pred)
 
 
     
-![png](output_44_1.png)
+![png](images/output_44_1.png)
     
 
 
@@ -1083,7 +1085,7 @@ plt.ylabel('Mean Test Score');
 
 
     
-![png](output_48_0.png)
+![png](images/output_48_0.png)
     
 
 
@@ -1137,7 +1139,7 @@ save_results('Decision Tree', y_test, y_pred)
 
 
     
-![png](output_52_1.png)
+![png](images/output_52_1.png)
     
 
 
@@ -1151,7 +1153,7 @@ plot_tree(model);
 
 
     
-![png](output_53_0.png)
+![png](images/output_53_0.png)
     
 
 
@@ -1253,7 +1255,7 @@ plt.plot(grid_model.cv_results_['mean_test_score'], 'o-');
 
 
     
-![png](output_60_0.png)
+![png](images/output_60_0.png)
     
 
 
@@ -1277,7 +1279,7 @@ save_results('Random Forest', y_test, y_pred)
 
 
     
-![png](output_61_1.png)
+![png](images/output_61_1.png)
     
 
 
@@ -1331,7 +1333,7 @@ plt.ylabel('Error Rates');
 
 
     
-![png](output_65_0.png)
+![png](images/output_65_0.png)
     
 
 
@@ -1368,7 +1370,7 @@ save_results('Adaboost', y_test, y_pred)
 
 
     
-![png](output_67_1.png)
+![png](images/output_67_1.png)
     
 
 
@@ -1940,7 +1942,7 @@ plt.plot(grid_model.cv_results_['mean_test_score']);
 
 
     
-![png](output_72_0.png)
+![png](images/output_72_0.png)
     
 
 
@@ -1964,7 +1966,7 @@ save_results('Gradient Boosting', y_test, y_pred)
 
 
     
-![png](output_73_1.png)
+![png](images/output_73_1.png)
     
 
 
@@ -2032,7 +2034,7 @@ plt.ylabel('Accuracy');
 
 
     
-![png](output_77_0.png)
+![png](images/output_77_0.png)
     
 
 
@@ -2069,7 +2071,7 @@ save_results('XGBoost', y_test, y_pred)
 
 
     
-![png](output_79_1.png)
+![png](images/output_79_1.png)
     
 
 
@@ -2126,7 +2128,7 @@ plt.ylabel('Accuracy Score');
 
 
     
-![png](output_83_0.png)
+![png](images/output_83_0.png)
     
 
 
@@ -2164,7 +2166,7 @@ dump(final_model, mypath + 'heart_knn.joblib')
 
 
 
-    ['/content/drive/MyDrive/Udemy/2022_PythonForMLDSMasterClass/project/heart_knn.joblib']
+    ['/project/heart_knn.joblib']
 
 
 
@@ -2332,3 +2334,4 @@ print(y_prob_pred, y_pred)
 
     [[1. 0.]] [0]
 
+[<-PREV](../project.md)
