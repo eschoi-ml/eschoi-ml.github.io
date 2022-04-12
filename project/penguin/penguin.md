@@ -27,7 +27,7 @@ import seaborn as sns
 
 
 ```python
-mypath = '/content/drive/MyDrive/Udemy/2022_PythonForMLDSMasterClass/project/'
+mypath = '/project/'
 ```
 
 
