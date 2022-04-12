@@ -1,3 +1,5 @@
+[<-PREV](../project.md)
+
 # Unsupervised Learning
 1. Clustering
     - K-Means clustering
@@ -18,7 +20,7 @@ import matplotlib.image as mpimg
 
 
 ```python
-mypath = '/content/drive/MyDrive/Udemy/2022_PythonForMLDSMasterClass/project/'
+mypath = '/project/'
 ```
 
 # 1. Clustering
@@ -39,7 +41,7 @@ plt.imshow(image_as_array);
 
 
     
-![png](output_6_0.png)
+![png](images/output_6_0.png)
     
 
 
@@ -80,7 +82,7 @@ ax[1].set_ylabel('Difference in SSD');
 
 
     
-![png](output_10_0.png)
+![png](images/output_10_0.png)
     
 
 
@@ -105,7 +107,7 @@ for i in range(3):
 
 
     
-![png](output_11_0.png)
+![png](images/output_11_0.png)
     
 
 
@@ -731,7 +733,7 @@ sns.clustermap(scaled_df);
 
 
     
-![png](output_20_0.png)
+![png](images/output_20_0.png)
     
 
 
@@ -1115,7 +1117,7 @@ dn = hierarchy.dendrogram(linkage_matrix);
 
 
     
-![png](output_30_0.png)
+![png](images/output_30_0.png)
     
 
 
@@ -1127,7 +1129,7 @@ dn = hierarchy.dendrogram(linkage_matrix,truncate_mode='lastp',p=11);
 
 
     
-![png](output_31_0.png)
+![png](images/output_31_0.png)
     
 
 
@@ -1153,7 +1155,7 @@ sns.scatterplot(data=df, x='X1', y='X2');
 
 
     
-![png](output_35_0.png)
+![png](images/output_35_0.png)
     
 
 
@@ -1177,7 +1179,7 @@ display_categories(model, df)
 
 
     
-![png](output_38_0.png)
+![png](images/output_38_0.png)
     
 
 
@@ -1221,7 +1223,7 @@ ax[1].hlines(y=1, xmin=0, xmax=2, colors='red', ls='--');
 
 
     
-![png](output_41_0.png)
+![png](images/output_41_0.png)
     
 
 
@@ -1233,7 +1235,7 @@ display_categories(model, df)
 
 
     
-![png](output_42_0.png)
+![png](images/output_42_0.png)
     
 
 
@@ -1255,7 +1257,7 @@ ax[1].hlines(y=3, xmin=0, xmax=10, colors='red', ls='--');
 
 
     
-![png](output_43_0.png)
+![png](images/output_43_0.png)
     
 
 
@@ -1267,7 +1269,7 @@ display_categories(model, df)
 
 
     
-![png](output_44_0.png)
+![png](images/output_44_0.png)
     
 
 
@@ -1305,7 +1307,7 @@ ax[1].set_xlim(0, 10);
 
 
     
-![png](output_47_0.png)
+![png](images/output_47_0.png)
     
 
 
@@ -1325,7 +1327,7 @@ ax[1].set_xlim(0, 10);
 
 
     
-![png](output_48_0.png)
+![png](images/output_48_0.png)
     
 
 
@@ -1339,7 +1341,7 @@ display_categories(model, df)
 
 
     
-![png](output_49_0.png)
+![png](images/output_49_0.png)
     
 
 
@@ -1351,7 +1353,7 @@ display_categories(model, df)
 
 
     
-![png](output_50_0.png)
+![png](images/output_50_0.png)
     
 
 
@@ -2079,7 +2081,7 @@ plt.ylabel('Second Principal Component');
 
 
     
-![png](output_61_0.png)
+![png](images/output_61_0.png)
     
 
 
@@ -2103,7 +2105,7 @@ plt.ylabel('Second Principal Component');
 
 
     
-![png](output_64_0.png)
+![png](images/output_64_0.png)
     
 
 
@@ -2301,7 +2303,7 @@ plt.title('n_components = 2');
 
 
     
-![png](output_66_0.png)
+![png](images/output_66_0.png)
     
 
 
@@ -2341,6 +2343,7 @@ plt.ylabel('Variance Explained');
 
 
     
-![png](output_69_0.png)
+![png](images/output_69_0.png)
     
 
+[<-PREV](../project.md)
