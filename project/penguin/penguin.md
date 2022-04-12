@@ -1,3 +1,5 @@
+[<-PREV](../project.md)
+
 # Supervised Learning - Classification of Penguin Species
 1. Import libraries, set up directory, and read data
 2. Quick data check 
@@ -661,7 +663,7 @@ plt.xticks(rotation=45);
 
 
     
-![png](output_20_0.png)
+![png](images/output_20_0.png)
     
 
 
@@ -686,7 +688,7 @@ save_results('Logistic Regression', y_test, y_pred)
 
 
     
-![png](output_21_1.png)
+![png](images/output_21_1.png)
     
 
 
@@ -793,7 +795,7 @@ plt.plot(grid_model.cv_results_['mean_test_score'], 'o-');
 
 
     
-![png](output_29_0.png)
+![png](images/output_29_0.png)
     
 
 
@@ -843,7 +845,7 @@ save_results('KNN', y_test, y_pred)
 
 
     
-![png](output_31_1.png)
+![png](images/output_31_1.png)
     
 
 
@@ -937,7 +939,7 @@ plt.ylabel('Mean Test Score');
 
 
     
-![png](output_38_0.png)
+![png](images/output_38_0.png)
     
 
 
@@ -1003,7 +1005,7 @@ save_results('SVM', y_test, y_pred)
 
 
     
-![png](output_42_1.png)
+![png](images/output_42_1.png)
     
 
 
@@ -1056,7 +1058,7 @@ plt.ylabel('Mean Test Score');
 
 
     
-![png](output_46_0.png)
+![png](images/output_46_0.png)
     
 
 
@@ -1111,7 +1113,7 @@ save_results('Decision Tree', y_test, y_pred)
 
 
     
-![png](output_50_1.png)
+![png](images/output_50_1.png)
     
 
 
@@ -1225,7 +1227,7 @@ plt.plot(grid_model.cv_results_['mean_test_score']);
 
 
     
-![png](output_58_0.png)
+![png](images/output_58_0.png)
     
 
 
@@ -1250,7 +1252,7 @@ save_results('Random Forest', y_test, y_pred)
 
 
     
-![png](output_59_1.png)
+![png](images/output_59_1.png)
     
 
 
@@ -1301,7 +1303,7 @@ plt.ylabel('Error Rates');
 
 
     
-![png](output_63_0.png)
+![png](images/output_63_0.png)
     
 
 
@@ -1339,7 +1341,7 @@ save_results('Adaboost', y_test, y_pred)
 
 
     
-![png](output_65_1.png)
+![png](images/output_65_1.png)
     
 
 
@@ -1430,7 +1432,7 @@ plt.ylabel('Accuracy');
 
 
     
-![png](output_72_0.png)
+![png](images/output_72_0.png)
     
 
 
@@ -1455,7 +1457,7 @@ save_results('Gradient Boosting', y_test, y_pred)
 
 
     
-![png](output_73_1.png)
+![png](images/output_73_1.png)
     
 
 
@@ -1523,7 +1525,7 @@ plt.ylabel('Accuracy');
 
 
     
-![png](output_77_0.png)
+![png](images/output_77_0.png)
     
 
 
@@ -1561,7 +1563,7 @@ save_results('XGBoost', y_test, y_pred)
 
 
     
-![png](output_79_1.png)
+![png](images/output_79_1.png)
     
 
 
@@ -1619,7 +1621,7 @@ plt.ylabel('Accuracy Score');
 
 
     
-![png](output_83_0.png)
+![png](images/output_83_0.png)
     
 
 
@@ -1804,3 +1806,4 @@ print(y_prob_pred, y_pred)
 
     [[9.26548553e-09 9.99999988e-01 2.99162945e-09]] ['Chinstrap']
 
+[<-PREV](../project.md)
