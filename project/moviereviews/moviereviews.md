@@ -1,3 +1,5 @@
+[<-PREV](../project.md)
+
 # Naive Bayes and Natual Language Processing (NLP)
 
 1. Import libraries, set up directory, and read data
@@ -26,7 +28,7 @@ import seaborn as sns
 
 
 ```python
-mypath = '/content/drive/MyDrive/Udemy/2022_PythonForMLDSMasterClass/project/'
+mypath = '/project/'
 ```
 
 
@@ -266,7 +268,7 @@ save_results('NB_CountVectorizer', y_test, y_pred)
 
 
     
-![png](output_16_1.png)
+![png](images/output_16_1.png)
     
 
 
@@ -294,7 +296,7 @@ save_results('NB_TFIDF', y_test, y_pred)
 
 
     
-![png](output_17_1.png)
+![png](images/output_17_1.png)
     
 
 
@@ -323,7 +325,7 @@ save_results('LogisticRegression', y_test, y_pred)
 
 
     
-![png](output_19_1.png)
+![png](images/output_19_1.png)
     
 
 
@@ -352,7 +354,7 @@ save_results('SVM Linear', y_test, y_pred)
 
 
     
-![png](output_21_1.png)
+![png](images/output_21_1.png)
     
 
 
@@ -379,7 +381,7 @@ save_results('SVM with rbf kernel', y_test, y_pred)
 
 
     
-![png](output_22_1.png)
+![png](images/output_22_1.png)
     
 
 
@@ -410,7 +412,7 @@ save_results('Random Forest', y_test, y_pred)
 
 
     
-![png](output_24_1.png)
+![png](images/output_24_1.png)
     
 
 
@@ -464,7 +466,7 @@ plt.ylabel('Accuracy Score');
 
 
     
-![png](output_28_0.png)
+![png](images/output_28_0.png)
     
 
 
@@ -501,7 +503,7 @@ dump(final_model, mypath + 'moviereview_SVMwithRBF.joblib')
 
 
 
-    ['/content/drive/MyDrive/Udemy/2022_PythonForMLDSMasterClass/project/moviereview_SVMwithRBF.joblib']
+    ['/project/moviereview_SVMwithRBF.joblib']
 
 
 
@@ -574,3 +576,4 @@ y_pred
     array(['neg'], dtype=object)
 
 
+[<-PREV](../project.md)
