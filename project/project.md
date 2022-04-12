@@ -9,7 +9,7 @@ description: Machine Learning Project
 
 ## Classical Machine Learning
 - [Supervised Learnig for Classification of Penguin Species](penguin/penguin.md)
-- [Supervised Learning for Classification of Heart Diseases](heart/heart.md)
+- [Supervised Learning for Classification of Heart Disease](heart/heart.md)
 - [Unsupervised Learning](unsupervised/uunsupervised.md)
 
 ## Statistical Machine Learning
