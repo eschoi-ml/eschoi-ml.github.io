@@ -9,7 +9,8 @@
     3.1 Word embedding
     - Count vectorizer
     - Term Frequency - Inverse Document Frequency (TF-IDF)
-    3.2 Model comparisons
+    
+    3.2 Model implementation
     - Multinomial Naive Bayes
     - Logistic Regression
     - Linear SVM
