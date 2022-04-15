@@ -1,3 +1,5 @@
+[<-PREV](../project.md)
+
 # Regression of Subjective Wellbeing using Tree Based Algorithms
 1. Import libraries, set up directories, and read data
 2. Quick data check
@@ -23,7 +25,7 @@ import seaborn as sns
 
 
 ```python
-mypath = '/content/drive/MyDrive/happiness/'
+mypath = '/happiness/'
 ```
 
 
@@ -1165,7 +1167,7 @@ ax[1].set_ylim(0, 800);
 
 
     
-![png](output_12_0.png)
+![png](images/output_12_0.png)
     
 
 
@@ -1177,7 +1179,7 @@ sns.scatterplot(data=df, x='SubWell', y='Eudaimonia');
 
 
     
-![png](output_13_0.png)
+![png](images/output_13_0.png)
     
 
 
@@ -1189,7 +1191,7 @@ sns.heatmap(corr);
 
 
     
-![png](output_14_0.png)
+![png](images/output_14_0.png)
     
 
 
@@ -1201,7 +1203,7 @@ sns.heatmap(corr[['SubWell', 'Eudaimonia']].transpose());
 
 
     
-![png](output_15_0.png)
+![png](images/output_15_0.png)
     
 
 
@@ -1217,7 +1219,7 @@ plt.xticks(rotation=90);
 
 
     
-![png](output_16_0.png)
+![png](images/output_16_0.png)
     
 
 
@@ -1231,7 +1233,7 @@ plt.xticks(rotation=90);
 
 
     
-![png](output_17_0.png)
+![png](images/output_17_0.png)
     
 
 
@@ -1245,7 +1247,7 @@ sns.barplot(data=df, x='Academic', y='SubWell', ax=ax[2]);
 
 
     
-![png](output_18_0.png)
+![png](images/output_18_0.png)
     
 
 
@@ -1256,7 +1258,7 @@ sns.catplot(data=df, x='Academic', y='SubWell', col='School', kind='bar');
 
 
     
-![png](output_19_0.png)
+![png](images/output_19_0.png)
     
 
 
@@ -1610,7 +1612,7 @@ plt.ylabel('MSE');
 
 
     
-![png](output_32_0.png)
+![png](images/output_32_0.png)
     
 
 
@@ -1647,7 +1649,7 @@ plt.xticks(rotation=90);
 
 
     
-![png](output_35_0.png)
+![png](images/output_35_0.png)
     
 
 
@@ -1662,7 +1664,7 @@ plt.xticks(rotation=90);
 
 
     
-![png](output_36_0.png)
+![png](images/output_36_0.png)
     
 
 
@@ -1697,7 +1699,7 @@ plt.ylabel('MSE');
 
 
     
-![png](output_40_0.png)
+![png](images/output_40_0.png)
     
 
 
@@ -1779,7 +1781,7 @@ plt.xticks(max_leaf_nodes);
 
 
     
-![png](output_48_0.png)
+![png](images/output_48_0.png)
     
 
 
@@ -1793,7 +1795,7 @@ plt.xticks(max_depth);
 
 
     
-![png](output_49_0.png)
+![png](images/output_49_0.png)
     
 
 
@@ -1806,7 +1808,7 @@ plt.xticks(n_estimators);
 
 
     
-![png](output_50_0.png)
+![png](images/output_50_0.png)
     
 
 
@@ -1876,7 +1878,7 @@ plt.ylabel('MSE');
 
 
     
-![png](output_56_0.png)
+![png](images/output_56_0.png)
     
 
 
@@ -1916,7 +1918,7 @@ plt.xticks(rotation=90);
 
 
     
-![png](output_59_0.png)
+![png](images/output_59_0.png)
     
 
 
@@ -1931,7 +1933,7 @@ plt.xticks(rotation=90);
 
 
     
-![png](output_60_0.png)
+![png](images/output_60_0.png)
     
 
 
@@ -2107,7 +2109,7 @@ plt.ylabel('MSE');
 
 
     
-![png](output_64_0.png)
+![png](images/output_64_0.png)
     
 
 
@@ -2138,7 +2140,7 @@ dump(final_model, mypath + 'happiness_randomforest.joblib')
 
 
 
-    ['/content/drive/MyDrive/happiness/happiness_randomforest.joblib']
+    ['/happiness/happiness_randomforest.joblib']
 
 
 
@@ -2325,3 +2327,4 @@ print(data_pred)
 
     [3.3729956]
 
+[<-PREV](../project.md)
