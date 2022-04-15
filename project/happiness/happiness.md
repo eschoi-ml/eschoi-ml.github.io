@@ -1,6 +1,6 @@
 [<-PREV](../project.md)
 
-# Regression of Subjective Wellbeing using Tree Based Algorithms
+# Supervised Learning for Regression of Subjective Wellbeing using Tree Based Algorithms
 1. Import libraries, set up directories, and read data
 2. Quick data check
 3. Exploratory data analysis (EDA)
