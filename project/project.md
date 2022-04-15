@@ -11,6 +11,7 @@ description: Machine Learning Project
 - [Supervised Learnig for Classification of Penguin Species](penguin/penguin.md)
 - [Supervised Learning for Classification of Heart Disease](heart/heart.md)
 - [Unsupervised Learning](unsupervised/unsupervised.md)
+- [Regression of Subjective Wellbeing using Tree Based Methods](happiness/happiness.md)
 
 ## Statistical Machine Learning
 - [Naive Bayes and NLP with Moview Reviews](moviereviews/moviereviews.md)
