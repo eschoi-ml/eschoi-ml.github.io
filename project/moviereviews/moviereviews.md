@@ -241,7 +241,7 @@ def save_results(model_name, y_test, y_pred):
     res[model_name] = accuracy_score(y_test, y_pred)
 ```
 
-### 3.2 Model comparisons
+### 3.2 Model implementation
 
 #### 3.2.1 Multinomial NB using Count vectorizer vs. TF-IDF embeddings
 
