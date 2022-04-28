@@ -29,7 +29,7 @@ description: Data Structure and Algorithm
 > **Code along Problem Set: [Monotonic Stack](monotonic_stack.md)**
 
 - Graph: Directed/Undirected, Connected/ Disconnected, Cyclic/ Acyclic, Weighted/Unweighted
-- Tree: Undirected, Connected, Acyclic, Unweighted graph
+- Tree: Directed, Connected, Acyclic, Unweighted graph
   - N-ary Tree
   - Binary Tree
   - Binary Search Tree
