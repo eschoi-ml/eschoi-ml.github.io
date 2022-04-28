@@ -70,16 +70,16 @@ Basic categories of algorithms: Insert, Update, Delete, Sort, and Search
 
 > **Code along Lecture Note: [Ultimate Binary Search Template](binary_search.md)**
 
-- Depth First Search algorithm (traverse all nodes or traverse all paths between two nodes when equally or unweighted)
-- Breath First Search algorithm (traverse all nodes or shortest path between two nodes when equally or unweighted)
+- Depth First Search algorithm 
+- Breath First Search algorithm 
 - Topological Sort
-- Dijkstra algorithm (shortest path from a single source when eaqually or positively weighted) 
-- Bellman-Ford algorithm (shortest path from a single source when negatively weighted)
+- Dijkstra algorithm 
+- Bellman-Ford algorithm 
 - Union Find 
-- Kruskal's and Prim's Minimum Spanning Tree algorithm
+- Minimum Spanning Tree algorithm
 
 
-> **[Code along Lecture Note: DFS, BFS, Topological sort, Dijkstra, Bellman-Ford, Union Find, MST algorithm](search.md)**
+> **Code along Lecture Note: [DFS, BFS, Topological sort, Dijkstra, Bellman-Ford, Union Find, MST algorithm](search.md)**
 
 ## Greedy algorithm
 
