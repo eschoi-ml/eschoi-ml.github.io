@@ -9,8 +9,8 @@ Let's try solving Top 8 Greedy algorithm questions!
 1. Job sequencing with deadlines
 1. Minimum number of platforms/ meeting rooms
 1. Huffman Coding
-1. Dijkstra's algorithm for shortest paths from a single source (in-progress)
-1. Kruska's and Prim's minimum spanning tree (in-progress)
+1. [Dijkstra's algorithm for shortest paths from a single source](search.md)
+1. [Kruska's and Prim's minimum spanning tree](search.md)
 
 Inspired by these two articles [[Top 7]](https://medium.com/techie-delight/top-7-greedy-algorithm-problems-3885feaf9430) & [[Top 20]](https://www.geeksforgeeks.org/top-20-greedy-algorithms-interview-questions/?ref=rp).
 
@@ -393,77 +393,6 @@ print('Decoded text: ', decoded_text)
     Original text:  I love estelle!
     Encoded text:  10011100011101010011100110001111010000011011
     Decoded text:  I love estelle!
-
-
-### Dijkstra's algorithm for shortest paths from a single source
-given a source vertex s from a set of vertices V in a weighted graph where all its edge weights w(u, v) are non-negative, find the shortest/smallest path weights d(s, v) for all vertices v present in the graph.
-
-
-
-
-```python
-import heapq
-def get_route(target, previous):
-
-    route = []
-    v = target
-    while v != -1:
-        route.append(v)
-        v = previous[v]
-    return route[::-1]
-
-def Dijkstra(source, graph):
-
-    N = len(graph)
-    pq = [(0, source)]
-
-    distance = [float('inf')] * N
-    distance[source] = 0
-
-    visited = [False] * N
-    visited[source] = True
-
-    previous = [-1] * N
-    route = []
-
-    while pq:
-
-        d, v = heapq.heappop(pq)
-        visited[v] = True
-
-        for n, w in graph[v].items():
-            new_dist = d + w
-            if not visited[n] and new_dist < distance[n]:
-                distance[n] = new_dist
-                previous[n] = v
-                heapq.heappush(pq, (distance[n], n))
-
-    for i in range(1, N):
-        if i!= source and distance[i]!=float('inf'):
-            route = get_route(i, previous)
-            print(f'Path from {source} to {i}: {route} with the minimum cost {distance[i]}')
-
-graph = {0:{1:10, 4:3},
-         1:{2:2, 4:4},
-         2:{3:9},
-         3:{2:7},
-         4:{1:1, 2:8, 3:2}
-         }
-Dijkstra(0, graph)
-```
-
-    Path from 0 to 1: [0, 4, 1] with the minimum cost 4
-    Path from 0 to 2: [0, 4, 1, 2] with the minimum cost 6
-    Path from 0 to 3: [0, 4, 3] with the minimum cost 5
-    Path from 0 to 4: [0, 4] with the minimum cost 3
-
-
-### Minimum Spanning Tree (MST)
-
-#### Kruskal's MST
-#### Prim's MST
-
-
 
 
 [<-PREV](dsa.md)
