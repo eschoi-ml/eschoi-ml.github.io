@@ -680,21 +680,17 @@ def kruskal_mst(vertices, edges):
     res = []
 
     i = 0
-    cnt_edge = 0
-    while cnt_edge < vertices - 1:
+    minCost = 0
+    while uf.component > 1:
 
         u, v, w = edges[i]
 
         if uf.union(u, v):
-            cnt_edge += 1
+            minCost += w
             res.append([u, v, w])
-        
+            print(f"{u}--{v}: {w}")
         i += 1
-    
-    minCost = 0
-    for u, v, w in res:
-        minCost += w
-        print(f"{u}--{v}: {w}")
+        
     print("MST cost: ", minCost)
 
 kruskal_mst(4, edges1)
