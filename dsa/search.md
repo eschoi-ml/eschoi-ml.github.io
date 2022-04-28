@@ -1,3 +1,5 @@
+[<-PREV](dsa.md)
+
 # Search with DFS, BFS, Topological Sort, Dijkstra, Bellman-Ford, Union-Find, and MST algorithms
 
 
@@ -772,3 +774,4 @@ prim_mst(5, edges2)
     1--4: 5
     MST cost:  16
 
+[<-PREV](dsa.md)
