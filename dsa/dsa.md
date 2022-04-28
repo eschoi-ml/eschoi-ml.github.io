@@ -29,7 +29,6 @@ description: Data Structure and Algorithm
 > **Code along Problem Set: [Monotonic Stack](monotonic_stack.md)**
 
 - Graph: Directed/Undirected, Connected/ Disconnected, Cyclic/ Acyclic, Weighted/Unweighted
-  - (Minimum) Spanning Tree: (Minimum sum of the weight of the edges) Undirected, Connected
 - Tree
   - N-ary Tree
   - Binary Tree
