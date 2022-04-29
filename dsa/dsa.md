@@ -78,7 +78,7 @@ Basic categories of algorithms: Insert, Update, Delete, Sort, and Search
 - Minimum Spanning Tree algorithm
 
 
-> **Code along Lecture Note: [DFS, BFS, Topological sort, Dijkstra, Bellman-Ford, Union Find, MST algorithm](search.md)**
+> **Code along Lecture Note: [DFS, BFS, Topological sort, Dijkstra, Bellman-Ford, Union Find, and MST algorithms](search.md)**
 
 ## Greedy algorithm
 
