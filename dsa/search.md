@@ -673,39 +673,31 @@ class UnionFind:
 
 ```python
 def kruskal_mst(vertices, edges):
+    
+    # O(e*(log(e) + alpha(n))) & O(n)
 
-    uf = UnionFind(vertices)
-    edges.sort(key=lambda x:x[2])
-
+    edges.sort(key=lambda x:x[2]) # O(e*loge)
+    
+    uf = UnionFind(vertices) 
+    
     res = []
-
-    i = 0
     minCost = 0
-    while uf.component > 1:
-
-        u, v, w = edges[i]
+    for u, v, w in edges: # O(e*alpha(n))
 
         if uf.union(u, v):
             minCost += w
             res.append([u, v, w])
-            print(f"{u}--{v}: {w}")
-        i += 1
-        
-    print("MST cost: ", minCost)
 
-kruskal_mst(4, edges1)
-kruskal_mst(5, edges2)
+            if uf.component == 1:
+                return minCost, res
+    return -1, None
+
+print(kruskal_mst(4, edges1))
+print(kruskal_mst(5, edges2))
 ```
 
-    2--3: 4
-    0--3: 5
-    0--1: 10
-    MST cost:  19
-    0--1: 2
-    1--2: 3
-    1--4: 5
-    0--3: 6
-    MST cost:  16
+    (19, [[2, 3, 4], [0, 3, 5], [0, 1, 10]])
+    (16, [[0, 1, 2], [1, 2, 3], [1, 4, 5], [0, 3, 6]])
 
 
 ## 7.2 Prim’s MST
@@ -713,61 +705,49 @@ kruskal_mst(5, edges2)
 
 ```python
 def prim_mst(n, edges):
-
-    def find_minKey():
-
-        minval = float('inf')
-
-        for v in range(n):
-            if not mstSet[v] and key[v] < minval:
-                minval = key[v]
-                minidx = v
-        
-        return minidx
-
+    # O(n^2) & O(n^2)
     graph = [[0] * n for _ in range(n)]
     for u, v, w in edges:
         graph[u][v] = w
         graph[v][u] = w
 
-    key = [float('inf')] * n
-    key[0] = 0
-    
     parent = [None] * n
     parent[0] = -1
 
+    key = [float('inf')] * n
+    key[0] = 0
+
     mstSet = [False] * n
-    
+
+    res = []
+    minCost = 0    
     for _ in range(n):
 
-        u = find_minKey()
-        mstSet[u] = True
-        
+        # find min_key(minkey), min_node(u)
+        u = -1
+        minkey = float('inf')
         for v in range(n):
-            if graph[u][v] > 0 and not mstSet[v] and key[v] > graph[u][v]:
+            if not mstSet[v] and key[v] < minkey:
+                minkey = key[v]
+                u = v
+
+        mstSet[u] = True
+        minCost += minkey
+        res.append([parent[u], u, minkey])
+
+        # update u's neighbors' key
+        for v in range(n):
+            if not mstSet[v] and 0 < graph[u][v] < key[v]:
                 key[v] = graph[u][v]
                 parent[v] = u
-    
-    minCost = 0
-    for v in range(1, n):
-        u = parent[v]
-        w = graph[u][v]
-        print(f"{u}--{v}: {w}")
-        minCost += w
-    print("MST cost: ", minCost)
+
+    return minCost, res[1:]
         
-prim_mst(4, edges1)
-prim_mst(5, edges2)
+print(prim_mst(4, edges1))
+print(prim_mst(5, edges2))
 ```
 
-    0--1: 10
-    3--2: 4
-    0--3: 5
-    MST cost:  19
-    0--1: 2
-    1--2: 3
-    0--3: 6
-    1--4: 5
-    MST cost:  16
+    (19, [[0, 3, 5], [3, 2, 4], [0, 1, 10]])
+    (16, [[0, 1, 2], [1, 2, 3], [1, 4, 5], [0, 3, 6]])
 
 [<-PREV](dsa.md)
