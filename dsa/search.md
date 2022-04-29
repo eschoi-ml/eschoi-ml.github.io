@@ -21,7 +21,7 @@
     - 3.3 Find all paths & their min distances with a distance variable
 
 5. Bellman-Ford algorithm(Dynamic Programming)
-6. Union Find
+6. Union Find (Greedy)
 7. Minimum Spanning Tree algorithm (Greedy)
     - 7.1 Kruskal’s Minimum Spanning Tree algorithm
     - 7.2 Prim’s Minimum Spanning Tree algorithm
