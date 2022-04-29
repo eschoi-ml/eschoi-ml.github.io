@@ -13,8 +13,7 @@
     - 2.1 Breath First Search - Return the shortest depth if you can reach a target node('F') from a starting node ('A')
     - 2.2 Breath First Path Search - Return the shortest path from a starting node ('A') to a target node('F')
 
-3. Topological Sort - Iterative using **Queue**
-
+3. Topological Sort - Iterative using **Queue** (Sort)
 4. Dijkstra algorithm - Iterative using **Heap Queue** (Greedy)
     - 3.1 Find a single path & min distance with a distance variable
     - 3.2 Find a single path & min distance without a distance variable
