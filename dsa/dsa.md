@@ -71,11 +71,11 @@ Basic categories of algorithms: Insert, Update, Delete, Sort, and Search
 
 - Depth First Search algorithm 
 - Breath First Search algorithm 
-- Topological Sort
-- Dijkstra algorithm 
-- Bellman-Ford algorithm 
-- Union Find 
-- Minimum Spanning Tree algorithm
+- Topological Sort (Sort)
+- Dijkstra algorithm (Greedy)
+- Bellman-Ford algorithm (Dynamic programming)
+- Union Find (Greedy)
+- Minimum Spanning Tree algorithm (Greedy)
 
 
 > **Code along Lecture Note: [DFS, BFS, Topological sort, Dijkstra, Bellman-Ford, Union Find, and MST algorithms](search.md)**
