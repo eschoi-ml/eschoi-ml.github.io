@@ -1,3 +1,5 @@
+[<-PREV](dsa.md)
+
 # Standard Greedy Algorithm
 
 1. Maximum number of activity selelction 
@@ -658,3 +660,5 @@ print('Decoded text: ', decoded_text)
     Encoded text:  111
     Decoded text:  aaa
 
+
+[<-PREV](dsa.md)
