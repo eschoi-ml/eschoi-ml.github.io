@@ -83,16 +83,22 @@ Basic categories of algorithms: Insert, Update, Delete, Sort, and Search
 ## Greedy algorithm
 
 Looks for locally optimum solutions in the hopes of finding a global optimum
-- Activity selelction 
-- Fractional Knapsack
-- Graph coloring
-- Job sequencing with deadlines
-- Minimum number of platforms/ meeting rooms
-- Huffman Coding
-- Dijkstra's algorithm for shortest paths from a single source 
-- Kruskal's and Prim's minimum spanning tree
 
-> **Code along Lecture Note: [Top 8 Greedy Algorithm](greedy.md)**
+- Maximum number of activity selelction
+- Maximum profit in job sequencing with deadlines
+- Generate egyption fraction
+- Maximum value in Fractional Knapsack
+- Minimum empty space on wall by fitting shelves
+- Minimum number of coloring graph
+- Minimum number of platforms
+- Minimum number of meeting rooms
+- Minimum time to assign mice to holes
+- Minimum number of swaps to make the string balanced
+- Maximum number that policemen catch thieves
+- Water connection (dfs)
+- Huffman Coding
+
+> **Code along Lecture Note: [Standard Greedy Algorithm](standard_greedy.md)**
 
 ## Dynamic programming
 Problems that have overlapping subproblems AND optimal substructure property (If not, use a recursive algorithm using a divide and conquer approach)
