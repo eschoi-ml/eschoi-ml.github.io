@@ -1,3 +1,5 @@
+[PREV](digitrecognizer.md)
+
 # Computer Vision - Classification with Pytorch
 
 1. Import libraries, set up devicce and directories, and load data
@@ -15,15 +17,6 @@
     - [PyTorch v1.11.0 ](https://pytorch.org/docs/stable/index.html)
     - [torchvision v0.12](https://pytorch.org/vision/stable/index.html)
     
-
-
-```python
-from google.colab import drive
-drive.mount('/content/drive')
-```
-
-    Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount("/content/drive", force_remount=True).
-
 
 ## 1. Import libraries, set up device and directories, and load data
 
@@ -64,8 +57,8 @@ print("device:", device)
 
 
 ```python
-input_dir = '/content/drive/MyDrive/MLproject/digitrecognizer/'
-output_dir = '/content/drive/MyDrive/MLproject/digitrecognizer/'
+input_dir = '/digitrecognizer/'
+output_dir = '/digitrecognizer/'
 ```
 
 
@@ -196,7 +189,7 @@ plt.show()
 
 
     
-![png](output_15_0.png)
+![png](image/pytorch/output_15_0.png)
     
 
 
@@ -459,7 +452,7 @@ ax[1].set_ylim(0.6, 1.05);
 
 
     
-![png](output_24_0.png)
+![png](image/pytorch/output_24_0.png)
     
 
 
@@ -525,7 +518,7 @@ print(classification_report(y_valid, y_valid_pred))
 
 
     
-![png](output_27_1.png)
+![png](image/pytorch/output_27_1.png)
     
 
 
@@ -562,7 +555,7 @@ plt.show()
 
 
     
-![png](output_30_0.png)
+![png](image/pytorch/output_30_0.png)
     
 
 
@@ -604,7 +597,7 @@ plt.show()
 
 
     
-![png](output_33_0.png)
+![png](image/pytorch/output_33_0.png)
     
 
 
@@ -616,3 +609,5 @@ submission['Label'] = y_test_pred
 filepath = output_dir + 'pytorch_submission.csv'
 submission.to_csv(filepath, index=False)
 ```
+
+[PREV](digitrecognizer.md)
