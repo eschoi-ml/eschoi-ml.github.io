@@ -20,7 +20,7 @@ description: Machine Learning Project
 
 ### Computer Vision
 - [Multi-Label Disease Classification on Chest X-ray with Deep Learning](chestxray/chestxray.md)
-- [Classification on Digit Recognizer with TensorFlow Keras and Pytorch](digitrecognizer/digitrecognizer.md)
+- [Computer Vision Classification with TensorFlow Keras and Pytorch](digitrecognizer/digitrecognizer.md)
 
 ### Natural Language Processing
 - [Sentiment Classification on Enron Emails using RNNs for NLP](enronemail/enronemail.md)
