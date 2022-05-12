@@ -1,4 +1,4 @@
-[<-PREV](digitreconizer.md)
+[<-PREV](digitrecognizer.md)
 
 # Computer Vision - Classification with Keras
 
@@ -281,15 +281,15 @@ history = model.fit(
 
     Epoch 1/50
     295/295 [==============================] - ETA: 0s - loss: 0.3651 - accuracy: 0.8846
-    Epoch 1: val_loss improved from inf to 3.93664, saving model to /mymodel.h5
+    Epoch 1: val_loss improved from inf to 3.93664, saving model to /digitrecognizer/mymodel.h5
     295/295 [==============================] - 22s 59ms/step - loss: 0.3651 - accuracy: 0.8846 - val_loss: 3.9366 - val_accuracy: 0.2014 - lr: 0.0010
     Epoch 2/50
     295/295 [==============================] - ETA: 0s - loss: 0.1233 - accuracy: 0.9627
-    Epoch 2: val_loss improved from 3.93664 to 0.06527, saving model to /mymodel.h5
+    Epoch 2: val_loss improved from 3.93664 to 0.06527, saving model to /digitrecognizer/mymodel.h5
     295/295 [==============================] - 19s 62ms/step - loss: 0.1233 - accuracy: 0.9627 - val_loss: 0.0653 - val_accuracy: 0.9800 - lr: 0.0010
     Epoch 3/50
     295/295 [==============================] - ETA: 0s - loss: 0.0915 - accuracy: 0.9720
-    Epoch 3: val_loss improved from 0.06527 to 0.05503, saving model to /mymodel.h5
+    Epoch 3: val_loss improved from 0.06527 to 0.05503, saving model to /digitrecognizer/mymodel.h5
     295/295 [==============================] - 19s 63ms/step - loss: 0.0915 - accuracy: 0.9720 - val_loss: 0.0550 - val_accuracy: 0.9810 - lr: 0.0010
     Epoch 4/50
     295/295 [==============================] - ETA: 0s - loss: 0.0749 - accuracy: 0.9767
@@ -297,11 +297,11 @@ history = model.fit(
     295/295 [==============================] - 17s 58ms/step - loss: 0.0749 - accuracy: 0.9767 - val_loss: 0.0638 - val_accuracy: 0.9812 - lr: 0.0010
     Epoch 5/50
     295/295 [==============================] - ETA: 0s - loss: 0.0677 - accuracy: 0.9789
-    Epoch 5: val_loss improved from 0.05503 to 0.05292, saving model to /mymodel.h5
+    Epoch 5: val_loss improved from 0.05503 to 0.05292, saving model to /digitrecognizer/mymodel.h5
     295/295 [==============================] - 17s 57ms/step - loss: 0.0677 - accuracy: 0.9789 - val_loss: 0.0529 - val_accuracy: 0.9841 - lr: 0.0010
     Epoch 6/50
     294/295 [============================>.] - ETA: 0s - loss: 0.0645 - accuracy: 0.9795
-    Epoch 6: val_loss improved from 0.05292 to 0.03036, saving model to /mymodel.h5
+    Epoch 6: val_loss improved from 0.05292 to 0.03036, saving model to /digitrecognizer/mymodel.h5
     295/295 [==============================] - 16s 53ms/step - loss: 0.0643 - accuracy: 0.9795 - val_loss: 0.0304 - val_accuracy: 0.9924 - lr: 0.0010
     Epoch 7/50
     295/295 [==============================] - ETA: 0s - loss: 0.0564 - accuracy: 0.9823
@@ -319,15 +319,15 @@ history = model.fit(
     295/295 [==============================] - 16s 53ms/step - loss: 0.0503 - accuracy: 0.9850 - val_loss: 0.0353 - val_accuracy: 0.9897 - lr: 0.0010
     Epoch 10/50
     295/295 [==============================] - ETA: 0s - loss: 0.0387 - accuracy: 0.9881
-    Epoch 10: val_loss improved from 0.03036 to 0.02882, saving model to /mymodel.h5
+    Epoch 10: val_loss improved from 0.03036 to 0.02882, saving model to /digitrecognizer/mymodel.h5
     295/295 [==============================] - 17s 56ms/step - loss: 0.0387 - accuracy: 0.9881 - val_loss: 0.0288 - val_accuracy: 0.9922 - lr: 1.0000e-04
     Epoch 11/50
     294/295 [============================>.] - ETA: 0s - loss: 0.0358 - accuracy: 0.9892
-    Epoch 11: val_loss improved from 0.02882 to 0.02643, saving model to /mymodel.h5
+    Epoch 11: val_loss improved from 0.02882 to 0.02643, saving model to /digitrecognizer/mymodel.h5
     295/295 [==============================] - 16s 55ms/step - loss: 0.0359 - accuracy: 0.9891 - val_loss: 0.0264 - val_accuracy: 0.9929 - lr: 1.0000e-04
     Epoch 12/50
     295/295 [==============================] - ETA: 0s - loss: 0.0291 - accuracy: 0.9908
-    Epoch 12: val_loss improved from 0.02643 to 0.02459, saving model to /mymodel.h5
+    Epoch 12: val_loss improved from 0.02643 to 0.02459, saving model to /digitrecognizer/mymodel.h5
     295/295 [==============================] - 16s 54ms/step - loss: 0.0291 - accuracy: 0.9908 - val_loss: 0.0246 - val_accuracy: 0.9929 - lr: 1.0000e-04
     Epoch 13/50
     295/295 [==============================] - ETA: 0s - loss: 0.0304 - accuracy: 0.9907
@@ -345,19 +345,19 @@ history = model.fit(
     295/295 [==============================] - 15s 52ms/step - loss: 0.0298 - accuracy: 0.9915 - val_loss: 0.0250 - val_accuracy: 0.9934 - lr: 1.0000e-04
     Epoch 16/50
     295/295 [==============================] - ETA: 0s - loss: 0.0285 - accuracy: 0.9912
-    Epoch 16: val_loss improved from 0.02459 to 0.02454, saving model to /mymodel.h5
+    Epoch 16: val_loss improved from 0.02459 to 0.02454, saving model to /digitrecognizer/mymodel.h5
     295/295 [==============================] - 16s 54ms/step - loss: 0.0285 - accuracy: 0.9912 - val_loss: 0.0245 - val_accuracy: 0.9937 - lr: 1.0000e-05
     Epoch 17/50
     295/295 [==============================] - ETA: 0s - loss: 0.0290 - accuracy: 0.9913
-    Epoch 17: val_loss improved from 0.02454 to 0.02432, saving model to /mymodel.h5
+    Epoch 17: val_loss improved from 0.02454 to 0.02432, saving model to /digitrecognizer/mymodel.h5
     295/295 [==============================] - 16s 56ms/step - loss: 0.0290 - accuracy: 0.9913 - val_loss: 0.0243 - val_accuracy: 0.9939 - lr: 1.0000e-05
     Epoch 18/50
     295/295 [==============================] - ETA: 0s - loss: 0.0287 - accuracy: 0.9913
-    Epoch 18: val_loss improved from 0.02432 to 0.02415, saving model to /mymodel.h5
+    Epoch 18: val_loss improved from 0.02432 to 0.02415, saving model to /digitrecognizer/mymodel.h5
     295/295 [==============================] - 16s 55ms/step - loss: 0.0287 - accuracy: 0.9913 - val_loss: 0.0242 - val_accuracy: 0.9939 - lr: 1.0000e-05
     Epoch 19/50
     295/295 [==============================] - ETA: 0s - loss: 0.0289 - accuracy: 0.9910
-    Epoch 19: val_loss improved from 0.02415 to 0.02401, saving model to /mymodel.h5
+    Epoch 19: val_loss improved from 0.02415 to 0.02401, saving model to /digitrecognizer/mymodel.h5
     295/295 [==============================] - 16s 54ms/step - loss: 0.0289 - accuracy: 0.9910 - val_loss: 0.0240 - val_accuracy: 0.9934 - lr: 1.0000e-05
     Epoch 20/50
     295/295 [==============================] - ETA: 0s - loss: 0.0274 - accuracy: 0.9919
@@ -544,4 +544,4 @@ filepath = output_dir + 'keras_submission.csv'
 submission.to_csv(filepath, index=False)
 ```
 
-[<-PREV](digitreconizer.md)
+[<-PREV](digitrecognizer.md)
