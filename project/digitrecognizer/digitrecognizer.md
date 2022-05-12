@@ -1,4 +1,4 @@
-[<-PREV](project.md)
+[<-PREV](../project.md)
 
 # Computer Vision Classification - Digit Recognizer
 
@@ -6,4 +6,4 @@
 
 ## [CV Classification in Pytorch](digitrecognizer_pytorch.md)
 
-[<-PREV](project.md)
+[<-PREV](../project.md)
