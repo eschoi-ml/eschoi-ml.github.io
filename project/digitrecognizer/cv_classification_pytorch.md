@@ -1,4 +1,4 @@
-[PREV](digitrecognizer.md)
+[<-PREV](digitrecognizer.md)
 
 # Computer Vision - Classification with Pytorch
 
@@ -610,4 +610,4 @@ filepath = output_dir + 'pytorch_submission.csv'
 submission.to_csv(filepath, index=False)
 ```
 
-[PREV](digitrecognizer.md)
+[<-PREV](digitrecognizer.md)
