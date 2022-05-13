@@ -125,21 +125,22 @@ unbounded_knapsack(value, weight, W)
 ```python
 def coinChange(self, coins: List[int], amount: int) -> int:
     """
-    dp[i]: the min number of coins to make amount i using all coins 
-    dp[i] = min(dp[i], 1 + dp[i-coins[j]]) if coins[j] <= i
-    amount 0 1 2 3 4 5 6 7 8 9 10 11
-           0 
+        dp[i]: the min # of coins that you need to make up the amount i using coins
+        
+        if coin <= amount:
+            dp[i] = min(dp[i], dp[i-coin]) 
     """
     
-    n = len(coins)
-    dp = [float('inf')] * (amount + 1)
+    dp = [float('inf')]*(amount + 1)
     dp[0] = 0
-    
+
+
     for i in range(1, amount + 1):
-        for j in range(n):
-            if coins[j] <= i:
-                dp[i] = min(dp[i], 1 + dp[i-coins[j]])
-    return dp[-1] if dp[-1]!= float('inf') else -1
+        for coin in coins:
+            if coin <= i:
+                dp[i] = min(dp[i], dp[i-coin] + 1)
+
+    return dp[-1] if dp[-1]!=float('inf') else -1
 ```
 
 ## [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)
@@ -149,17 +150,22 @@ def coinChange(self, coins: List[int], amount: int) -> int:
 ```python
 def minCostClimbingStairs(self, cost: List[int]) -> int:
     """
-    dp[i]: the minimum cost to reach i
-    dp[i] = cost[i] + min(dp[i-2], dp[i-1])
-    
-    """
-    n = len(cost)
-    dp = [0] * n
-    dp[0], dp[1] = cost[0], cost[1]
-    for i in range(2, n):
-        dp[i] = cost[i] + min(dp[i-2], dp[i-1])
+    dp[i]: the min cost to reach the i steps
 
-    return min(dp[-2], dp[-1])
+    dp[0] = dp[1] = 0
+
+    dp[i] = min(dp[i], dp[i-1] + cost[i-1], dp[i-2] + cost[i-2])
+
+    """
+
+    n = len(cost)
+    dp = [float('inf')] * (n + 1)
+    dp[0] = dp[1] = 0
+
+    for i in range(2, n+1):
+        dp[i] = min(dp[i], dp[i-1] + cost[i-1], dp[i-2] + cost[i-2])
+
+    return dp[-1]
 ```
 
 ## [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)
@@ -169,27 +175,25 @@ def minCostClimbingStairs(self, cost: List[int]) -> int:
 ```python
 def minPathSum(self, grid: List[List[int]]) -> int:
     """
-    grid[i][j]: the minimum sum upto the path (i, j)
-        1 3 1
-        1
-        4
-    grid[i][j] += min(grid[i-1][j], grid[i][j-1])
-        1 4 5
-        2
-        6
-    
+    dp[i][j]: the min path sum to (i, j)
+
+    dp[i][j] = min(dp[i-1][j], dp[i][j-1]) + grid[i][j]
+
     """
     m, n = len(grid), len(grid[0])
+    dp = [[0] * n for _ in range(m)]
+    dp[0][0] = grid[0][0]
     for i in range(1, m):
-        grid[i][0] += grid[i-1][0]
-    for i in range(1, n):
-        grid[0][i] += grid[0][i-1]
-    
+        dp[i][0] = dp[i-1][0] + grid[i][0]
+    for j in range(1, n):
+        dp[0][j] = dp[0][j-1] + grid[0][j]
+
+
     for i in range(1, m):
         for j in range(1, n):
-            grid[i][j] += min(grid[i-1][j], grid[i][j-1])
-    
-    return grid[-1][-1]
+            dp[i][j] = min(dp[i-1][j], dp[i][j-1]) + grid[i][j]
+
+    return dp[-1][-1]
 ```
 
 ## [Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/)
@@ -197,20 +201,24 @@ def minPathSum(self, grid: List[List[int]]) -> int:
 
 
 ```python
-def minFallingPathSum(self, A: List[List[int]]) -> int:
+def minFallingPathSum(self, matrix: List[List[int]]) -> int:
     """
-    A[i][j]: the minimum path sum upto (i, j)
-    
+    dp[i][j]: the min sum of falling path to (i, j)
+
+    dp[i][j] = min(dp[i-1][j-1], dp[i-1][j], dp[i-1][j+1]) + matrix[i][j]
+
     """
-    
-    n = len(A)
-    
+    n = len(matrix)
+    dp = [[0] * n for _ in range(n)]
+    for j in range(n):
+        dp[0][j] = matrix[0][j]
+
+
     for i in range(1, n):
         for j in range(n):
-            
-            A[i][j] += min(A[i-1][max(0, j-1):min(n-1, j+1) + 1])
-    
-    return min(A[n-1])
+            dp[i][j] = min(dp[i-1][max(0, j-1):min(j+2, n)]) + matrix[i][j]
+
+    return min(dp[-1])
 ```
 
 ## [Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets/)
