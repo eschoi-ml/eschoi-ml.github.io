@@ -296,20 +296,44 @@ def minSteps(self, n: int) -> int:
 ```python
 def numSquares(self, n: int) -> int:
     """
-    dp[i]: the minimum number of perfect square numbers that sum to i
+     dp[i]: the min # of perfect square that sum to i
 
     """
-    squares = [ i*i for i in range(1, int(sqrt(n)) + 1)]
-    
-    dp = [float('inf')] * (n + 1)
+    # Sol1. DP O(n*sqrt(n)), O(n) 
+
+    dp = [float('inf')] * (n+1)
     dp[0] = 0
-    
-    for i in range(1, n + 1):
-        for square in squares:
-            if square <= i:
-                dp[i] = min(dp[i], dp[i - square] + 1)
-    
+
+    for i in range(1, n+1):
+        j = 1
+        while j*j <= i:
+            dp[i] = min(dp[i], dp[i-j*j] + 1)
+            j += 1
     return dp[-1]
+
+
+    # Sol2. BFS
+
+    q = collections.deque([n])
+    visited = set([n])
+    depth = -1
+    while q:
+        depth += 1
+        size = len(q)
+
+        for _ in range(size):
+
+            num = q.popleft()
+            if num == 0:
+                return depth
+
+            j = 1
+            while j * j <= num:
+                neighbor = num - j*j
+                if neighbor not in visited:
+                    visited.add(neighbor)
+                    q.append(neighbor)
+                j += 1
 ```
 
 ## [Triangle](https://leetcode.com/problems/triangle/)
