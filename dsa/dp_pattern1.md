@@ -276,17 +276,15 @@ def minSteps(self, n: int) -> int:
             
     return dp[-1]
 
-    # Solution 2
-    cnt = 0
-    i = 2
-    while i < n + 1:
-        if n % i == 0:
-            cnt += i 
-            n //= i
-        else:
-            i += 1
-            
-    return cnt
+    # Solution 2 O(sqrt(n)) & O(1)
+    res = 0
+    d = 2
+    while n > 1:
+        while n % d == 0:
+            res += d
+            n //= d
+        d += 1
+    return res
 ```
 
 ## [Perfect Squares](https://leetcode.com/problems/perfect-squares/)
