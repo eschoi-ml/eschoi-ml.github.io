@@ -5,6 +5,7 @@
 
 Given a target, find the minimum/maximum cost/path/sum to reach the target.
 - 0/1 Knapsack
+- Ones and Zeros
 - Unbounded knapsack
 - Coin Change
 - Min Cost Climbing Stairs
@@ -13,7 +14,6 @@ Given a target, find the minimum/maximum cost/path/sum to reach the target.
 - 2 Keys Keyboard
 - Perfect Squares
 - Triangle
-- Ones and Zeros
 - Maximal Square
 - Last Stone Weight II
 - Partition Equal Subset Sum
@@ -82,6 +82,61 @@ optimized_zero_one_knapsack(value, weight, W)
     65
 
 
+
+## [Ones and Zeros](https://leetcode.com/problems/ones-and-zeroes/)
+*Return the size of the largest subset*
+
+
+```python
+def findMaxForm(self, strs: List[str], m: int, n: int) -> int:
+    """
+    dp[k][i][j]: the maximum number of strings that can be included in the subset 
+                    given only i 0's and j 1's using 0 to k-1 items in strs
+    
+    """
+    # Basic Solution: O(k * m * n) & O(k * m * n)
+    len_strs = len(strs)
+    for i in range(len_strs):
+        strs[i] = collections.Counter(strs[i])
+    
+    dp = [[[0] * (n + 1) for _ in range(m + 1)] for _ in range(len_strs + 1)]
+            
+    for k in range(1, len_strs + 1):
+        zeros = strs[k-1]['0']
+        ones = strs[k-1]['1']
+        for i in range(m + 1):
+            for j in range(n + 1):
+                if i >= zeros and j >= ones:
+                    dp[k][i][j] = max(dp[k-1][i][j], dp[k-1][i - zeros][j - ones] + 1)
+                else:
+                    dp[k][i][j] = dp[k-1][i][j]
+
+    return dp[-1][-1][-1]
+
+
+    """
+    dp[i][j]: the maximum number of strings that can be included in the subset 
+                given only i 0's and j 1's
+    """
+    # Optimized Solution: O(k * m * n) & O(m * n)
+
+    len_strs = len(strs)
+    for i in range(len_strs):
+        strs[i] = collections.Counter(strs[i])
+    
+    dp = [[0] * (n + 1) for _ in range(m + 1)]
+            
+    for k in range(len_strs):
+        zeros = strs[k]['0']
+        ones = strs[k]['1']
+
+        for i in range(m, -1, -1):
+            for j in range(n, -1, -1):
+                if i >= zeros and j >= ones:
+                    dp[i][j] = max(dp[i][j], dp[i - zeros][j - ones] + 1)
+
+    return dp[-1][-1]
+```
 
 ## Unbounded Knapsack
 
@@ -349,61 +404,6 @@ def minimumTotal(self, triangle: List[List[int]]) -> int:
         for j in range(i+1):
             triangle[i][j] += min(triangle[i-1][max(0, j-1)], triangle[i-1][min(j, i-1)]) 
     return min(triangle[-1])
-```
-
-## [Ones and Zeros](https://leetcode.com/problems/ones-and-zeroes/)
-*Return the size of the largest subset*
-
-
-```python
-def findMaxForm(self, strs: List[str], m: int, n: int) -> int:
-    """
-    dp[k][i][j]: the maximum number of strings that can be included in the subset 
-                    given only i 0's and j 1's using 0 to k-1 items in strs
-    
-    """
-    # Basic Solution: O(k * m * n) & O(k * m * n)
-    len_strs = len(strs)
-    for i in range(len_strs):
-        strs[i] = collections.Counter(strs[i])
-    
-    dp = [[[0] * (n + 1) for _ in range(m + 1)] for _ in range(len_strs + 1)]
-            
-    for k in range(1, len_strs + 1):
-        zeros = strs[k-1]['0']
-        ones = strs[k-1]['1']
-        for i in range(m + 1):
-            for j in range(n + 1):
-                if i >= zeros and j >= ones:
-                    dp[k][i][j] = max(dp[k-1][i][j], dp[k-1][i - zeros][j - ones] + 1)
-                else:
-                    dp[k][i][j] = dp[k-1][i][j]
-
-    return dp[-1][-1][-1]
-
-
-    """
-    dp[i][j]: the maximum number of strings that can be included in the subset 
-                given only i 0's and j 1's
-    """
-    # Optimized Solution: O(k * m * n) & O(m * n)
-
-    len_strs = len(strs)
-    for i in range(len_strs):
-        strs[i] = collections.Counter(strs[i])
-    
-    dp = [[0] * (n + 1) for _ in range(m + 1)]
-            
-    for k in range(len_strs):
-        zeros = strs[k]['0']
-        ones = strs[k]['1']
-
-        for i in range(m, -1, -1):
-            for j in range(n, -1, -1):
-                if i >= zeros and j >= ones:
-                    dp[i][j] = max(dp[i][j], dp[i - zeros][j - ones] + 1)
-
-    return dp[-1][-1]
 ```
 
 ## [Maximal Square](https://leetcode.com/problems/maximal-square/)
