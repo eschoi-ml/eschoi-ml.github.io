@@ -4,19 +4,21 @@
 # Pattern 1. Min/Max value
 
 Given a target, find the minimum/maximum cost/path/sum to reach the target.
-- 0/1 Knapsack
+- **0/1 Knapsack**
 - Ones and Zeros
-- Unbounded knapsack
+- **Unbounded knapsack**
 - Coin Change
-- Min Cost Climbing Stairs
+- **Min Cost Climbing Stairs**
 - Minimum Path Sum
-- Minimum Cost For Tickets
-- 2 Keys Keyboard
-- Perfect Squares
+- Minimum Falling Path Sum
 - Triangle
+- **Minimum Cost For Tickets**
+- **2 Keys Keyboard**
+- Perfect Squares
 - Maximal Square
+- **Partition Equal Subset Sum**
 - Last Stone Weight II
-- Partition Equal Subset Sum
+
 
 ## 0/1 Knapsack 
 Given weights and values of n items, put these items in a knapsack of capacity W to get the maximum total value in the knapsack. Find the maximum value subset of value such that sum of the weights of this subset is smaller than or equal to W. You cannot break an item, either pick the complete item or don’t pick it (0-1 property).
@@ -276,6 +278,23 @@ def minFallingPathSum(self, matrix: List[List[int]]) -> int:
     return min(dp[-1])
 ```
 
+## [Triangle](https://leetcode.com/problems/triangle/)
+*Return the minimum path sum from top to bottom.*
+
+
+```python
+def minimumTotal(self, triangle: List[List[int]]) -> int:
+    """
+    triangle[i][j]: the minimum path sum to (i, j)
+
+    """
+    n = len(triangle)
+    for i in range(1, n):
+        for j in range(i+1):
+            triangle[i][j] += min(triangle[i-1][max(0, j-1)], triangle[i-1][min(j, i-1)]) 
+    return min(triangle[-1])
+```
+
 ## [Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets/)
 *Return the minimum number of dollars you need to travel every day in the given list of days.*
 
@@ -389,22 +408,7 @@ def numSquares(self, n: int) -> int:
                 j += 1
 ```
 
-## [Triangle](https://leetcode.com/problems/triangle/)
-*Return the minimum path sum from top to bottom.*
 
-
-```python
-def minimumTotal(self, triangle: List[List[int]]) -> int:
-    """
-    triangle[i][j]: the minimum path sum to (i, j)
-
-    """
-    n = len(triangle)
-    for i in range(1, n):
-        for j in range(i+1):
-            triangle[i][j] += min(triangle[i-1][max(0, j-1)], triangle[i-1][min(j, i-1)]) 
-    return min(triangle[-1])
-```
 
 ## [Maximal Square](https://leetcode.com/problems/maximal-square/)
 *Find the largest square containing only 1's*
@@ -460,29 +464,6 @@ def maximalSquare(self, matrix: List[List[str]]) -> int:
     return maxlen ** 2
 ```
 
-## [Last Stone Weight II](https://leetcode.com/problems/last-stone-weight-ii/)
-*Return the smallest possible weight of the left stone.(The minimum difference between the sum of two groups.)*
-
-
-```python
-def lastStoneWeightII(self, stones: List[int]) -> int:
-    """
-    dp = {0}
-    stones = 2, 7, 4, 1, 8, 1
-                +  +  +  +  +  +
-                -  -  -  -  -  -
-    """
-    
-    dp = {0}
-    for stone in stones:
-        temp_dp = set()
-        for i in dp:
-            temp_dp.add(stone + i)
-            temp_dp.add(abs(stone - i))
-        dp = temp_dp
-    return min(dp)
-```
-
 ## [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)
 *Find if the array can be partitioned into two subsets such that the sum of elements in both subsets is equal.*
 
@@ -511,6 +492,29 @@ def canPartition(self, nums: List[int]) -> bool:
         h = h | curr_h
 
     return False
+```
+
+## [Last Stone Weight II](https://leetcode.com/problems/last-stone-weight-ii/)
+*Return the smallest possible weight of the left stone.(The minimum difference between the sum of two groups.)*
+
+
+```python
+def lastStoneWeightII(self, stones: List[int]) -> int:
+    """
+    dp = {0}
+    stones = 2, 7, 4, 1, 8, 1
+                +  +  +  +  +  +
+                -  -  -  -  -  -
+    """
+    
+    dp = {0}
+    for stone in stones:
+        temp_dp = set()
+        for i in dp:
+            temp_dp.add(stone + i)
+            temp_dp.add(abs(stone - i))
+        dp = temp_dp
+    return min(dp)
 ```
 
 
