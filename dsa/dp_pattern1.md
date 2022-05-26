@@ -31,45 +31,45 @@ W = 6
 ```python
 def zero_one_knapsack(value, weight, W):
     """
-    dp[i][j] the maximum value to make weight j using 0~i-1 items
-    dp[i][j] = max(dp[i-1][j], value[i-1] + dp[i-1][j-weight[i-1]]) 
-             = dp[i-1][j] 
-    item\W   0 1 2 3 4 5 6 
-        0    0 0 0 0 0 0 0 
-        1    0 
-        2    0 
-        3    0
+    dp[k][i]: the max value to make i weights using k items  
+    
+    k\i 0 1 2 3 ... W
+    0
+    1
+    2
+    .
+    n
+    
     """
+    
     n = len(value)
-    dp = [[0] * (W+1) for _ in range(n+1)]
-
-    for i in range(1, n+1): # item
-        for j in range(1, W+1): # weight
-            if weight[i-1] <= j:
-                dp[i][j] = max(dp[i-1][j], value[i-1] + dp[i - 1][j-weight[i-1]])
+    dp = [[0] * (W + 1) for _ in range(n + 1)]
+    
+    for k in range(1, n + 1):
+        v, w = value[k-1], weight[k-1]
+        for i in range(W + 1):
+            if w <= i:
+                dp[k][i] = max(dp[k-1][i], dp[k-1][i-w] + v)
             else:
-                dp[i][j] = dp[i-1][j]
-
+                dp[k][i] = dp[k-1][i]
     return dp[-1][-1]
 
 def optimized_zero_one_knapsack(value, weight, W):
     """
-    dp[i] the maximum value to make weight j using 0~i-1 items
-
+    dp[i]: the max value to make i weights using 1 to k items  
+    
+    i 0 1 2 3 ... W
+              <-start
     """
+    
     n = len(value)
-    dp = [0] * (W+1)
-
-    for i in range(1, n+1):
-        for j in range(W, 0, -1):
-            if weight[i-1] <= j:
-                dp[j] = max(dp[j], value[i-1] + dp[j-weight[i-1]])
-
+    dp = [0] * (W + 1)
+    for k in range(1, n + 1):
+        v, w = value[k-1], weight[k-1]
+        for i in range(W, -1, -1):
+            if w <= i:
+                dp[i] = max(dp[i], dp[i-w] + v)
     return dp[-1]
-
-value = [10, 15, 40]
-weight = [1, 2, 3]
-W = 6
 
 zero_one_knapsack(value, weight, W)
 optimized_zero_one_knapsack(value, weight, W)
@@ -89,52 +89,52 @@ optimized_zero_one_knapsack(value, weight, W)
 
 ```python
 def findMaxForm(self, strs: List[str], m: int, n: int) -> int:
+
+    # Sol1. Basic Solution O(nstr * m * n) & O(nstr * m * n)
     """
-    dp[k][i][j]: the maximum number of strings that can be included in the subset 
-                    given only i 0's and j 1's using 0 to k-1 items in strs
-    
+    dp[k][i][j]: max # of subset of strs from 0 to k-1, with i 0s and j 1s 
+
     """
-    # Basic Solution: O(k * m * n) & O(k * m * n)
-    len_strs = len(strs)
-    for i in range(len_strs):
-        strs[i] = collections.Counter(strs[i])
-    
-    dp = [[[0] * (n + 1) for _ in range(m + 1)] for _ in range(len_strs + 1)]
-            
-    for k in range(1, len_strs + 1):
-        zeros = strs[k-1]['0']
-        ones = strs[k-1]['1']
+    nstr = len(strs)
+    cnt_str = [0] * nstr
+    for i in range(nstr):
+        cnt_str[i] = collections.Counter(strs[i])
+
+
+    dp = [[[0] * (n + 1) for _ in range(m + 1)] for _ in range(nstr + 1)]
+
+    for k in range(1, nstr+1):
+        zeros = cnt_str[k-1]['0']
+        ones = cnt_str[k-1]['1']
         for i in range(m + 1):
             for j in range(n + 1):
-                if i >= zeros and j >= ones:
-                    dp[k][i][j] = max(dp[k-1][i][j], dp[k-1][i - zeros][j - ones] + 1)
+                if zeros <= i and ones <= j:
+                    dp[k][i][j] = max(dp[k-1][i][j], dp[k-1][i-zeros][j-ones] + 1)
                 else:
                     dp[k][i][j] = dp[k-1][i][j]
-
     return dp[-1][-1][-1]
 
+    # Sol2. Optimization O(nstr * m * n) & O(m * n)
+    """
+    dp[i][j]: max # of subset of strs from 0 to k-1 total nstr items, with i 0s and j 1s 
 
     """
-    dp[i][j]: the maximum number of strings that can be included in the subset 
-                given only i 0's and j 1's
-    """
-    # Optimized Solution: O(k * m * n) & O(m * n)
 
-    len_strs = len(strs)
-    for i in range(len_strs):
-        strs[i] = collections.Counter(strs[i])
-    
+    nstr = len(strs)
+    cnt_str = [0] * nstr
+    for i in range(nstr):
+        cnt_str[i] = collections.Counter(strs[i])
+
     dp = [[0] * (n + 1) for _ in range(m + 1)]
-            
-    for k in range(len_strs):
-        zeros = strs[k]['0']
-        ones = strs[k]['1']
+
+    for k in range(1, nstr+1):
+        zeros = cnt_str[k-1]['0']
+        ones = cnt_str[k-1]['1']
 
         for i in range(m, -1, -1):
             for j in range(n, -1, -1):
-                if i >= zeros and j >= ones:
-                    dp[i][j] = max(dp[i][j], dp[i - zeros][j - ones] + 1)
-
+                if zeros <= i and ones <= j:
+                    dp[i][j] = max(dp[i][j], dp[i-zeros][j-ones] + 1)
     return dp[-1][-1]
 ```
 
