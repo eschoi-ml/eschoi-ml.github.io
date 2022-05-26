@@ -12,7 +12,7 @@ Given a target, find the minimum/maximum cost/path/sum to reach the target.
 - Minimum Path Sum
 - Minimum Falling Path Sum
 - Triangle
-- **Minimum Cost For Tickets**
+- Minimum Cost For Tickets
 - **2 Keys Keyboard**
 - Perfect Squares
 - Maximal Square
