@@ -13,9 +13,10 @@ Given a target, find the minimum/maximum cost/path/sum to reach the target.
 - Minimum Falling Path Sum
 - Triangle
 - Minimum Cost For Tickets
+- Maximal Square
+- Maximal Rectangle
 - **2 Keys Keyboard**
 - Perfect Squares
-- Maximal Square
 - **Partition Equal Subset Sum**
 - Last Stone Weight II
 
@@ -328,6 +329,132 @@ def mincostTickets(self, days: List[int], costs: List[int]) -> int:
     return dp[-1]
 ```
 
+
+## [Maximal Square](https://leetcode.com/problems/maximal-square/)
+*Find the largest square containing only 1's*
+
+
+```python
+def maximalSquare(self, matrix: List[List[str]]) -> int:
+    """
+    dp[i][j]: the longest length of square at (i+1, j+1)
+    
+    """
+    # Basic Solution: O(m * n) & O(m * n)
+    m, n = len(matrix), len(matrix[0])
+    dp = [[0] * (n + 1) for _ in range(m + 1)]
+    maxlen = 0
+    for i in range(1, m + 1):
+        for j in range(1, n + 1):
+            if matrix[i-1][j-1] == '1':
+                dp[i][j] = min(dp[i-1][j-1], dp[i][j-1], dp[i-1][j]) + 1
+                maxlen = max(maxlen, dp[i][j])
+    
+    return maxlen ** 2
+    
+    """
+    dp[i]: the longest length of square at column i 
+    """
+    # Optimized Solution 1. O(m * n) & O(n)
+    m, n = len(matrix), len(matrix[0])
+    dp = [0] * (n + 1)
+    maxlen = 0
+    for i in range(1, m + 1):
+        temp_dp = [0] * (n + 1)
+        for j in range(1, n + 1):
+            if matrix[i-1][j-1] == '1':
+                temp_dp[j] = min(dp[j-1], dp[j], temp_dp[j-1]) + 1
+                maxlen = max(maxlen, temp_dp[j])
+        dp = temp_dp
+    return maxlen ** 2
+            
+    # Optimized Solution 2. O(m * n) & O(n)
+    m, n = len(matrix), len(matrix[0])
+    dp = [0] * (n + 1)
+    maxlen = 0
+    for i in range(1, m + 1):
+        prev = 0
+        for j in range(1, n + 1):
+            if matrix[i-1][j-1] == '1':
+                dp[j] = min(dp[j-1], dp[j], prev) + 1
+                maxlen = max(maxlen, dp[j])
+                prev = dp[j]
+            else:
+                prev = 0
+    return maxlen ** 2
+```
+
+
+## [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/)
+*Find the largest rectangle containing only 1's and return its area*
+
+
+```python
+def maximalRectangle(self, matrix: List[List[str]]) -> int:
+
+    # Sol1 O(m^2*n) & O(mn)
+    m, n = len(matrix), len(matrix[0])
+
+    dp = [[0] * (n + 1) for _ in range(m + 1)]
+
+
+    maxarea = 0
+    for i in range(1, m+1):
+        for j in range(1, n+1):
+            if matrix[i-1][j-1] == "1":
+
+                width = dp[i][j] = dp[i][j-1] + 1
+
+                for k in range(i, 0, -1):
+                    width = min(width, dp[k][j])
+                    if width == 0:
+                        break
+                    maxarea = max(maxarea, width * (i-k+1))
+    return maxarea
+
+    # Sol2 O(mn) & O(n)
+    m, n = len(matrix), len(matrix[0])
+
+    left = [0] * n
+    right = [n] * n
+    height = [0] * n
+
+    maxarea = 0
+    for i in range(m):
+
+        # height
+        for j in range(n):
+            if matrix[i][j] == "1":
+                height[j] += 1                
+            else:
+                height[j] = 0
+
+        # left
+        curr_left = 0
+        for j in range(n):
+            if matrix[i][j] == "1":
+                left[j] = max(left[j], curr_left)
+            else:    
+                left[j] = 0     # reset
+                curr_left = j + 1
+        # right
+        curr_right = n
+        for j in range(n-1, -1, -1):
+            if matrix[i][j] == '1':
+                right[j] = min(right[j], curr_right)
+            else:
+                right[j] = n    # reset
+                curr_right = j
+
+        # maxarea
+        for j in range(n):
+            maxarea = max(maxarea, height[j] * (right[j] - left[j]))
+
+    return maxarea
+
+
+```
+
 ## [2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/)
 *Return the minimum number of operations to get the character 'A' exactly n times on the screen.*
 
@@ -408,61 +535,6 @@ def numSquares(self, n: int) -> int:
                 j += 1
 ```
 
-
-
-## [Maximal Square](https://leetcode.com/problems/maximal-square/)
-*Find the largest square containing only 1's*
-
-
-```python
-def maximalSquare(self, matrix: List[List[str]]) -> int:
-    """
-    dp[i][j]: the longest length of square at (i+1, j+1)
-    
-    """
-    # Basic Solution: O(m * n) & O(m * n)
-    m, n = len(matrix), len(matrix[0])
-    dp = [[0] * (n + 1) for _ in range(m + 1)]
-    maxlen = 0
-    for i in range(1, m + 1):
-        for j in range(1, n + 1):
-            if matrix[i-1][j-1] == '1':
-                dp[i][j] = min(dp[i-1][j-1], dp[i][j-1], dp[i-1][j]) + 1
-                maxlen = max(maxlen, dp[i][j])
-    
-    return maxlen ** 2
-    
-    """
-    dp[i]: the longest length of square at column i 
-    """
-    # Optimized Solution 1. O(m * n) & O(m + n)
-    m, n = len(matrix), len(matrix[0])
-    dp = [0] * (n + 1)
-    maxlen = 0
-    for i in range(1, m + 1):
-        temp_dp = [0] * (n + 1)
-        for j in range(1, n + 1):
-            if matrix[i-1][j-1] == '1':
-                temp_dp[j] = min(dp[j-1], dp[j], temp_dp[j-1]) + 1
-                maxlen = max(maxlen, temp_dp[j])
-        dp = temp_dp
-    return maxlen ** 2
-            
-    # Optimized Solution 2. O(m * n) & O(n)
-    m, n = len(matrix), len(matrix[0])
-    dp = [0] * (n + 1)
-    maxlen = 0
-    for i in range(1, m + 1):
-        prev = 0
-        for j in range(1, n + 1):
-            if matrix[i-1][j-1] == '1':
-                dp[j] = min(dp[j-1], dp[j], prev) + 1
-                maxlen = max(maxlen, dp[j])
-                prev = dp[j]
-            else:
-                prev = 0
-    return maxlen ** 2
-```
 
 ## [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)
 *Find if the array can be partitioned into two subsets such that the sum of elements in both subsets is equal.*
