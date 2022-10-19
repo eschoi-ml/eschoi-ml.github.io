@@ -32,9 +32,9 @@ def preorder_iterative(root):
         res.append(node.val)
 
         if node.right:
-            res.append(node.right)
+            stack.append(node.right)
         if node.left:
-            res.append(node.left)
+            stack.append(node.left)
     return res
 ```
 
