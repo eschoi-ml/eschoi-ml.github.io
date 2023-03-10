@@ -25,8 +25,8 @@ print('TensorFlow version: ', tf.__version__)
 
 
 ```python
-input_dir = '/content/drive/MyDrive/MLproject/wine/'
-output_dir = '/content/drive/MyDrive/MLproject/wine/'
+input_dir = '/wine/'
+output_dir = '/wine/'
 ```
 
 
@@ -794,7 +794,7 @@ sns.countplot(data=df, x='type');
 
 
     
-![png](output_20_0.png)
+![png](images/output_20_0.png)
     
 
 
@@ -806,7 +806,7 @@ sns.histplot(data=df, x='quality', bins=20);
 
 
     
-![png](output_21_0.png)
+![png](images/output_21_0.png)
     
 
 
@@ -851,7 +851,7 @@ sns.histplot(data=df, x='quality', bins=20);
 
 
     
-![png](output_24_0.png)
+![png](images/output_24_0.png)
     
 
 
@@ -1004,7 +1004,7 @@ plot_model(model, show_shapes=True, show_layer_names=True, show_layer_activation
 
 
     
-![png](output_40_1.png)
+![png](images/output_40_1.png)
     
 
 
@@ -1117,7 +1117,7 @@ for i, met in enumerate(['wine_type_loss', 'wine_type_binary_accuracy']):
 
 
     
-![png](output_43_0.png)
+![png](images/output_43_0.png)
     
 
 
@@ -1140,7 +1140,7 @@ for i, met in enumerate(['wine_quality_loss', 'wine_quality_root_mean_squared_er
 
 
     
-![png](output_44_0.png)
+![png](images/output_44_0.png)
     
 
 
@@ -1199,7 +1199,7 @@ print(classification_report(y_test[0], y_test_pred_class_type))
 
 
     
-![png](output_48_1.png)
+![png](images/output_48_1.png)
     
 
 
@@ -1216,7 +1216,7 @@ plt.title('Wine quality');
 
 
     
-![png](output_49_0.png)
+![png](images/output_49_0.png)
     
 
 
