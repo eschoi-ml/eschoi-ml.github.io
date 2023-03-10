@@ -1,3 +1,5 @@
+[<-PREV](../project.md)
+
 # Multi-outputs of wine type and quality for classification and regression
 
 
@@ -1219,8 +1221,4 @@ plt.title('Wine quality');
 ![png](images/output_49_0.png)
     
 
-
-
-```python
-
-```
+[<-PREV](../project.md)
