@@ -19,7 +19,7 @@ description: Machine Learning Project
 
 ## Deep Learning
 
-- [Multi-output of Wine Type and Quality for Classification and Regression](wine/wine.md)
+- [Multi-outputs of Wine Type and Quality for Classification and Regression](wine/wine.md)
 
 ### Computer Vision
 - [Multi-Label Disease Classification on Chest X-ray with Deep Learning](chestxray/chestxray.md)
