@@ -5,19 +5,22 @@ description: Machine Learning Project
 ---
 [<-PREV ](../README.md)
 
-# Machine Learning Project
+# Project
 
-## Classical Machine Learning
+## Data Science project
+- [Exploratory Data Analysis and Statistical Analysis for Insurance Expenses](insurance/insurance.md)
+
+## Classical Machine Learning project
 - [Supervised Learnig for Classification of Penguin Species](penguin/penguin.md)
 - [Supervised Learning for Classification of Heart Disease](heart/heart.md)
 - [Unsupervised Learning](unsupervised/unsupervised.md)
 - [Supervised Learning for Regression of Subjective Wellbeing using Tree Based Algorithms](happiness/happiness.md)
 
 
-## Statistical Machine Learning
+## Statistical Machine Learning project
 - [Naive Bayes and NLP with Moview Reviews](moviereviews/moviereviews.md)
 
-## Deep Learning
+## Deep Learning project
 
 - [Multi-outputs of Wine Type and Quality for Classification and Regression](wine/wine.md)
 
