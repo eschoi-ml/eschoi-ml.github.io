@@ -1,3 +1,5 @@
+[<-PREV](../project.md)
+
 # Insurance Expenses Analysis
 **Overview**: The data consists of various categorical and numerical features, focusing on insurance expenses. They provide comprehensive insights into various factors that might influence insurance expenses.
 
@@ -35,7 +37,7 @@ import scipy.stats as stats
 
 
 ```python
-dir = '/content/drive/MyDrive/DS_project/insurance_202404/'
+dir = '/insurance/'
 ```
 
 
@@ -743,7 +745,7 @@ fig.tight_layout();
 
 
     
-![png](output_16_0.png)
+![png](images/output_16_0.png)
     
 
 
@@ -758,7 +760,7 @@ fig.tight_layout();
 
 
     
-![png](output_17_0.png)
+![png](images/output_17_0.png)
     
 
 
@@ -774,7 +776,7 @@ sns.pairplot(df.drop(columns=['age_group', 'bmi_group']), hue='sex', palette='vi
 
 
     
-![png](output_19_0.png)
+![png](images/output_19_0.png)
     
 
 
@@ -1467,7 +1469,7 @@ sns.heatmap(corr, annot=True);
 
 
     
-![png](output_22_0.png)
+![png](images/output_22_0.png)
     
 
 
@@ -1479,7 +1481,7 @@ sns.heatmap(corr[corr['expenses']<1][['expenses']].transpose(), annot=True);
 
 
     
-![png](output_23_0.png)
+![png](images/output_23_0.png)
     
 
 
@@ -1499,7 +1501,7 @@ fig.tight_layout();
 
 
     
-![png](output_25_0.png)
+![png](images/output_25_0.png)
     
 
 
@@ -1524,7 +1526,7 @@ fig.tight_layout()
 
 
     
-![png](output_27_0.png)
+![png](images/output_27_0.png)
     
 
 
@@ -1546,7 +1548,7 @@ fig.tight_layout();
 
 
     
-![png](output_29_0.png)
+![png](images/output_29_0.png)
     
 
 
@@ -1564,7 +1566,7 @@ fig.tight_layout()
 
 
     
-![png](output_31_0.png)
+![png](images/output_31_0.png)
     
 
 
@@ -6197,3 +6199,4 @@ Various exploratory data analysis and statistical analysis using t-tests, one-wa
 ## **Conclusion**
 These insights and recommendations aim to contribute to the in-depth understanding of relationships among various medical-related attributes, ultimately to reduce medical expenses and enhance well-being.
 
+[<-PREV](../project.md)
