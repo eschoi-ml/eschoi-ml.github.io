@@ -4659,7 +4659,7 @@ test_conclusion(ho, ha, test_statistic, pval)
     H_a: \text{The distribution of smokers and non-smokers across different regions are not same.}
     \end{align}
 *   Step2: $α = 0.05$
-*   Step3: $K = \sum_{k} \frac{{(O-E)}^2}{E}$ with Chi-square homogeneity test because two different categorical variables, smoker/non-smoker and different regions.
+*   Step3: $K = \sum_{k} \frac{(O-E)^2}{E}$ with Chi-square homogeneity test because two different categorical variables, smoker/non-smoker and different regions.
 *   Step4: Right tailed p-value = $P(K>k)$
 *   Step5: Conclusion.
 
