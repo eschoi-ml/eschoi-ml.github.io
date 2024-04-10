@@ -1615,10 +1615,10 @@ def test_conclusion(ho, ha, test_statistic, pval, alpha=0.05):
 
 
 *   Step1: Hypotheses
-\begin{align}
+\begin{aligned}
     H_o: \mu_1 = \mu_2\\
     H_a: \mu_1 > \mu_2
-    \end{align}
+    \end{aligned}
 *   Step2: $α = 0.05$
 *   Step3: $\bar{X_1} - \bar{X_2}$ with student's t distribution because the population standard deviations are unknown.  
 *   Step4: Right tailed p-value = $P(T>t)$
@@ -2231,10 +2231,10 @@ test_conclusion(ho, ha, test_statistic, pval)
 
 
 *   Step1: Hypotheses
-\begin{align}
+\begin{aligned}
     H_o: \mu_1 = \mu_2\\
     H_a: \mu_1 \neq \mu_2
-    \end{align}
+    \end{aligned}
 *   Step2: $α = 0.05$
 *   Step3: $\bar{X_1} - \bar{X_2}$ with student's t distribution because the population standard deviations are unknown.  
 *   Step4: Both tailed p-value = $P(|T|>t)$
@@ -5842,13 +5842,13 @@ test_conclusion(ho, ha, test_statistic, pval)
 #### 3.6.2 The correlation coefficient of BMI and insurance expenses for non-smokers are 0.
 
 *   Step1: Hypotheses
-\begin{align}
+\begin{aligned}
     H_o: \rho = 0\\
     H_a: \rho \neq 0
-    \end{align}
-*   Step2: $$α = 0.05$$
-*   Step3: $$R$$ (correlation coefficient of BMI and insurance expenses for non-smokers) with student's t distribution because the population standard deviations are unknown.  
-*   Step4: Both tailed p-value = $$P(|T|>t)$$
+    \end{aligned}
+*   Step2: $α = 0.05$
+*   Step3: $R$ (correlation coefficient of BMI and insurance expenses for non-smokers) with student's t distribution because the population standard deviations are unknown.  
+*   Step4: Both tailed p-value = $P(|T|>t)$
 *   Step5: Conclusion.
 
 
