@@ -1615,10 +1615,10 @@ def test_conclusion(ho, ha, test_statistic, pval, alpha=0.05):
 
 
 *   Step1: Hypotheses
-\begin{aligned}
+\\begin{align}
     H_o: \mu_1 = \mu_2\\
     H_a: \mu_1 > \mu_2
-    \end{aligned}
+    \\end{align}
 *   Step2: $α = 0.05$
 *   Step3: $\bar{X_1} - \bar{X_2}$ with student's t distribution because the population standard deviations are unknown.  
 *   Step4: Right tailed p-value = $P(T>t)$
