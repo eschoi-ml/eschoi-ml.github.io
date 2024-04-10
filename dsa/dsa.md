@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Eun Soo's Machine Learning Guide
+title: Eunsoo's Data Science Guide
 description: Data Structure and Algorithm
 ---
 
