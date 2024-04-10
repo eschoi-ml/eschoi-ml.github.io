@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Eun Soo's Machine Learning Guide
-description: Machine Learning Project
+title: Eunsoo's Data Science Guide
+description: Data Science and Machine Learning Projects
 ---
 [<-PREV ](../README.md)
 
