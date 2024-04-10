@@ -5846,7 +5846,7 @@ test_conclusion(ho, ha, test_statistic, pval)
     H_o: \rho = 0\\
     H_a: \rho \neq 0
     \end{align}
-*   Step2: $α = 0.05$
+*   Step2: $'α = 0.05'$
 *   Step3: $R$ (correlation coefficient of BMI and insurance expenses for non-smokers) with student's t distribution because the population standard deviations are unknown.  
 *   Step4: Both tailed p-value = $P(|T|>t)$
 *   Step5: Conclusion.
