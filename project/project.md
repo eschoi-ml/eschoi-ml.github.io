@@ -8,6 +8,7 @@ title: Eunsoo's Data Science Guide
 
 ## Data Science project
 - [Exploratory Data Analysis and Statistical Analysis for Insurance Expenses](insurance/insurance.md)
+- [Exploratory Data Analysis of Movie Ratings from Onlie Review Sites](movie/movie.md)
 
 ## Classical Machine Learning project
 - [Supervised Learnig for Classification of Penguin Species](penguin/penguin.md)
