@@ -1,3 +1,5 @@
+[<-PREV](../project.md)
+
 # Exploratory Data Analysis of Movie Ratings from Online Review Sites
 
 # 1. Import library, Set up directories
@@ -1321,7 +1323,7 @@ plt.show()
 
 
     
-![png](output_17_0.png)
+![png](images/output_17_0.png)
     
 
 
@@ -1340,7 +1342,7 @@ plt.show();
 
 
     
-![png](output_18_0.png)
+![png](images/output_18_0.png)
     
 
 
@@ -1427,7 +1429,7 @@ plt.title('Fandango Rate Differences');
 
 
     
-![png](output_21_0.png)
+![png](images/output_21_0.png)
     
 
 
@@ -1574,7 +1576,7 @@ sns.scatterplot(data=fandango, x='RATING', y='VOTES', alpha=0.5);
 
 
     
-![png](output_23_0.png)
+![png](images/output_23_0.png)
     
 
 
@@ -2594,7 +2596,7 @@ plt.show()
 
 
     
-![png](output_33_0.png)
+![png](images/output_33_0.png)
     
 
 
@@ -2613,7 +2615,7 @@ plt.title('Rotten Tomatoes Rate Differences');
 
 
     
-![png](output_35_0.png)
+![png](images/output_35_0.png)
     
 
 
@@ -2640,7 +2642,7 @@ plt.show()
 
 
     
-![png](output_38_0.png)
+![png](images/output_38_0.png)
     
 
 
@@ -2654,7 +2656,7 @@ plt.title('Metacritic Rate Differences');
 
 
     
-![png](output_39_0.png)
+![png](images/output_39_0.png)
     
 
 
@@ -2693,7 +2695,7 @@ sns.scatterplot(data=others, x='IMDB_user_vote_count', y='Metacritic_user_vote_c
 
 
     
-![png](output_42_0.png)
+![png](images/output_42_0.png)
     
 
 
@@ -4346,7 +4348,7 @@ sns.clustermap(data=scores.drop('FILM', axis=1).corr(), annot=True, cmap='coolwa
 
 
     
-![png](output_55_0.png)
+![png](images/output_55_0.png)
     
 
 
@@ -4359,7 +4361,7 @@ plt.xlabel('Rate');
 
 
     
-![png](output_56_0.png)
+![png](images/output_56_0.png)
     
 
 
@@ -4375,7 +4377,7 @@ plt.show()
 
 
     
-![png](output_57_0.png)
+![png](images/output_57_0.png)
     
 
 
@@ -4810,6 +4812,8 @@ plt.title('10 Worst Films by Rotten Tomatoes Displayed');
 
 
     
-![png](output_59_0.png)
+![png](images/output_59_0.png)
     
+
+[<-PREV](../project.md)
 
