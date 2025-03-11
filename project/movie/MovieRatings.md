@@ -14,7 +14,7 @@ import seaborn as sns
 
 
 ```python
-mypath = '/content/drive/MyDrive/Udemy/2025_PythonForMLDSMasterClass/06-Capstone-Project/'
+mypath = '/content/drive/MyDrive/'
 ```
 
 # 2. Fandango
