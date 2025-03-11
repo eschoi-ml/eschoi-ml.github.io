@@ -6,7 +6,7 @@ title: Eunsoo's Data Science Guide
 
 # Project
 
-## Exploratory Data Analysis
+## Exploratory Data Analysis and Statistical Analysis project
 - [Exploratory Data Analysis and Statistical Analysis for Insurance Expenses](insurance/insurance.md)
 - [Exploratory Data Analysis of Movie Ratings from Onlie Review Sites](movie/MovieRatings.md)
 
