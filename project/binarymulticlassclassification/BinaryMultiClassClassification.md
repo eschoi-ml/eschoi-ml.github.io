@@ -10,7 +10,7 @@
     *   Evaluating: Confusion Matrix, Reciever Operating Characteristic (ROC) curve and Precision-Recall curve for Binary Classification
         -  ROC curve in depth: y_pred vs. y_pred_prob vs. y_score
 
-3. Logistic Regression for Multi-Class Classification: Iris flower data
+3. [Logistic Regression for Multi-Class Classification: Iris flower data](#3-logistic-regression-for-multi-class-classification-iris-flower-data)
     *   Read data and Quick data check
     *   Exploratory Data Analysis (EDA)
     *   Modeling
