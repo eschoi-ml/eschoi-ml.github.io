@@ -15,7 +15,7 @@ title: Eunsoo's Data Science Guide
 - [Supervised Learning for Classification of Heart Disease](heart/heart.md)
 - [Unsupervised Learning](unsupervised/unsupervised.md)
 - [Supervised Learning for Regression of Subjective Wellbeing using Tree Based Algorithms](happiness/happiness.md)
-- [Evaluation of Logistic Regression for Binary Classification and Multi-Class Classification](binarymulticlass/BinaryMultiClassClassification.md)
+- [Evaluation of Logistic Regression for Binary Classification and Multi-Class Classification](binarymulticlassclassification/BinaryMultiClassClassification.md)
 
 
 ## Statistical Machine Learning project
