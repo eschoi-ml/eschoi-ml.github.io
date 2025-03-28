@@ -1,13 +1,13 @@
+[<-PREV](../project.md)
+
 # Evaluation of Binary Classification and Multi-Class Classification
 
 1. Import libraries and Set up directories
 2. Logistic Regression for Binary Classification: Hearing test data
-
     *   Read data and Quick data check
     *   Exploratory Data Analyasis (EDA)
     *   Modling
     *   Evaluating: Confusion Matrix, Reciever Operating Characteristic (ROC) curve and Precision-Recall curve for Binary Classification
-    
         -  ROC curve in depth: y_pred vs. y_pred_prob vs. y_score
 
 3. Logistic Regression for Multi-Class Classification: Iris flower data
@@ -697,7 +697,7 @@ sns.boxplot(data=df, x='test_result', y='age');
 
 
     
-![png](output_12_0.png)
+![png](images/output_12_0.png)
     
 
 
@@ -708,7 +708,7 @@ sns.boxplot(data=df, x='test_result', y='physical_score');
 
 
     
-![png](output_13_0.png)
+![png](images/output_13_0.png)
     
 
 
@@ -719,7 +719,7 @@ sns.scatterplot(data=df, x='age', y='physical_score', hue='test_result');
 
 
     
-![png](output_14_0.png)
+![png](images/output_14_0.png)
     
 
 
@@ -730,7 +730,7 @@ sns.heatmap(df.corr(), annot=True);
 
 
     
-![png](output_15_0.png)
+![png](images/output_15_0.png)
     
 
 
@@ -743,7 +743,7 @@ ax.scatter(df['age'],df['physical_score'],df['test_result'],c=df['test_result'])
 
 
     
-![png](output_16_0.png)
+![png](images/output_16_0.png)
     
 
 
@@ -947,7 +947,7 @@ report_evaluation('Logistic Regression', y_test, y_pred)
 
 
     
-![png](output_31_1.png)
+![png](images/output_31_1.png)
     
 
 
@@ -958,7 +958,7 @@ plot_binaryclass_curves(model, scaled_X_test, y_test)
 
 
     
-![png](output_32_0.png)
+![png](images/output_32_0.png)
     
 
 
@@ -1005,7 +1005,7 @@ plt.title('ROC Curve using y_pred');
 
 
     
-![png](output_34_1.png)
+![png](images/output_34_1.png)
     
 
 
@@ -1577,7 +1577,7 @@ plt.title('ROC Curve using y_pred_prob');
 
 
     
-![png](output_35_1.png)
+![png](images/output_35_1.png)
     
 
 
@@ -1775,7 +1775,7 @@ plt.title('ROC Curve using y_score');
 
 
     
-![png](output_36_1.png)
+![png](images/output_36_1.png)
     
 
 
@@ -2467,7 +2467,7 @@ sns.scatterplot(data=df, x='sepal_length', y='sepal_width', hue='species');
 
 
     
-![png](output_45_0.png)
+![png](images/output_45_0.png)
     
 
 
@@ -2478,7 +2478,7 @@ sns.scatterplot(data=df, x='petal_length', y='petal_width', hue='species');
 
 
     
-![png](output_46_0.png)
+![png](images/output_46_0.png)
     
 
 
@@ -2489,7 +2489,7 @@ sns.pairplot(df, hue='species');
 
 
     
-![png](output_47_0.png)
+![png](images/output_47_0.png)
     
 
 
@@ -2500,7 +2500,7 @@ sns.heatmap(df.corr(numeric_only=True), annot=True);
 
 
     
-![png](output_48_0.png)
+![png](images/output_48_0.png)
     
 
 
@@ -2515,7 +2515,7 @@ ax.scatter(df['sepal_width'],df['petal_width'],df['sepal_length'],c=c);
 
 
     
-![png](output_49_0.png)
+![png](images/output_49_0.png)
     
 
 
@@ -2718,7 +2718,7 @@ plot_ind_multiclass_roc(model, scaled_X_test, y_test, 3)
 
 
     
-![png](output_63_0.png)
+![png](images/output_63_0.png)
     
 
 
@@ -2760,6 +2760,6 @@ plot_one_multiclass_roc(model, scaled_X_test, y_test, 3)
 
 
     
-![png](output_65_0.png)
+![png](images/output_65_0.png)
     
-
+[<-PREV](../project.md)
