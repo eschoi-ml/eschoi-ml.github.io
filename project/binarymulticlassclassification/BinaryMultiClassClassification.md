@@ -33,7 +33,7 @@ warnings.filterwarnings('ignore')
 
 ```python
 input_dir = '/DATA/'
-output_dir = '/'
+output_dir = ''
 ```
 
 # 2. Logistic Regression for Binary Classification: Hearing test data
@@ -2677,7 +2677,7 @@ report_evaluation('Multi-Class Logistic Regression', y_test, y_pred)
 
 
     
-![png](output_61_1.png)
+![png](images/output_61_1.png)
     
 
 
