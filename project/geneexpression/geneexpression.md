@@ -5,9 +5,9 @@
 1. [Import Libraries, Set up directories, Read data and Quick data check](#1-import-libraries-set-up-directories-read-data-and-quick-data-check)
 2. [Exploratory Data Analysis (EDA)](#2-exploratory-data-analysis-eda)
 3. [Modeling & Evaluating](#3-modeling-and-evaluating)
-    - Logistic Regression
-    - KNN
-    - SVM
+    - [Logistic Regression](#31-logistic-regression)
+    - [KNN](#32-knn)
+    - [SVM](#33-svm)
 4. [Compare the Results](#4-compare-the-results)
 5. [Save (and Load) the Best Model: SVM](#5-save-and-load-the-best-model-svm)
 
