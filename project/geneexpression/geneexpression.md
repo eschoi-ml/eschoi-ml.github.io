@@ -1,13 +1,15 @@
+[<-PREV](../project)
+
 # Supervised Learning - Classification of Gene Expression
 
 1. [Import Libraries, Set up directories, Read data and Quick data check](#1-import-libraries-set-up-directories-read-data-and-quick-data-check)
 2. [Exploratory Data Analysis (EDA)](#2-exploratory-data-analysis-eda)
-3. [Modeling & Evaluating](#3-modeling-&-evaluating)
+3. [Modeling & Evaluating](#3-modeling-evaluating)
     - Logistic Regression
     - KNN
     - SVM
 4. [Compare the Results](#4-compare-the-results)
-5. Save (and Load) the Best Model: SVM
+5. [Save (and Load) the Best Model: SVM](#5-save-and-load-the-best-model-svm)
 
 # 1. Import Libraries, Set up directories, Read data and Quick data check
 
@@ -682,7 +684,7 @@ plt.show();
 
 
     
-![png](output_11_0.png)
+![png](images/output_11_0.png)
     
 
 
@@ -825,7 +827,7 @@ report_evaluation('Logistic Regression', y_test, y_pred)
 
 
     
-![png](output_23_1.png)
+![png](images/output_23_1.png)
     
 
 
@@ -836,7 +838,7 @@ plot_binaryclass_curves(lr_model, scaled_X_test, y_test)
 
 
     
-![png](output_24_0.png)
+![png](images/output_24_0.png)
     
 
 
@@ -899,7 +901,7 @@ report_evaluation('KNN', y_test, y_pred)
 
 
     
-![png](output_30_1.png)
+![png](images/output_30_1.png)
     
 
 
@@ -910,7 +912,7 @@ plot_binaryclass_curves(knn_model, scaled_X_test, y_test)
 
 
     
-![png](output_31_0.png)
+![png](images/output_31_0.png)
     
 
 
@@ -1407,7 +1409,7 @@ plt.show();
 
 
     
-![png](output_36_0.png)
+![png](images/output_36_0.png)
     
 
 
@@ -1435,7 +1437,7 @@ report_evaluation('KNN', y_test, y_pred)
 
 
     
-![png](output_38_1.png)
+![png](images/output_38_1.png)
     
 
 
@@ -1446,7 +1448,7 @@ plot_binaryclass_curves(knn_grid_model, scaled_X_test, y_test)
 
 
     
-![png](output_39_0.png)
+![png](images/output_39_0.png)
     
 
 
@@ -1960,7 +1962,7 @@ report_evaluation('SVM', y_test, y_pred)
 
 
     
-![png](output_47_1.png)
+![png](images/output_47_1.png)
     
 
 
@@ -1974,7 +1976,7 @@ disp.ax_.scatter(X_train['Gene One'], X_train['Gene Two'], c=y_train, edgecolors
 
 
     
-![png](output_48_0.png)
+![png](images/output_48_0.png)
     
 
 
@@ -1988,7 +1990,7 @@ disp.ax_.set_ylim(3, 8);
 
 
     
-![png](output_49_0.png)
+![png](images/output_49_0.png)
     
 
 
@@ -2458,7 +2460,7 @@ disp.ax_.scatter(X_train['Gene One'], X_train['Gene Two'], c=y_train, edgecolors
 
 
     
-![png](output_53_0.png)
+![png](images/output_53_0.png)
     
 
 
@@ -2472,7 +2474,7 @@ disp.ax_.set_ylim(3, 8);
 
 
     
-![png](output_54_0.png)
+![png](images/output_54_0.png)
     
 
 
@@ -2489,7 +2491,7 @@ disp.ax_.scatter(X_test['Gene One'], X_test['Gene Two'], c=y_test, edgecolors='k
 
 
     
-![png](output_56_0.png)
+![png](images/output_56_0.png)
     
 
 
@@ -2504,7 +2506,7 @@ disp.ax_.set_ylim(3, 8);
 
 
     
-![png](output_57_0.png)
+![png](images/output_57_0.png)
     
 
 
@@ -2526,7 +2528,7 @@ report_evaluation('SVM', y_test, y_pred)
 
 
     
-![png](output_58_1.png)
+![png](images/output_58_1.png)
     
 
 
@@ -2537,7 +2539,7 @@ plot_binaryclass_curves(svm_grid_model, X_test, y_test)
 
 
     
-![png](output_59_0.png)
+![png](images/output_59_0.png)
     
 
 
@@ -2900,7 +2902,7 @@ plt.show();
 
 
     
-![png](output_65_0.png)
+![png](images/output_65_0.png)
     
 
 
@@ -2935,4 +2937,4 @@ loaded_model.predict(sample)
 
     array([0])
 
-
+[<-PREV](../project)
