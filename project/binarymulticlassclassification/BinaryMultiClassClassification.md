@@ -3,7 +3,7 @@
 # Evaluation of Binary Classification and Multi-Class Classification
 
 1. [Import libraries and Set up directories](#-1.-Import-libraries-and-Set-up-directories)
-2. [Logistic Regression for Binary Classification: Hearing test data](#-2.-Logistic-Regression-for-Binary-Classification:-Hearing-test-data)
+2. [Logistic Regression for Binary Classification: Hearing test data](#2.-Logistic-Regression-for-Binary-Classification:-Hearing-test-data)
     *   Read data and Quick data check
     *   Exploratory Data Analyasis (EDA)
     *   Modling
