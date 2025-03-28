@@ -16,6 +16,7 @@ title: Eunsoo's Data Science Guide
 - [Unsupervised Learning](unsupervised/unsupervised.md)
 - [Supervised Learning for Regression of Subjective Wellbeing using Tree Based Algorithms](happiness/happiness.md)
 - [Evaluation of Logistic Regression for Binary Classification and Multi-Class Classification](binarymulticlassclassification/BinaryMultiClassClassification.md)
+- [Supervised Learning for Classification of Gene Expression](geneexpression/geneexpression.md)
 
 
 ## Statistical Machine Learning project
