@@ -4,7 +4,7 @@
 
 1. [Import Libraries, Set up directories, Read data and Quick data check](#1-import-libraries-set-up-directories-read-data-and-quick-data-check)
 2. [Exploratory Data Analysis (EDA)](#2-exploratory-data-analysis-eda)
-3. [Modeling & Evaluating](#3-modeling-&-evaluating)
+3. [Modeling & Evaluating](#3-modeling-and-evaluating)
     - Logistic Regression
     - KNN
     - SVM
@@ -688,7 +688,7 @@ plt.show();
     
 
 
-# 3. Modeling & Evaluating
+# 3. Modeling and Evaluating
 
 
 ```python
