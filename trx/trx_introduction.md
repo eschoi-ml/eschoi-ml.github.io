@@ -1,4 +1,4 @@
-[<-PREV](../trx.md)
+[<-PREV](../trx/trx.md)
 
 # TRX Coaching Guide
 
@@ -116,4 +116,4 @@
 - TRX for Runners / Cyclists / Desk Workers
 - Skill Development / Progressions (e.g. master pistol squats)
 
-[<-PREV](/trx.md)
+[<-PREV](../trx/trx.md)
