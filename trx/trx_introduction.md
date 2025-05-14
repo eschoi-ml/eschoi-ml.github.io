@@ -1,3 +1,5 @@
+[<-PREV](/trx.md)
+
 # TRX Coaching Guide
 
 ## Benefits of TRX
@@ -113,3 +115,5 @@
 - Combat or Sports Inspired
 - TRX for Runners / Cyclists / Desk Workers
 - Skill Development / Progressions (e.g. master pistol squats)
+
+[<-PREV](/trx.md)
