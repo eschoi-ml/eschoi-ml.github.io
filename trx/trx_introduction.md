@@ -1,4 +1,4 @@
-# Introduction of TRX
+# TRX Coaching Guide
 
 ## Benefits of TRX
 1. **Full-Body Workout**: TRX engages multiple muscle groups at once, helping improve strength, balance, flexibility, and core stability in a single session.
@@ -10,22 +10,19 @@
 7. **Enhances Functional Strength**: TRX mimics real-life movements, which helps improve coordination and strength you actually use in daily life and sports.
 8. **Boosts Cardiovascular Fitness**: With the right programming (like HIIT or circuit style), TRX can also provide a solid cardio workout in addition to strength training.
 
-##Coaching TRX
-
-Introduction of TRX 
-Anatomy of TRX
-Suspension anchor
-Main carabiner
-Equalizer loop
-Locking loop
-Mid length mark
-Adjustment tabs
-Adjusters
-Handles
-Foot cradles
-Adjusting Length
-To lengthen: Hold onto the adjusters, pull them both back 
-To shorten: Pull down on the adjuster and with the other hand hold onto the adjustment tabs and pull upwards to your desired length
+## Anatomy of TRX
+- Suspension anchor
+- Main carabiner
+- Equalizer loop
+- Locking loop
+- Mid length mark
+- Adjustment tabs
+- Adjusters
+- Handles
+- Foot cradles
+- Adjusting Length
+- To lengthen: Hold onto the adjusters, pull them both back 
+- To shorten: Pull down on the adjuster and with the other hand hold onto the adjustment tabs and pull upwards to your desired length
 Short < Mid length < Mid calf < Fully lengthened
 
 Coaching System
