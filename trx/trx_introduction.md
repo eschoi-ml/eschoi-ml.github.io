@@ -43,18 +43,18 @@
 - **Stability Principle**: The further apart your feet are, the easier the exercise. The closer your feet are, the more difficult the exercise is. (Feet apart < Feet narrow < Single leg)
 
 ### Cueing Convention: **NAPS-MR**
-- Name: Name of the exercise
-- Adjustment: TRX length adjustment
-- Position: Position relative to the anchor point
-- Start: Starting posture/body alignment
-- Movement: Movement cue from start position to midpoint
-- Return: Return cue from midpoint to end/start position
+- **N**ame: Name of the exercise
+- **A**djustment: TRX length adjustment
+- **P**osition: Position relative to the anchor point
+- **S**tart: Starting posture/body alignment
+- **M**ovement: Movement cue from start position to midpoint
+- **R**eturn: Return cue from midpoint to end/start position
 
 ### Systematic Movement-Based Coaching: **FLAC**
-- Focus
-- Learn
-- Apply
-- Challenge
+- **F**ocus
+- **L**earn
+- **A**pply
+- **C**hallenge
 
 ### Body Checks: Positive questions
 - An affirmation
