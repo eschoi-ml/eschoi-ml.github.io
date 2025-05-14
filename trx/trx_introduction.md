@@ -17,30 +17,30 @@
 - Locking loop
 - Mid length mark
 - Adjustment tabs
-- Adjusters
-- Handles
-- Foot cradles
+- **Adjusters**
+- **Handles**
+- **Foot cradles**
 - Adjusting Length
 - To lengthen: Hold onto the adjusters, pull them both back 
 - To shorten: Pull down on the adjuster and with the other hand hold onto the adjustment tabs and pull upwards to your desired length: Short < Mid length < Mid calf < Fully lengthened
 
 ## Coaching System
 
-### Setting the Standards: Foundational Movements + What should be STABLE vs. MOBILE 
-- Plank: Full body
-- Pull: Full body in proper alignment vs. shoulder girdles, shoulders, elbows
-- Hinge (Hip-dominant): Torso vs. maximal hip flexion-extension with minimal knee flexion-extension
-- Push: Core and lower body vs. shoulder girdles, shoulders, elbows
-- Rotate: Torso moving in a cylinder fashion vs. Ankles, hips, t-spine, arms
-- Squat (Knee-dominant): Spine vs. Ankles, hips, and knees (maximal hip flexion-extension with maximal knee flexion and optimal ankle dorsiflexion)
-- Lunge: Torso vs. Ankles, knees, and hips
+### Setting the Standards: Foundational Movements + What should be **STABLE** vs. **MOBILE** 
+- **Plank**: Full body
+- **Pull**: Full body in proper alignment vs. shoulder girdles, shoulders, elbows
+- **Hinge** (Hip-dominant): Torso vs. maximal hip flexion-extension with minimal knee flexion-extension
+- **Push**: Core and lower body vs. shoulder girdles, shoulders, elbows
+- **Rotate**: Torso moving in a cylinder fashion vs. Ankles, hips, t-spine, arms
+- **Squat** (Knee-dominant): Spine vs. Ankles, hips, and knees (maximal hip flexion-extension with maximal knee flexion and optimal ankle dorsiflexion)
+- **Lunge**: Torso vs. Ankles, knees, and hips
 
 ### Principles of Progression/ Regression
-- Vector Principle: The closer to the anchor point, the more difficult, the farther from the anchor point, the easier the exercise is.
-- Pendulum Principle: The closer to the anchor point your feet are, the easier. The farther from the anchor point, the more difficult the exercise is.
-- Stability Principle: The further apart your feet are, the easier the exercise. The closer your feet are, the more difficult the exercise is. (Feet apart < Feet narrow < Single leg)
+- **Vector Principle**: The closer to the anchor point, the more difficult, the farther from the anchor point, the easier the exercise is.
+- **Pendulum Principle**: The closer to the anchor point your feet are, the easier. The farther from the anchor point, the more difficult the exercise is.
+- **Stability Principle**: The further apart your feet are, the easier the exercise. The closer your feet are, the more difficult the exercise is. (Feet apart < Feet narrow < Single leg)
 
-### Cueing Convention: NAPS-MR
+### Cueing Convention: **NAPS-MR**
 - Name: Name of the exercise
 - Adjustment: TRX length adjustment
 - Position: Position relative to the anchor point
@@ -48,7 +48,7 @@
 - Movement: Movement cue from start position to midpoint
 - Return: Return cue from midpoint to end/start position
 
-### Systematic Movement-Based Coaching: FLAC
+### Systematic Movement-Based Coaching: **FLAC**
 - Focus
 - Learn
 - Apply
