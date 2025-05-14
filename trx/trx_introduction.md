@@ -60,7 +60,7 @@
 - A correction
 
 ### Coaching Phrases
-1. Engage your core or glutes
+1. **Engage your core or glutes**
 - Engage, Activate, Contract, Squeeze, or Tighten your core/abs and glutes
 - Draw in your belly button in
 - Keep your core tight
