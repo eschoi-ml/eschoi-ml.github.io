@@ -1,4 +1,4 @@
-[<-PREV](/trx.md)
+[<-PREV](../trx.md)
 
 # TRX Coaching Guide
 
