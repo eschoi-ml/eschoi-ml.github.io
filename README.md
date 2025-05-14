@@ -7,9 +7,6 @@ This Github page is to share Statistical and Machine Learning related knowledge 
 
 ## [**-** Data Structure & Algorithm](dsa/dsa.md)
 
-
-## [**-** TRX](trx/trx.md)
-
 ### Contact info
 - Feel free to contact me if you have any question or want to leave comments. 
 - eschoi.stanford (at) gmail (dot) com
