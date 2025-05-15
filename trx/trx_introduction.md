@@ -26,6 +26,14 @@
 - To lengthen: Hold onto the adjusters, pull them both back 
 - To shorten: Pull down on the adjuster and with the other hand hold onto the adjustment tabs and pull upwards to your desired length: Short < Mid length < Mid calf < Fully lengthened
 
+## 6 Body Positions
+- **SF**: Standing Facing the anchor point
+- **SFA**: Standing Facing Away the anchor point
+- **SSW**: Standing Side Ways
+- **GF**: Ground Facing the anchor point
+- **GFA**: Ground Facing Away the anchor point
+- **GSW**: Ground Side Ways
+
 ## Coaching System
 
 ### Setting the Standards: Foundational Movements + What should be **STABLE** vs. **MOBILE** 
