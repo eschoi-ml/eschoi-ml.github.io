@@ -1,5 +1,3 @@
-[<-PREV](trx.md)
-
 # TRX Coaching Guide
 
 ## Benefits of TRX
