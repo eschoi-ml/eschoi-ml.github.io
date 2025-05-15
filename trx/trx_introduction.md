@@ -1,5 +1,7 @@
 # TRX Coaching Guide
 
+[<-PREV](trx.md)
+
 ## Benefits of TRX
 1. **Full-Body Workout**: TRX engages multiple muscle groups at once, helping improve strength, balance, flexibility, and core stability in a single session.
 2. **Core Activation**: Almost every TRX move requires core engagement due to the instability of the straps, which strengthens deep abdominal muscles and improves posture.
