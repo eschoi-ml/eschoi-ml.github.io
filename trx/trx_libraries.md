@@ -125,7 +125,7 @@
 |            |                       | One Leg Thruster (FL, SFA)                                                                                      |
 
 
-**Reference**
+**References**
 - [https://stack52.com/periodic-table-of-suspension-exercises/?srsltid=AfmBOoppyscbRQycW15LdcCB8P4iH7tv3KoyTyqSOHIC1uBqxfI9UAQO](https://stack52.com/periodic-table-of-suspension-exercises/?srsltid=AfmBOoppyscbRQycW15LdcCB8P4iH7tv3KoyTyqSOHIC1uBqxfI9UAQO)
 - [https://trxtraining.inspire360.com/enrolled/2ef9c42c-ff0a-11ef-b9e4-b639efc65ae4](https://trxtraining.inspire360.com/enrolled/2ef9c42c-ff0a-11ef-b9e4-b639efc65ae4)
 - [https://a.co/d/ikiqH92](https://a.co/d/ikiqH92)
