@@ -29,4 +29,5 @@ Below are two short videos introducing Korean Catholic history and the upcoming 
 - [Modern Korean Culture]()
 - [Korean Language and Social Etiquette]()
 
-  ## [Click Here to Download the Full Exhibition]()
+
+## [Click Here to Download the Full Exhibition]()
