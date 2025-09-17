@@ -6,21 +6,23 @@ Hello, I'm a passionate and dedicated TRX practitioner with experience in rehabi
 ## [TRX Libraries](trx_libraries.md)
 ## [TRX Classes](trx_classes.md)
 
-## Korean Catholic History
-## Martyrs
-### 103 Saint and 124 Blessed Korean Martyrs
-### Foreign Martyrs in Korea
-### Early Church Martyrs
-### Martyrs from the World Around UsK
+## 1. [Korean Catholic History]()
+- [Youtube]()
+## 2. Martyrs
+- [103 Saint and 124 Blessed Korean Martyrs]()
+- [Foreign Martyrs in Korea]()
+- [Early Church Martyrs]()
+- [Martyrs from the World Around Us]()
 ## Catholic Pilgrimage
-### Catholic Pilgrimage in Seoul
-### Catholic Pilgrimage Outside Seoul
-## Modern Korean Catholic Church
-## World Youth Day 2027 in Seoul, Korea
+- [Catholic Pilgrimage in Seoul]()
+- [Catholic Pilgrimage Outside Seoul]()
+## [Modern Korean Catholic Church]()
+## [World Youth Day 2027 in Seoul, Korea]()
+- [Youtube]()
 ## Korean Culture
-### Traditional Korean Culture
-### Modern Korean Culture
-### Korean Language and Social Etiquette
+- [Traditional Korean Culture]()
+- [Modern Korean Culture]()
+- [Korean Language and Social Etiquette]()
 
 
 ### Contact info
