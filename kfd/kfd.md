@@ -1,7 +1,8 @@
-# Journey of Faith: A Catholic Guide to Korean History and Culture  
+# A Journey through Korean Catholic History and Heritage  
 
-Hello, I'm a passionate and dedicated TRX practitioner with experience in rehabilitation and strength training. I’ve been training with TRX since the beginning of 2024, and in just over a year, it has transformed me physically, mentally, and emotionally. From my own experience, I can confidently say that TRX is one of the safest and most effective exercises. I'm eager to lead TRX in group fitness classes, helping others discover the transformative power of TRX in an inclusive and supportive environment.
+Hello, this is Eunsoo, Korean Catholic and parishioner at [Our Lady of Peace Church & Shirine](https://www.olop-shrine.org/) in California, USA. I created this page to To celebrate the teast day of korean martyrs in September 20, 2025. 
 
+Here are two introductory videos that describe 
 - [Youtube]()
 - [Youtube]()
   
@@ -11,6 +12,7 @@ Hello, I'm a passionate and dedicated TRX practitioner with experience in rehabi
 - [Foreign Martyrs in Korea]()
 - [Early Church Martyrs]()
 - [Martyrs from the World Around Us]()
+
 ## Catholic Pilgrimage
 - [Catholic Pilgrimage in Seoul]()
 - [Catholic Pilgrimage Outside Seoul]()
