@@ -6,9 +6,9 @@ Hello, I'm a passionate and dedicated TRX practitioner with experience in rehabi
 ## [TRX Libraries](trx_libraries.md)
 ## [TRX Classes](trx_classes.md)
 
-## 1. [Korean Catholic History]()
+## [Korean Catholic History]()
 - [Youtube]()
-## 2. Martyrs
+## Martyrs
 - [103 Saint and 124 Blessed Korean Martyrs]()
 - [Foreign Martyrs in Korea]()
 - [Early Church Martyrs]()
