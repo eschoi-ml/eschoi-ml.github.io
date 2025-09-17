@@ -1,4 +1,4 @@
-# Martyrdom and Korean Catholic & Cultural Heritage
+# Martyrdom and Korean Catholic Heritage
 
 Hello, my name is Eunsoo. I’m a Korean-American Catholic and parishioner at [Our Lady of Peace Church & Shrine](https://www.olop-shrine.org) in California, USA. On September 20, 2025, our parish celebrated the feast day of the Korean Martyrs - St. Andrew Kim Taegon, Paul Chong Hasang and Companions.
 
@@ -30,4 +30,4 @@ Below are two short videos introducing Korean Catholic history and the upcoming 
 - [Korean Language and Social Etiquette](KoreanLanguageAndSocialEtiquette.pdf)
 
 
-## [Click Here to Download the Full Exhibition]()
+## [Click Here to Download the Full Exhibition](MartyrdomAndKoreanCatholicHeritage-compressed.pdf)
