@@ -1,5 +1,4 @@
-# Light of the Martyrs
-# Walking the Sacred Path of Korean Catholic Heritage  
+# Light of the Martyrs: Walking the Sacred Path of Korean Catholic Heritage  
 
 Hello, this is Eunsoo, Korean Catholic and parishioner at [Our Lady of Peace Church & Shirine](https://www.olop-shrine.org/) in California, USA. I created this page to To celebrate the teast day of korean martyrs in September 20, 2025. 
 
