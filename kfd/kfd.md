@@ -22,7 +22,7 @@ Below are two short videos introducing Korean Catholic history and the upcoming 
   
 ## [Modern Korean Catholic Church](ModernKoreanCatholicChurch.pdf)
 
-## [World Youth Day 2027 in Seoul, Korea](World Youth Day 2027.pdf)
+## [World Youth Day 2027 in Seoul, Korea](WorldYouthDay2027.pdf)
 
 ## Korean Culture
 - [Traditional Korean Culture](TraditionalKoreanCulture.pdf)
