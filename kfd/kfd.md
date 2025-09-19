@@ -30,7 +30,7 @@ Below are two short videos introducing Korean Catholic history and the upcoming 
 - [Korean Language and Social Etiquette](KoreanLanguageAndSocialEtiquette.pdf)
 
 
-## [Click Here to Download the Full Exhibition](MartyrdomAndKoreanCatholicHeritage_v2-compressed.pdf)
+## [Click Here to Download the Full Exhibition (Ver.2)](MartyrdomAndKoreanCatholicHeritage_v2-compressed.pdf)
 
 ![QueenOfMartyrAndPeace](QueenOfMartyrsPeace_v2.png)
 
