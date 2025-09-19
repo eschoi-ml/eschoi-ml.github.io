@@ -29,6 +29,10 @@ Below are two short videos introducing Korean Catholic history and the upcoming 
 - [Modern Korean Culture](ModernKoreanCulture.pdf)
 - [Korean Language and Social Etiquette](KoreanLanguageAndSocialEtiquette.pdf)
 
+## Quiz
+- [Quiz on Martyrdom and Korean Catholic Heritage](Quiz.pdf)
+- [Quiz for Children on Martyrdom and Korean Catholic Heritage](QuizForChildren.pdf)
+
 
 ## [Click Here to Download the Full Exhibition (Ver.2)](MartyrdomAndKoreanCatholicHeritage_v2-compressed.pdf)
 
