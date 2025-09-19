@@ -2,7 +2,7 @@
 
 Hello, my name is Eunsoo. I’m a Korean-American Catholic and parishioner at [Our Lady of Peace Church & Shrine](https://www.olop-shrine.org) in California, USA. On September 20, 2025, our parish celebrated the feast day of the Korean Martyrs - St. Andrew Kim Taegon, Paul Chong Hasang and Companions.
 
-This page was created to share their inspiring faith  and the rich cultural traditions. The original exhibition consisted of 14 display panels, each featuring 8–9 letter-sized pages. Even though it was designed for display, we hope their remarkable stories are conveyed to you well. We invite you to explore Korean Catholic history, the lives of various martyrs, pilgrimage sites, and the beauty of Korean culture. If you have any questions or would like to leave a comment, please feel free to contact me at eschoi.stanford@gmail.com.
+This page was created to share their inspiring faith and the rich cultural traditions. The original exhibition consisted of 14 display panels, each featuring 8–9 letter-sized pages. Even though it was designed for displaying, we hope their remarkable stories are conveyed to you well. We invite you to explore Korean Catholic history, the lives of various martyrs, pilgrimage sites, and the beauty of Korean culture. If you have any questions or would like to leave a comment, please feel free to contact me at eschoi.stanford@gmail.com.
 
 Below are two short videos introducing Korean Catholic history and the upcoming World Youth Day 2027 in Seoul.
 - [Korean Martyr Saints](https://youtu.be/fE61T_ygxbc?si=GOe9PvMrmwydtbcQ)
@@ -22,7 +22,7 @@ Below are two short videos introducing Korean Catholic history and the upcoming 
   
 ## [Modern Korean Catholic Church](ModernKoreanCatholicChurch.pdf)
 
-## [World Youth Day 2027 in Seoul, Korea](WorldYouthDay2027.pdf)
+## [World Youth Day 2027 in Seoul, Korea](WorldYouthDay.pdf)
 
 ## Korean Culture
 - [Traditional Korean Culture](TraditionalKoreanCulture.pdf)
@@ -30,4 +30,6 @@ Below are two short videos introducing Korean Catholic history and the upcoming 
 - [Korean Language and Social Etiquette](KoreanLanguageAndSocialEtiquette.pdf)
 
 
-## [Click Here to Download the Full Exhibition](MartyrdomAndKoreanCatholicHeritage-compressed.pdf)
+## [->Click Here to Download the Full Exhibition](MartyrdomAndKoreanCatholicHeritage_v2-compressed.pdf)
+
+
