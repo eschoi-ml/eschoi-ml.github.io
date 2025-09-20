@@ -17,7 +17,7 @@ Below are two short videos introducing Korean Catholic history and the upcoming 
 - [Martyrs from the World Around Us](MartyrsFromTheWorldAroundUs.pdf)
 
 ## Catholic Pilgrimage
-- [Catholic Pilgrimage in Seoul](CatholicPilgrimageInSeoul.pdf)
+- [Catholic Pilgrimage In Seoul](CatholicPilgrimageInSeoul.pdf)
 - [Catholic Pilgrimage Outside Seoul](CatholicPilgrimageOutsideSeoul.pdf)
   
 ## [Modern Korean Catholic Church](ModernKoreanCatholicChurch.pdf)
