@@ -34,7 +34,7 @@ Below are two short videos introducing Korean Catholic history and the upcoming 
 - [Quiz for Children on Martyrdom and Korean Catholic Heritage](QuizForChildren.pdf)
 
 
-## [Click Here to Download the Full Exhibition (Ver.2)](MartyrdomAndKoreanCatholicHeritage_v2-compressed.pdf)
+## [Click Here to Download the Full Exhibition (ver.2)](MartyrdomAndKoreanCatholicHeritage_v2-compressed.pdf)
 
 ![QueenOfMartyrAndPeace](QueenOfMartyrsPeace_v2.png)
 
