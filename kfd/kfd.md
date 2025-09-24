@@ -8,7 +8,11 @@ Below are two short videos introducing Korean Catholic history and the upcoming 
 - [Korean Martyr Saints](https://youtu.be/fE61T_ygxbc?si=6j9IR2kTBCVoGq0G)
 - [World Youth Day 2027 in Seoul, Korea](https://youtu.be/IBgqQ6_d22w?si=lMsvHtsmOxv-jtMx)
 
+
+
 # **We are currently updating the documents to ensure proper copyright compliance.**
+
+
 
 ## Korean Catholic History
 
